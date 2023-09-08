@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/continue_page.dart';
+import 'package:unity_world/pages/Welcome/continue_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
