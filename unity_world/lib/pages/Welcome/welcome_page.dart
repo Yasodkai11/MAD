@@ -11,12 +11,12 @@ class WelcomePage extends StatelessWidget {
       backgroundColor: Colors.white,
 
       body: Column(
-
         mainAxisAlignment: MainAxisAlignment.center,
 
         children: [
 
-          Expanded(
+          const Expanded(
+
             child: Center(
               child: Text(
                 "WELCOME TO",
@@ -27,25 +27,28 @@ class WelcomePage extends StatelessWidget {
                 ),
               ),
             ),
+
           ),
 
           Expanded(
+            
             child: Column(
               children: [
                 Center(
                   child: Image.asset(
-                    'assets/images/logo1.png',
+                    'assets/icons/logo1.png',
                     height: 250,
                     width: 250,
                   ),
                 ),
               ],
             ),
+
           ),
 
           Padding(
             padding: 
-              EdgeInsets.fromLTRB(0, 0, 10, 55),
+              const EdgeInsets.fromLTRB(0, 0, 10, 55),
             child: 
               Align(
                 alignment: Alignment.bottomRight,
@@ -57,16 +60,19 @@ class WelcomePage extends StatelessWidget {
                         context, 
                           MaterialPageRoute(
                             builder: 
-                              (context) => ContinuePage())
+                              (context) => const ContinuePage())
                       );
                     }, 
                     child: 
-                    Icon(Icons.navigate_next_rounded),
+                      const Icon(Icons.navigate_next_rounded),
                   ),
+
               ),
           ),
+
         ],
       ),
+
     );
   }
 }
