@@ -30,7 +30,18 @@ class _SheduleState extends State<Shedule> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-          
+          const SizedBox(height: 20.0),
+            Column(
+              children: [
+                Center(
+                  child: Image.asset(
+                    'assets/illustrations/shedule.png',
+                    height: 260,
+                    width: 320,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
