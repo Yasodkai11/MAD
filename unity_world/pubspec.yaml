@@ -68,6 +68,11 @@ flutter:
     - assets/images/rasika.webp
     - assets/images/dulanjali.webp
     - assets/images/vimukthi.jpg
+    - assets/icons/logo1.png
+    - assets/illustrations/admin.png
+    - assets/illustrations/login.png
+    - assets/illustrations/user.png
+    - assets/illustrations/shedule.png
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
