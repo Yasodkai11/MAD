@@ -6,6 +6,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   
@@ -13,11 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: const WelcomePage(),
-
-      title: '',
-      theme: ThemeData(
-      ),
+      title: 'Unity World',
+      theme: ThemeData(),
       debugShowCheckedModeBanner: false,
+
     );
   }
 }

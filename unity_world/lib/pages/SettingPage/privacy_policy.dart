@@ -75,6 +75,8 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
             ),
 
 
+
+
             Align(
               alignment: Alignment.topLeft,
               child: Container(
@@ -183,6 +185,64 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
               ),
             ),
 
+
+ const SizedBox(height: 16),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 16),
+                children: [
+                  TextSpan(
+                    text: 'Security:\n ',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextSpan(
+                    text:
+                        'We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.Links to Other Sites.This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
+                  ),
+                ],
+              ),
+            ),
+
+
+
+
+             const SizedBox(height: 16),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 16),
+                children: [
+                  TextSpan(
+                    text: "Children's Privacy\n",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextSpan(
+                    text:
+                        'These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do the necessary actions.',
+                  ),
+                ],
+              ),
+            ),
+
+
+
+               const SizedBox(height: 16),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 17),
+                children: [
+                  TextSpan(
+                    text: "We use the information collected for the following purposes:\n",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
 
             
