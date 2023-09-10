@@ -170,7 +170,7 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
 
             const SizedBox(height: 5),
             Container(
-              margin: const EdgeInsets.only(top: 1, bottom: 5),
+              margin: const EdgeInsets.only(top: 1, bottom: 1),
               child: const Text(
                 "We may employ third-party companies and individuals due to the following reasons:\n"
                 "      - To facilitate our Service;\n"
@@ -229,7 +229,8 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
 
 
 
-               const SizedBox(height: 16),
+
+const SizedBox(height: 16),
             RichText(
               text: const TextSpan(
                 style: TextStyle(color: Colors.black, fontSize: 17),
@@ -243,6 +244,97 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
                 ],
               ),
             ),
+
+
+const SizedBox(height: 5),
+            Container(
+              margin: const EdgeInsets.only(top: 1, bottom: 5, left:5, right: 20),
+              child: const Text(
+                  "Account Management: \n"
+                    "Update Timetable: \n"
+                    "Join Club\n"
+                    "Send Event Notification:",
+                  style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+
+
+            const SizedBox(height: 16),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 16),
+                children: [
+                  TextSpan(
+                    text: "Changes to This Privacy Policy\n",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  TextSpan(
+                    text:
+                        'We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.',
+                  ),
+                ],
+              ),
+            ),
+
+
+
+            const SizedBox(height: 16),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 17),
+                children: [
+                  TextSpan(
+                    text: "Contact Us",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+         
+
+       const SizedBox(height: 10),
+            RichText(
+              text: const TextSpan(
+                style: TextStyle(color: Colors.black, fontSize: 16),
+                children: [
+                  TextSpan(
+                    text: "If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at  ",
+                    style: TextStyle(
+                      fontWeight: FontWeight.normal,
+                    ),
+                  ),
+                  TextSpan(
+                    text:
+                        'codewizard@nsbm.gmail.com.',
+                    style: TextStyle(
+                       color: Color.fromARGB(255, 30, 144, 255)),
+                  ),
+                ],
+              ),
+            ),
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             
