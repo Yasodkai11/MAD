@@ -29,7 +29,16 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
         ),
 
         backgroundColor: Colors.white,
-        actions: [],
+        actions: [
+
+          IconButton(
+              onPressed: () {}, 
+              icon: Image.asset("assets/icons/notification-100.png",
+              width: 24,
+              height: 24,
+              )
+            ),
+        ],
 
     );
 
