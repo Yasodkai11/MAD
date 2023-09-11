@@ -22,11 +22,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
               ),
 
               color: Colors.black,
-              
+
             );
           }
           ) 
         ),
+
+        backgroundColor: Colors.white,
+        actions: [],
 
     );
 
