@@ -33,18 +33,30 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
           IconButton(
               onPressed: () {}, 
-              icon: Image.asset("assets/icons/notification-100.png",
-              width: 24,
-              height: 24,
-              )
+              icon: Image.asset(
+                "assets/icons/notification-100.png",
+                width: 24,
+                height: 24,
+              ),
             ),
+
+            IconButton(
+              onPressed: () {}, 
+              icon: Image.asset(
+                "assets/icons/profile-pic.png",
+                width: 30,
+                height: 30,
+              ),
+            ),
+
         ],
 
     );
-
   }
   
   @override
+  
   // TODO: implement preferredSize
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
+
 }
