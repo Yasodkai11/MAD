@@ -73,12 +73,14 @@ flutter:
     - assets/illustrations/login.png
     - assets/illustrations/user.png
     - assets/illustrations/shedule.png
+    - assets/illustrations/request.png
     - assets/images/gayan.webp
     - assets/images/hirushi.webp
     - assets/images/nethmi.webp
     - assets/images/pramudya.webp
     - assets/images/csds.jpg
     - assets/images/fac.jpg
+    
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -32,8 +32,18 @@ class _requestState extends State<request> {
                     fontWeight: FontWeight.bold),
               ),
             ),
-            
-            
+                 const SizedBox(height: 20.0),
+            Column(
+              children: [
+                Center(
+                  child: Image.asset(
+                    'assets/illustrations/request.png',
+                    height: 260,
+                    width: 320,
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
