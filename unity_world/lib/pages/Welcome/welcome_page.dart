@@ -64,7 +64,9 @@ class WelcomePage extends StatelessWidget {
                       );
                     }, 
                     child: 
-                      const Icon(Icons.navigate_next_rounded),
+                      const Icon(
+                        Icons.navigate_next_rounded
+                      ),
                   ),
 
               ),
