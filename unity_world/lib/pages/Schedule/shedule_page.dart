@@ -56,6 +56,19 @@ class _SheduleState extends State<Shedule> {
                 style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             ),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 10,
+                bottom: 5,
+                right: 50,
+                left: 10,
+              ),
+              child: const Text(
+                "Daily Lecture Hall Schedule in FOC:",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.black, fontSize: 18),
+              ),
+            ),
           ],
         ),
       ),
