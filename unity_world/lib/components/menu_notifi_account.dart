@@ -5,7 +5,31 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
   @override
   Widget build(BuildContext context) {
-    return AppBar();
+    return AppBar(
+
+      leading: Builder(
+          builder: ((context) {
+            return IconButton(
+
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }, 
+
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: Icon(
+                Icons.menu
+              ),
+
+              color: Colors.black,
+              
+            );
+          }
+          ) 
+        ),
+
+    );
+
   }
   
   @override
