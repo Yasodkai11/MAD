@@ -69,6 +69,20 @@ class _SheduleState extends State<Shedule> {
                 style: TextStyle(color: Colors.black, fontSize: 18),
               ),
             ),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 10,
+                bottom: 5,
+                right: 50,
+                left: 10,
+              ),
+              child: const Text(
+                "https://undraw.co/search",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Color.fromARGB(255, 15, 26, 88), fontSize: 18),
+              ),
+            ),
           ],
         ),
       ),
