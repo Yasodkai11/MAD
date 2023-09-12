@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/Club/club_main.dart';
+import 'package:unity_world/pages/Schedule/shedule_page.dart';
 
 class BottomNavigation extends StatefulWidget {
 
@@ -61,7 +63,20 @@ class _BottomNavigationState extends State<BottomNavigation> {
           ),
 
         ],
-      ),      
+      ),    
+
+      body: <Widget>[
+
+        Container(
+          child: CommunityPage()
+        ),
+
+        Container(
+          child: const Shedule()
+        ),
+
+      ]
+      [currentPageIndex],  
 
     );
 
