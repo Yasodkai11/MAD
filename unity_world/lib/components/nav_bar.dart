@@ -10,8 +10,9 @@ class BottomNavigation extends StatefulWidget {
 }
 
 class _BottomNavigationState extends State<BottomNavigation> {
-  @override
+  int currentPageIndex = 2;
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
 
@@ -19,13 +20,13 @@ class _BottomNavigationState extends State<BottomNavigation> {
 
         onDestinationSelected: (int index) {
           setState(() {
-            
+            currentPageIndex = index;
           }
           );
         },
 
         indicatorColor: Colors.blue[800],
-        
+        selectedIndex: currentPageIndex,
 
         destinations: const <Widget> [
 
@@ -58,7 +59,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
             icon: Icon(Icons.feedback_outlined),
             label: 'Request',
           ),
-          
+
         ],
 
       ),
