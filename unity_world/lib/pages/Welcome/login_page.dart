@@ -18,7 +18,9 @@ class LoginPage extends StatelessWidget {
               padding: 
                 const EdgeInsets.all(5.0),
               child: 
-                Image.asset('assets/illustrations/login.png'),
+                Image.asset(
+                  'assets/illustrations/login.png'
+                ),
             ),
 
             const Padding(
@@ -134,4 +136,9 @@ class LoginPage extends StatelessWidget {
 
     );
   }
+
+  actionRememberMe(
+    bool isCheckedRememberme
+  ) {}
+
 }
