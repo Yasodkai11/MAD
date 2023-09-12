@@ -13,7 +13,25 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
 
   Widget build(BuildContext context) {
-    return Scaffold();
-    
+    return Scaffold(
+
+      bottomNavigationBar: NavigationBar(
+
+        onDestinationSelected: (int index) {
+          setState(() {
+            
+          }
+          );
+        },
+
+        indicatorColor: Colors.blue[800],
+        
+
+        destinations: const <Widget> [],
+
+      ),
+
+    );
+
   }
 }
