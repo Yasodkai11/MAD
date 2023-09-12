@@ -27,9 +27,43 @@ class _BottomNavigationState extends State<BottomNavigation> {
         indicatorColor: Colors.blue[800],
         
 
-        destinations: const <Widget> [],
+        destinations: const <Widget> [
+
+          NavigationDestination(
+
+            icon: Icon(Icons.people_alt_outlined), 
+            label: 'Club'
+          ),
+
+          NavigationDestination(
+            
+            icon: Icon(Icons.domain_verification_outlined), 
+            label: 'Schedule',
+          ),
+
+          NavigationDestination(
+            
+            icon: Icon(Icons.home_outlined),
+            label:'Home',
+          ),
+
+          NavigationDestination(
+            
+            icon: Icon(Icons.calendar_month_outlined),
+            label: 'Reservation',
+          ),
+
+          NavigationDestination(
+            
+            icon: Icon(Icons.feedback_outlined),
+            label: 'Request',
+          ),
+          
+        ],
 
       ),
+
+      
 
     );
 
