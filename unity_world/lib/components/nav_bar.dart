@@ -31,31 +31,31 @@ class _BottomNavigationState extends State<BottomNavigation> {
         destinations: const <Widget> [
 
           NavigationDestination(
-
+            selectedIcon: Icon(Icons.people),
             icon: Icon(Icons.people_alt_outlined), 
             label: 'Club'
           ),
 
           NavigationDestination(
-            
+            selectedIcon: Icon(Icons.domain_verification),
             icon: Icon(Icons.domain_verification_outlined), 
             label: 'Schedule',
           ),
 
           NavigationDestination(
-            
+            selectedIcon: Icon(Icons.home),
             icon: Icon(Icons.home_outlined),
             label:'Home',
           ),
 
           NavigationDestination(
-            
+            selectedIcon: Icon(Icons.calendar_month),
             icon: Icon(Icons.calendar_month_outlined),
             label: 'Reservation',
           ),
 
           NavigationDestination(
-            
+            selectedIcon: Icon(Icons.feedback),
             icon: Icon(Icons.feedback_outlined),
             label: 'Request',
           ),
