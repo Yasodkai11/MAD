@@ -83,6 +83,20 @@ class _SheduleState extends State<Shedule> {
                     color: Color.fromARGB(255, 15, 26, 88), fontSize: 18),
               ),
             ),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 10,
+                bottom: 5,
+                right: 50,
+                left: 10,
+              ),
+              child: const Text(
+                "Batch Time Table:-",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Color.fromARGB(255, 7, 5, 23), fontSize: 18),
+              ),
+            ),
           ],
         ),
       ),
