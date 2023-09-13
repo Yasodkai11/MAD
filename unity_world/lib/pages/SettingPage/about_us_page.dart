@@ -71,7 +71,7 @@ const SizedBox(height: 15.0),
                 "Our Vision",
                 textAlign: TextAlign.center,
 
-                
+
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 18,
@@ -79,6 +79,24 @@ const SizedBox(height: 15.0),
               ),
             ),
 
+
+
+ const SizedBox(
+  height: 10.0),
+  Container(
+    margin: const EdgeInsets.only(top: 10, bottom: 5, right: 50, left: 50,),
+    width: 250.0,
+    height: 200.0,
+   
+   
+    decoration:  BoxDecoration (
+    borderRadius:  BorderRadius.circular(30.0),
+    color: Color.fromARGB(255, 129, 193, 255),),
+    padding: EdgeInsets.all(40),
+    child: const Text("To acquire profound respect from the supporters over the globe and distinctive verticals of the business by conveying intriguing yet answers for their issues/challenges.",
+    textAlign:  TextAlign.center,
+    ),
+  ),
 
 
 
