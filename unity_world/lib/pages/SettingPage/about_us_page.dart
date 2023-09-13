@@ -44,6 +44,22 @@ const SizedBox(height: 20.0),
               ),
             ),
 
+const SizedBox(
+  height: 10.0),
+  Container(
+    margin: const EdgeInsets.only(top: 10, bottom: 5, right: 50, left: 50,),
+    width: 250.0,
+    height: 200.0,
+  
+    decoration:  BoxDecoration (
+    borderRadius:  BorderRadius.circular(30.0),
+    color: Color.fromARGB(255, 129, 193, 255),),
+    padding: EdgeInsets.all(40),
+    child: const Text("To decide our strength in the present and up and coming programming innovations by conveying modern arrangements that keep them serving and remaining for more.",
+    textAlign:  TextAlign.center,
+    ),
+      ),
+
 
 
 
