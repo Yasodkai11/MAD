@@ -30,6 +30,21 @@ class _AboutUsState extends State<AboutUs> {
             ),
 
 
+const SizedBox(height: 20.0),
+
+          Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5, right: 50, left: 30,),
+              child: const Text(
+                "Our Mission",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+
+
 
 
 
