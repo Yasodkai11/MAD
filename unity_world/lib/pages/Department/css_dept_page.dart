@@ -42,28 +42,18 @@ class CsseDepPage extends StatelessWidget {
                         SizedBox(height: 10),
                         _buildProgramLink(
                           context,
-                          'BSc (Hons) Computer Science – (Plymouth University – United Kingdom)',
-                          'https://example.com/bsc-computer-science',
-                        ),
-                        _buildProgramLink(
-                          context,
                           'BSc (Hons) Software Engineering – (Plymouth University – United Kingdom)',
-                          'https://example.com/bsc-software-engineering',
-                        ),
-                        _buildProgramLink(
-                          context,
-                          'BSc (Hons) in Computer Science – (UGC Approved – Offered By NSBM)',
-                          'https://example.com/bsc-cs-nsbm',
+                          'https://www.nsbm.ac.lk/course/bsc-hons-software-engineering/',
                         ),
                         _buildProgramLink(
                           context,
                           'BSc (Hons) in Software Engineering – (UGC Approved – Offered By NSBM)',
-                          'https://example.com/bsc-se-nsbm',
+                          'https://www.nsbm.ac.lk/course/bsc-honours-in-software-engineering/',
                         ),
                         _buildProgramLink(
                           context,
                           'Foundation Programme for Bachelor’s Degree',
-                          'https://example.com/foundation-programme',
+                          'https://www.nsbm.ac.lk/course/foundation-programme-duplicate-6306/',
                         ),
                       ],
                     ),
@@ -125,16 +115,6 @@ class CsseDepPage extends StatelessWidget {
                           ),
                         ],
                       ),
-                    ],
-                  ),
-                  SizedBox(height: 20), // Adding space between rows
-                  // Second line of images
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [],
-                      ),
                       Column(
                         children: [
                           Image.asset(
@@ -148,6 +128,16 @@ class CsseDepPage extends StatelessWidget {
                             style: TextStyle(color: Colors.black, fontSize: 7),
                           ),
                         ],
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 20), // Adding space between rows
+                  // Second line of images
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Column(
+                        children: [],
                       ),
                       SizedBox(height: 20),
                       Row(

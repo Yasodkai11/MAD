@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/Department/Dep_Head/pramudya.dart';
-import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'Dep_Head/pramudya.dart';
+import 'Dep_Head/dns_head.dart';
 
 class DnsDeptPage extends StatelessWidget {
   const DnsDeptPage({super.key});
@@ -10,14 +8,14 @@ class DnsDeptPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+       body: Center(
         child: Scrollbar(
           child: SingleChildScrollView(
             child: Center(
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/images/csds.jpg',
+                    'assets/images/network.png',
                     height: 200,
                     width: 1000,
                   ),
@@ -25,7 +23,7 @@ class DnsDeptPage extends StatelessWidget {
                     width: 300,
                     padding: EdgeInsets.all(20),
                     child: Text(
-                      'The Department of Data Science (DDS) was established under the Faculty of Computing on the day of 15th December 2020. The department is focused to be the leader in the discipline of Data Science in Sri Lanka which include knowledge contribution from the key areas of Artificial Intelligence, Machine Learning, Deep Learning, Natural Language processing, Data Mining, Statistical Modeling, Simulation, Optimization and Visualization. DDS is preparing to conduct seminars, workshops, and an annual conference in Data Science as its future activities. The department is aiming to disseminate knowledge and spread the global opportunities and business transformation trends with this highly sort after discipline of data science.',
+                      'The Department of Network and Security comes under the Faculty of Computing, which offers industry-focused local and international degree programs specialized in the field of networking and security. The department offers unique opportunities to achieve the students’ dream careers in the fields of networking and security, and Information Communication Technology.\n\nThe Department of Network and Security is focused on 3 main areas, namely, Data Communication Networks, Infrastructure Systems (Servers, Datacenters) and Security (both system and infrastructure). The department has established affiliations with leading Internet Service Providers (ISP) in the country to provide a real-time experience of the finest technological platforms in the aforementioned areas. The department provides a unique learning and research experience to students through the university academic staff, flying faculty members of University of Plymouth and industrial experts.',
                       style: TextStyle(color: Colors.white, fontSize: 15),
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
@@ -43,39 +41,28 @@ class DnsDeptPage extends StatelessWidget {
                         SizedBox(height: 10),
                         _buildProgramLink(
                           context,
-                          'BSc (Honours) in Data Science – (UGC Approved – Offered By NSBM)',
-                          'https://example.com/bsc-Data-Science',
+                          'BSc (Hons) Computer Networks – (Plymouth University – United Kingdom)',
+                          'https://www.nsbm.ac.lk/course/bsc-hons-in-computer-networks/',
                         ),
                         _buildProgramLink(
                           context,
-                          'BSc (Hons) in Computer Science – (UGC Approved – Offered By NSBM)',
-                          'https://example.com/bsc-Computer-Science',
+                          'BSc (Hons) Computer Security – (Plymouth University – United Kingdom)',
+                          'https://www.nsbm.ac.lk/course/bsc-hons-in-computer-security/',
                         ),
                         _buildProgramLink(
                           context,
-                          'BSc (Hons) Computer Science – (Plymouth University – United Kingdom)',
-                          'https://example.com/bsc-cs-nsbm',
+                          'Bachelor of Information Technology (Major in Cyber Security) – (Victoria University – Australia)',
+                          'https://www.nsbm.ac.lk/course/bachelor-of-information-technology-major-in-cyber-security/',
                         ),
                         _buildProgramLink(
                           context,
-                          'BSc (Hons) in Data Science – (Plymouth University – United Kingdom)',
-                          'https://example.com/bsc-ds-nsbm',
+                          'BSc (Hons) in Computer Networks – (UGC Approved – Offered By NSBM)',
+                          'https://www.nsbm.ac.lk/course/bsc-hons-in-computer-networks/',
                         ),
                       ],
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
-                  Container(
-                    width: 300,
-                    padding: EdgeInsets.all(20),
-                    child: Text(
-                      'The Department of Data Science (DDS) was established under the Faculty of Computing on the day of 15th December 2020. The department is focused to be the leader in the discipline of Data Science in Sri Lanka which include knowledge contribution from the key areas of Artificial Intelligence, Machine Learning, Deep Learning, Natural Language processing, Data Mining, Statistical Modeling, Simulation, Optimization and Visualization. DDS is preparing to conduct seminars, workshops, and an annual conference in Data Science as its future activities. The department is aiming to disseminate knowledge and spread the global opportunities and business transformation trends with this highly sort after discipline of data science.',
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
-                    color: Color.fromARGB(255, 15, 26, 88),
-                  ),
-                  SizedBox(height: 10),
-
                   SizedBox(height: 10),
                   const Text(
                     'Academic Staff',
@@ -92,18 +79,18 @@ class DnsDeptPage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PramudyaPage()),
+                                    builder: (context) => DnsheadPage()),
                               );
                             },
                             child: Column(
                               children: [
                                 Image.asset(
-                                  'assets/images/pramudya.webp',
+                                  'assets/images/chamindra.webp',
                                   width: 100,
                                   height: 100,
                                 ),
                                 const Text(
-                                  'Mr. Pramudya Thilakarathne\nHead / Senior Lecturer',
+                                  'Mr. Chamindra Attanayake\nHOD / Senior Lecturer',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Colors.black, fontSize: 7),
@@ -121,12 +108,26 @@ class DnsDeptPage extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
-                            'assets/images/gayan.webp',
+                            'assets/images/chamara.webp',
                             width: 100,
                             height: 100,
                           ),
                           const Text(
-                            'Mr. Gayan Perera\nLecturer',
+                            'Mr. Chamara Disanayake\nSenior Lecturer',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(color: Colors.black, fontSize: 7),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Image.asset(
+                            'assets/images/dilhara.webp',
+                            width: 100,
+                            height: 100,
+                          ),
+                          const Text(
+                            'Mr. Dilhara Batan Arachchige\nLecturer',
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.black, fontSize: 7),
                           ),
@@ -145,26 +146,12 @@ class DnsDeptPage extends StatelessWidget {
                       Column(
                         children: [
                           Image.asset(
-                            'assets/images/hirushi.webp',
+                            'assets/images/isuru.webp',
                             width: 100,
                             height: 100,
                           ),
                           const Text(
-                            'Ms. Hirushi Dilpriya\nTemporary Lecturer',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.black, fontSize: 7),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        children: [
-                          Image.asset(
-                            'assets/images/nethmi.webp',
-                            width: 100,
-                            height: 100,
-                          ),
-                          const Text(
-                            'Ms. nethmi\nLecturer',
+                            'Mr. Isuru Sri Bandara\nLecturer',
                             textAlign: TextAlign.center,
                             style: TextStyle(color: Colors.black, fontSize: 7),
                           ),
@@ -180,8 +167,9 @@ class DnsDeptPage extends StatelessWidget {
         ),
       ),
     );
+    
+    
   }
-
   Widget _buildProgramLink(
       BuildContext context, String programName, String url) {
     return Container(
@@ -209,6 +197,6 @@ class DnsDeptPage extends StatelessWidget {
 
 void main() {
   runApp(MaterialApp(
-    home: HomePage(),
+    home: DnsDeptPage(),
   ));
 }
