@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/Department/Dep_Head/pavi.dart';
+import 'package:unity_world/pages/Department/Dep_Head/pramudya.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Dep_Head/pramudya.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class DnsDeptPage extends StatelessWidget {
+  const DnsDeptPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +20,50 @@ class HomePage extends StatelessWidget {
                     'assets/images/csds.jpg',
                     height: 200,
                     width: 1000,
+                  ),
+                  Container(
+                    width: 300,
+                    padding: EdgeInsets.all(20),
+                    child: Text(
+                      'The Department of Data Science (DDS) was established under the Faculty of Computing on the day of 15th December 2020. The department is focused to be the leader in the discipline of Data Science in Sri Lanka which include knowledge contribution from the key areas of Artificial Intelligence, Machine Learning, Deep Learning, Natural Language processing, Data Mining, Statistical Modeling, Simulation, Optimization and Visualization. DDS is preparing to conduct seminars, workshops, and an annual conference in Data Science as its future activities. The department is aiming to disseminate knowledge and spread the global opportunities and business transformation trends with this highly sort after discipline of data science.',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                    ),
+                    color: Color.fromARGB(255, 15, 26, 88),
+                  ),
+                  SizedBox(height: 10),
+                  Container(
+                    width: 300,
+                    padding: EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Text(
+                          'Programmes',
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        ),
+                        SizedBox(height: 10),
+                        _buildProgramLink(
+                          context,
+                          'BSc (Honours) in Data Science – (UGC Approved – Offered By NSBM)',
+                          'https://example.com/bsc-Data-Science',
+                        ),
+                        _buildProgramLink(
+                          context,
+                          'BSc (Hons) in Computer Science – (UGC Approved – Offered By NSBM)',
+                          'https://example.com/bsc-Computer-Science',
+                        ),
+                        _buildProgramLink(
+                          context,
+                          'BSc (Hons) Computer Science – (Plymouth University – United Kingdom)',
+                          'https://example.com/bsc-cs-nsbm',
+                        ),
+                        _buildProgramLink(
+                          context,
+                          'BSc (Hons) in Data Science – (Plymouth University – United Kingdom)',
+                          'https://example.com/bsc-ds-nsbm',
+                        ),
+                      ],
+                    ),
+                    color: Color.fromARGB(255, 15, 26, 88),
                   ),
                   Container(
                     width: 300,
@@ -47,7 +92,7 @@ class HomePage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PaviPage()),
+                                    builder: (context) => PramudyaPage()),
                               );
                             },
                             child: Column(

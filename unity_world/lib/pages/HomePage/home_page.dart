@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/components/menu_notifi_account.dart';
 
 
@@ -9,6 +10,8 @@ class HomePage extends StatelessWidget {
     return Scaffold(
 
       appBar: MyAppBar(),
+
+      drawer: MyDrawer(),
       
     );
   }

@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Dep_Head/pavi.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class CsseDepPage extends StatelessWidget {
+  const CsseDepPage({super.key});
 
   @override
   Widget build(BuildContext context) {
