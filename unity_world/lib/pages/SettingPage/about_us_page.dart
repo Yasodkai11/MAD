@@ -63,6 +63,28 @@ const SizedBox(
 
 
 
+const SizedBox(height: 15.0),
+
+          Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5, right: 50, left: 30,),
+              child: const Text(
+                "Our Vision",
+                textAlign: TextAlign.center,
+
+                
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+
+
+
+
+
+
+
 
 
 
