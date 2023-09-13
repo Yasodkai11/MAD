@@ -97,6 +97,8 @@ class _SheduleState extends State<Shedule> {
                     color: Color.fromARGB(255, 7, 5, 23), fontSize: 18),
               ),
             ),
+            const SizedBox(height: 20.0),
+            const SizedBox(height: 10.0),
           ],
         ),
       ),
