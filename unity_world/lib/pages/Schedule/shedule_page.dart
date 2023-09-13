@@ -99,6 +99,21 @@ class _SheduleState extends State<Shedule> {
             ),
             const SizedBox(height: 20.0),
             const SizedBox(height: 10.0),
+             Center(
+              child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    height: 54,
+                    width: 98,
+                    color: const Color.fromARGB(255, 15, 26, 88),                    
+                  ),
+                ],
+              ),
+            ],
+              ),
+            ),
           ],
         ),
       ),
