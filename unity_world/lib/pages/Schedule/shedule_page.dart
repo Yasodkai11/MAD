@@ -127,6 +127,15 @@ class _SheduleState extends State<Shedule> {
                     height: 54,
                     width: 98,
                     color: const Color.fromARGB(255, 15, 26, 88),
+                    child: const Center(
+                      child: Text(
+                        "20.2",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ),
                 ],
               ),
