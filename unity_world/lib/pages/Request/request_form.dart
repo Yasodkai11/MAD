@@ -51,6 +51,16 @@ class _requestState extends State<request> {
                 bottom: 5,
                 right: 50,
                 left: 10,
+              ),
+              child: const Column(
+                children: [
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Subject :- ",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                ],
               ),              
             ),
           ],
