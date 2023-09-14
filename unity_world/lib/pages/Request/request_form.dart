@@ -60,6 +60,13 @@ class _requestState extends State<request> {
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
+                  SizedBox(height: 15.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter the subject here',
+                    ),
+                  ),
                 ],
               ),              
             ),
