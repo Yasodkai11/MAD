@@ -187,6 +187,17 @@ class _SheduleState extends State<Shedule> {
                   )
                 ],
               ),
+              Row(
+                children: [
+                  Container(
+                    height: 54,
+                    width: 98,
+                    color: const Color.fromARGB(255, 15, 26, 88),
+                    child: const Center(
+                    ),
+                  ),
+                ],
+              )
             ],
               ),
             ),
