@@ -121,10 +121,7 @@ class _requestState extends State<request> {
                           return Center(
                             child: AlertDialog(
                               title: const Center(
-                                child: Text("Successful",style: TextStyle(
-                                    color: Color.fromARGB(255, 30, 144, 255),
-                                    fontSize: 40,
-                                    fontWeight: FontWeight.bold),),
+                                
                               ),
                               
                               actions: [
