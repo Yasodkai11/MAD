@@ -246,6 +246,7 @@ class _SheduleState extends State<Shedule> {
             ],
               ),
             ),
+            const SizedBox(height: 30.0),
           ],
         ),
       ),
