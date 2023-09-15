@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/Department/Dep_Head/pramudya.dart';
 import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'Dep_Head/pramudya.dart';
+import 'Dep_Head/ds_head.dart';
 
 class DsDeptPage extends StatelessWidget {
   const DsDeptPage({super.key});
@@ -92,7 +91,7 @@ class DsDeptPage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PramudyaPage()),
+                                    builder: (context) => DsheadPage()),
                               );
                             },
                             child: Column(

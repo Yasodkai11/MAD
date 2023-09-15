@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PaviPage extends StatelessWidget {
+class CssheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +72,6 @@ class PaviPage extends StatelessWidget {
 
 void main() {
   runApp(MaterialApp(
-    home: PaviPage(),
+    home: CssheadPage(),
   ));
 }
