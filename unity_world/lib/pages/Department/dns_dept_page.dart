@@ -66,7 +66,10 @@ class DnsDeptPage extends StatelessWidget {
                   SizedBox(height: 10),
                   const Text(
                     'Academic Staff',
-                    style: TextStyle(color: Colors.black, fontSize: 20),
+                    style: TextStyle
+                    (color: Colors.black, 
+                    fontSize: 20
+                    ),
                   ),
 
                   Row(

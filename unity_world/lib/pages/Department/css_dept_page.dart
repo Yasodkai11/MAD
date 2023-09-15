@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'Dep_Head/pavi.dart';
+import 'Dep_Head/css_head.dart';
 
 class CsseDepPage extends StatelessWidget {
   const CsseDepPage({super.key});
@@ -75,7 +75,7 @@ class CsseDepPage extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => PaviPage()),
+                                    builder: (context) => CssheadPage()),
                               );
                             },
                             child: Column(

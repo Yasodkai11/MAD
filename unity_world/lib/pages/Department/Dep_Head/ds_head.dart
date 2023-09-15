@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PramudyaPage extends StatelessWidget {
+class DsheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,6 +72,6 @@ class PramudyaPage extends StatelessWidget {
 
 void main() {
   runApp(MaterialApp(
-    home: PramudyaPage(),
+    home: DsheadPage(),
   ));
 }
