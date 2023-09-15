@@ -175,6 +175,19 @@ const SizedBox(height: 15.0),
 
 
 
+            Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "Dean's Message",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Color.fromARGB(255, 15, 26, 88),
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+
+
 
           
 
