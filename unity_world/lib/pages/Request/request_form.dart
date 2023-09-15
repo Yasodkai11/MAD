@@ -126,7 +126,13 @@ class _requestState extends State<request> {
                                     fontSize: 40,
                                     fontWeight: FontWeight.bold),),
                               ),
-                              
+                              backgroundColor:
+                                   Colors.white,
+                              titleTextStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
                               actions: [
                                 TextButton(
                                   onPressed: () {
