@@ -99,6 +99,26 @@ const SizedBox(height: 15.0),
   ),
 
 
+ const SizedBox(
+  height: 10.0),
+            Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "Faculty Of Computing",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Color.fromARGB(255, 82, 81, 81),
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold),
+              ),
+            ),
+
+
+
+
+          
+
+
 
 
 
