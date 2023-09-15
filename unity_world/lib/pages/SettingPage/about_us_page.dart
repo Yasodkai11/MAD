@@ -156,6 +156,22 @@ const SizedBox(height: 15.0),
                     fontWeight: FontWeight.normal),
               ),
             ),
+          
+
+
+
+
+           Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "The FOC places equal emphasis on both theory and practice of all aspects of the computing field, enabling our students to have sufficient hands-on experience to take up any working assignment in their respective IT fields at the end of their degree programmes. So, look no further for that perfect computing degree; NSBM’s Faculty of Computing is the ideal choice!",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black,
+                    //fontSize: 10,
+                    fontWeight: FontWeight.normal),
+              ),
+            ),
 
 
 
