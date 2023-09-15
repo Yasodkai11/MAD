@@ -88,7 +88,14 @@ class _requestState extends State<request> {
                     style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                   SizedBox(height: 15.0),
-                  
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter a description here',
+                    ),
+                    maxLines: 5,
+                    minLines: 1,
+                  ),
                 ],
               ),
             ),
