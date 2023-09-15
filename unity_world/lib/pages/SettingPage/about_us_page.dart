@@ -186,6 +186,18 @@ const SizedBox(height: 15.0),
                     fontWeight: FontWeight.bold),
               ),
             ),
+            
+
+
+
+             Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5, left: 60,),
+              child:Image.asset(
+                  'assets/dean.jpg',
+                  width: 200,
+                  height: 200,
+                ),
+             ),
 
 
 
