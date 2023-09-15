@@ -145,6 +145,20 @@ const SizedBox(height: 15.0),
 
 
           
+          Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "The Faculty provides top-notch research, training and development services that will help students acquire new knowledge along with the best practices in their respective disciplines. The FOC aims to be among the foremost centre of excellence in Research and Development (R&D) and advance education in computing while taking into consideration national as well as regional requirements for Information and Communication Technology.",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black,
+                    //fontSize: 10,
+                    fontWeight: FontWeight.normal),
+              ),
+            ),
+
+
+
 
           
 
