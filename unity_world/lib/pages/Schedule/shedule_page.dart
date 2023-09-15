@@ -170,6 +170,21 @@ class _SheduleState extends State<Shedule> {
                     width: 20,
                     color: Colors.white,
                   ),
+                  Container(
+                    height: 20,
+                    width: 98,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 20,
+                    color: Colors.white,
+                  ),
+                  Container(
+                    height: 20,
+                    width: 98,
+                    color: Colors.white,
+                  )
                 ],
               ),
             ],
