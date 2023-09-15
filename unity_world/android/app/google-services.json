@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "676899004112",
+    "project_id": "testing-2-238f0",
+    "storage_bucket": "testing-2-238f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676899004112:android:18f98efe322703204148d5",
+        "android_client_info": {
+          "package_name": "com.example.unity_world"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_SeLYObyWSmi4bvteFmiXchpKHb764Bs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
