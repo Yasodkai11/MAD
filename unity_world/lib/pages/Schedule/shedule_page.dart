@@ -158,6 +158,15 @@ class _SheduleState extends State<Shedule> {
                   )
                 ],
               ),
+              Row(
+                children: [
+                  Container(
+                    height: 20,
+                    width: 98,
+                    color: Colors.white,
+                  ),
+                ],
+              ),
             ],
               ),
             ),
