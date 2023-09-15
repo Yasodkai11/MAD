@@ -105,6 +105,11 @@ class _requestState extends State<request> {
                   padding: const EdgeInsets.all(10),
                   height: 56,
                   minWidth: 155,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  color: const Color.fromARGB(255, 15, 26, 88),
+                  textColor: Colors.white,
                   
                   onPressed: () {
                     
