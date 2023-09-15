@@ -130,7 +130,7 @@ class _requestState extends State<request> {
                               actions: [
                                 TextButton(
                                   onPressed: () {
-                                    
+                                    Navigator.pop(context);
                                   },
 
                                   child: const Center(
