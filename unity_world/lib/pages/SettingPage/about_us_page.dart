@@ -126,7 +126,26 @@ const SizedBox(height: 15.0),
                     //fontSize: 10,
                     fontWeight: FontWeight.normal),
               ),
-            ),
+          ),
+
+
+
+          Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "FOC offers University Grants Commission’s approved degree programmes in multiple disciplines. It has also partnered with the world top ranking universities, University of Plymouth in UK and Victoria University in Australia, to provide undergraduates with highly recognized International Degrees. The innovative teaching methods, along with the latest state-of-the-art equipment, form the perfect blend that motivates our students to do their best and reach their goals with ease.",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black,
+                    //fontSize: 10,
+                    fontWeight: FontWeight.normal),
+              ),
+          ),
+
+
+
+          
+
           
 
 
