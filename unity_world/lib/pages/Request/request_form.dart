@@ -110,7 +110,10 @@ class _requestState extends State<request> {
                   ),
                   color: const Color.fromARGB(255, 15, 26, 88),
                   textColor: Colors.white,
-                  
+                  child: const Text("Send",style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),),
                   onPressed: () {
                     
                   }),
