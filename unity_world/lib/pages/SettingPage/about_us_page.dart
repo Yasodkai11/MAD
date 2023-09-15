@@ -115,7 +115,18 @@ const SizedBox(height: 15.0),
 
 
 
-
+          
+          Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 5),
+              child: const Text(
+                "Faculty of Computing (FOC) provides world-class education and training in Computing and Information Technology, both at the undergraduate as well as postgraduate levels.",
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black,
+                    //fontSize: 10,
+                    fontWeight: FontWeight.normal),
+              ),
+            ),
           
 
 
