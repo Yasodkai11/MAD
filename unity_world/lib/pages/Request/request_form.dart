@@ -70,6 +70,28 @@ class _requestState extends State<request> {
                 ],
               ),              
             ),
+
+            const SizedBox(height: 10.0),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 10,
+                bottom: 5,
+                right: 50,
+                left: 10,
+              ),
+              child: const Column(
+                children: [
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Please provide a brief description :- ",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.black, fontSize: 18),
+                  ),
+                  SizedBox(height: 15.0),
+                  
+                ],
+              ),
+            ),
           ],
         ),
       ),
