@@ -115,10 +115,13 @@ class CsseDepPage extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
+                          ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child:Image.asset(
                             'assets/images/dulanjali.webp',
                             width: 100,
                             height: 100,
+                          ),
                           ),
                           const Text(
                             'Ms. Dilanjali Wijesekara\nLecturer',
