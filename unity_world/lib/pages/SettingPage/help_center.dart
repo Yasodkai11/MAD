@@ -219,6 +219,54 @@ void showAlert(){
 
 
 
+
+
+
+            const SizedBox(height: 10.0),
+
+
+            Container(
+              margin: const EdgeInsets.only(
+                top: 5,
+                bottom: 2,
+                right: 15,
+                left: 15,
+              ),
+
+
+
+              child: const Column(
+                children: [
+                  SizedBox(height: 10.0),
+                  Text(
+                    "Please provide a brief description :- ",
+                    textAlign: 
+                    TextAlign.center,
+                    style: 
+                    TextStyle(
+                      color: Colors.black, 
+                      fontSize: 18
+                      
+                      ),
+                  ),
+
+
+                  SizedBox(height: 15.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'Enter a description here',
+                    ),
+                    maxLines: 5,
+                    minLines: 1,
+                  ),
+                ],
+              ),
+            ),
+
+
+
+
   
           
 
