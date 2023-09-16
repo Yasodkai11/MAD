@@ -28,11 +28,16 @@ class CssheadPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Image.asset(
+            ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child:Image.asset(
               'assets/images/pavitra.webp', // Assuming the image is located in the 'assets' folder
               width: 150, // Adjust the width as needed
             ),
+            ),
             SizedBox(height: 20),
+            _buildCurvedContainer(
+                    context,
             Container(
               width: 300,
               padding: EdgeInsets.all(20),
@@ -69,6 +74,19 @@ class CssheadPage extends StatelessWidget {
     );
   }
 }
+Widget _buildCurvedContainer(BuildContext context, Widget child) {
+    return Container(
+      margin:
+       EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius:
+         BorderRadius.circular(20), // Adjust the radius as needed
+        color: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: child,
+    );
+  }
+
 
 void main() {
   runApp(MaterialApp(

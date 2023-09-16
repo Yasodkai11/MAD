@@ -15,11 +15,16 @@ class CsseDepPage extends StatelessWidget {
             child: Center(
               child: Column(
                 children: [
-                  Image.asset(
+                  ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child:Image.asset(
                     'assets/images/csse.png',
                     height: 200,
                     width: 1000,
                   ),
+                  ),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -29,7 +34,10 @@ class CsseDepPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
+                  ),
                   SizedBox(height: 10),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -59,6 +67,7 @@ class CsseDepPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
+                  ),
                   SizedBox(height: 10),
                   const Text(
                     'Academic Staff',
@@ -80,10 +89,13 @@ class CsseDepPage extends StatelessWidget {
                             },
                             child: Column(
                               children: [
-                                Image.asset(
+                                ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                                child:Image.asset(
                                   'assets/images/pavitra.webp',
                                   width: 100,
                                   height: 100,
+                                ),
                                 ),
                                 const Text(
                                   'Ms. Pavithra Subhashini\nHead / Senior Lecturer',
@@ -103,10 +115,13 @@ class CsseDepPage extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
+                          ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child:Image.asset(
                             'assets/images/dulanjali.webp',
                             width: 100,
                             height: 100,
+                          ),
                           ),
                           const Text(
                             'Ms. Dilanjali Wijesekara\nLecturer',
@@ -117,10 +132,13 @@ class CsseDepPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                          ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child:Image.asset(
                             'assets/images/rasika.webp',
                             width: 100,
                             height: 100,
+                          ),
                           ),
                           const Text(
                             'Dr. Rasika Ranaweera\nDean / Senior Lecturer',
@@ -145,10 +163,13 @@ class CsseDepPage extends StatelessWidget {
                         children: [
                           Column(
                             children: [
-                              Image.asset(
+                              ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                              child:Image.asset(
                                 'assets/images/vimukthi.jpg',
                                 width: 100,
                                 height: 100,
+                              ),
                               ),
                               const Text(
                                 'Mr. Vimukhthi\nDepartment Secretary',
@@ -168,6 +189,18 @@ class CsseDepPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+  Widget _buildCurvedContainer(BuildContext context, Widget child) {
+    return Container(
+      margin:
+       EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius:
+         BorderRadius.circular(20), // Adjust the radius as needed
+        color: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: child,
     );
   }
 
