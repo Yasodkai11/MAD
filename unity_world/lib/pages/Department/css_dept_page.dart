@@ -132,10 +132,13 @@ class CsseDepPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                          ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child:Image.asset(
                             'assets/images/rasika.webp',
                             width: 100,
                             height: 100,
+                          ),
                           ),
                           const Text(
                             'Dr. Rasika Ranaweera\nDean / Senior Lecturer',
