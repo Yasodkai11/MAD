@@ -233,7 +233,7 @@ const SizedBox(height: 15.0),
               margin: const EdgeInsets.only(top: 3, bottom: 5),
               child: const Text(
                 "Dr. Rasika Ranaweera",
-                
+
                 style: TextStyle(
                     color: Colors.black,
                     fontSize: 12,
@@ -244,7 +244,23 @@ const SizedBox(height: 15.0),
 
 
 
-          
+
+ const SizedBox(height: 1.0),
+
+
+              Container(
+              margin: const EdgeInsets.only(top: 5, bottom: 5),
+              child: const Text(
+                "Dean – Faculty of Computing",
+
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
+                    ),
+              ),
+            ),
+
 
 
 
