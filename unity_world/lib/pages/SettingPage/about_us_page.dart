@@ -198,7 +198,7 @@ const SizedBox(height: 15.0),
                   height: 200,
                 ),
              ),
-             
+
 
 
  const SizedBox(height: 5.0),
@@ -221,6 +221,23 @@ const SizedBox(height: 15.0),
                     color: Colors.black,
                     fontSize: 12,
                     fontWeight: FontWeight.normal
+                    ),
+              ),
+            ),
+
+
+
+
+            
+              Container(
+              margin: const EdgeInsets.only(top: 3, bottom: 5),
+              child: const Text(
+                "Dr. Rasika Ranaweera",
+                
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold
                     ),
               ),
             ),
