@@ -49,6 +49,61 @@ void showAlert(){
             ),
 
       
+ Container(
+              margin: const EdgeInsets.only(
+                top: 10.0, 
+                bottom: 10.0,
+              ),
+
+              width: MediaQuery.of(context).size.width,
+              height: 620.0,
+
+              decoration: const BoxDecoration(
+                  color:Color.fromARGB(255,217,217,217),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(40),
+                    topRight: Radius.circular(40),
+                    bottomLeft: Radius.circular(40),
+                    bottomRight: Radius.circular(40),
+                  ),
+              ),
+
+
+
+
+
+
+
+
+              child: Column(
+                children: <Widget>[
+
+            
+            const SizedBox(height: 10.0),
+            Container(
+              margin: const EdgeInsets.only(
+                top: 2,
+                bottom: 5,
+                right: 15,
+                left: 15,
+              ),
+
+
+              child: const Column(
+                children: [
+                  Center(
+                    child: Text(
+                "Contact Us",
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 25,
+                    fontWeight: FontWeight.bold
+                    ),
+              ),
+            ),
+
+
+
 
 
 
