@@ -270,6 +270,25 @@ const SizedBox(height: 15.0),
                    margin: const EdgeInsets.only(top: 2, bottom: 5, right: 50, left: 100),
                    width: 150.0,
                    height: 100.0,
+
+
+
+    decoration:  BoxDecoration (
+    borderRadius:  BorderRadius.circular(20.0),
+    color: Color.fromARGB(255, 129, 193, 255),),
+    padding: EdgeInsets.all(15),
+    child: const Text("Faculty of Computing, NSBM Green University, Mahenwaththa,\n"
+                "Pitipana,\n"                 
+                "Homagama,\n"                           
+              "Sri Lanka.\n",
+    textAlign:  TextAlign.center,
+    style: TextStyle(
+      fontSize: 10,
+      color:  Colors.white,
+      fontWeight: FontWeight.bold
+    ),
+    ),
+), 
   
 
 
