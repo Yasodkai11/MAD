@@ -31,7 +31,10 @@ class CsseDepPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
+                  ),
                   SizedBox(height: 10),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -60,6 +63,7 @@ class CsseDepPage extends StatelessWidget {
                       ],
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
+                  ),
                   ),
                   SizedBox(height: 10),
                   const Text(
