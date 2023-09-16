@@ -198,6 +198,32 @@ const SizedBox(height: 15.0),
                   height: 200,
                 ),
              ),
+             
+
+
+ const SizedBox(height: 5.0),
+
+             Container(
+              margin: const EdgeInsets.only(top: 3, bottom: 0),
+              padding: const EdgeInsets.all(30),
+              child: const Text(
+                "Welcome to the Faculty of Computing of NSBM Green University. NSBM is a dynamic young organization offering innovative educational products to cater to the needs of the fast-developing business and industrial economies in the world.\n"
+
+                 "Your course of study will be up-to-date and relevant and will be delivered by well-qualified staff geared to prepare you for employment.\nThe NSBM Graduate profile and student charter aim to develop the students to achieve what they expect in their chosen career paths. As students of NSBM, you are expected to work hard and set high standards.\n" 
+                 
+                 "To help you achieve success, you are provided with excellent staff as well as student support services to help deal with your needs. Our academic (both local and foreign), administrative and technical staff with which you work will be ready to advise and facilitate you.\n" 
+                 
+                 "It is your responsibility to take your course of studies very seriously and make full use of the diverse range of learning opportunities provided to you, managing your time effectively in class and in self-directed assignments. With the staunch belief in creating reliable and holistic individuals, our wish is to see you become successful in life and be a good ambassador for the university.",
+               
+               
+                textAlign: TextAlign.left,
+                style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 12,
+                    fontWeight: FontWeight.normal
+                    ),
+              ),
+            ),
 
 
 
