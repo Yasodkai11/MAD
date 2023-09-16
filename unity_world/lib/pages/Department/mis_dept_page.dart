@@ -145,11 +145,14 @@ class IsseDepPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child:Image.asset(
                             'assets/images/chalani.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Ms. Chalani Oruthotaarachchi\nSenior Lecturer',
                             textAlign: TextAlign.center,
