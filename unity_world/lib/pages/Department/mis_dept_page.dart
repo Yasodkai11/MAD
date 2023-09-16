@@ -20,6 +20,8 @@ class IsseDepPage extends StatelessWidget {
                     height: 200,
                     width: 1000,
                   ),
+                   _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -32,6 +34,7 @@ class IsseDepPage extends StatelessWidget {
                       ),
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
+                  ),
                   ),
                   SizedBox(height: 10),
                   Container(
@@ -157,6 +160,18 @@ class IsseDepPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+  Widget _buildCurvedContainer(BuildContext context, Widget child) {
+    return Container(
+      margin:
+       EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius:
+         BorderRadius.circular(20), // Adjust the radius as needed
+        color: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: child,
     );
   }
   Widget _buildProgramLink(
