@@ -96,11 +96,14 @@ class IsseDepPage extends StatelessWidget {
                             },
                             child: Column(
                               children: [
-                                Image.asset(
+                                 ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                                child:Image.asset(
                                   'assets/images/shafraz.webp',
                                   width: 100,
                                   height: 100,
                                 ),
+                                 ),
                                 const Text(
                                   'Dr. Mohamed Shafraz \nHead / Senior Lecturer',
                                   textAlign: TextAlign.center,
