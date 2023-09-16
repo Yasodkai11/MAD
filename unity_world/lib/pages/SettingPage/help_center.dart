@@ -106,6 +106,32 @@ void showAlert(){
 
 
 
+  SizedBox(height: 10.0),
+                  Text(
+                    "To :- ",
+                  
+                    style: TextStyle(
+                      color: Colors.black, 
+                      fontSize: 18,
+
+                      ),
+                  ),
+
+
+                  SizedBox(height: 15.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      hintText: 'codewizard@nsbm.gmail.com.',
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+
+
 
 
   
