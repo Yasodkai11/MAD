@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-class ReservationPage extends StatelessWidget {
- const ReservationPage({super.key});
+class ReservationPage extends StatefullWidget {
+ 
 
  @override
- Widget build (BuildContext context ){
-  return Scaffold();
- }
+ _ReservationPageState createState() => _ReservationPageState();
+ 
 
 }   
