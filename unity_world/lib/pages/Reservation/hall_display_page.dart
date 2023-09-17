@@ -44,3 +44,4 @@ class _ReservationPageState extends State<ReservationPage> {
                         'Hall Number',
                         style: TextStyle(fontSize: 18),
                       ),
+                      SizedBox(height: 10),
