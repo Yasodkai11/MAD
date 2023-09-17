@@ -267,6 +267,101 @@ void showAlert(){
 
 
 
+
+
+
+
+ const SizedBox(height: 30.0),
+            Center(
+              child: MaterialButton(
+                  padding: const EdgeInsets.all(8),
+                  height: 56,
+                  minWidth: 155,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+
+
+                  color: const Color.fromARGB(255, 15, 26, 88),
+                  textColor: 
+                  Colors.white,
+                  child: 
+                  const Text("Send",
+                  style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold
+                  ),
+                  ),
+
+
+
+
+
+
+                     
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Center(
+                            child: AlertDialog(
+                              title: const Center(
+                                child: Text("Successful",style: TextStyle(
+                                    color: Color.fromARGB(255, 30, 144, 255),
+                                    fontSize: 40,
+                                    fontWeight: FontWeight.bold),),
+                              ),
+
+
+
+                              backgroundColor:
+                                   Colors.white,
+                              titleTextStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+
+
+
+
+                                  child: const Center(
+                                    child: Text("Done"),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+                        );
+                  }
+                  ),
+            )
+                ],
+ ),
+        
+        ),
+          ]
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
   
           
 
@@ -443,7 +538,3 @@ void showAlert(){
 
 
   
- 
-        );
-   }                    
-   }
