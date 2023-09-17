@@ -298,7 +298,67 @@ void showAlert(){
 
 
 
-                  
+
+                     
+                  onPressed: () {
+                    showDialog(
+                        context: context,
+                        builder: (context) {
+                          return Center(
+                            child: AlertDialog(
+                              title: const Center(
+                                child: Text("Successful",style: TextStyle(
+                                    color: Color.fromARGB(255, 30, 144, 255),
+                                    fontSize: 40,
+                                    fontWeight: FontWeight.bold),),
+                              ),
+
+
+
+                              backgroundColor:
+                                   Colors.white,
+                              titleTextStyle: const TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                              actions: [
+                                TextButton(
+                                  onPressed: () {
+                                    Navigator.pop(context);
+                                  },
+
+
+
+
+                                  child: const Center(
+                                    child: Text("Done"),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          );
+                        }
+                        );
+                  }
+                  ),
+            )
+                ],
+ ),
+        
+        ),
+          ]
+        ),
+      ),
+    );
+  }
+}
+
+
+
+
+
+
 
 
 
@@ -478,7 +538,3 @@ void showAlert(){
 
 
   
- 
-        );
-   }                    
-   }
