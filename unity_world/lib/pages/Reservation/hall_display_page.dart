@@ -31,3 +31,6 @@ class _ReservationPageState extends State<ReservationPage> {
               'assets/illustration/reservation.svg',
               height: size.height *0.28,
             ),
+            SizedBox(height: 10,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
