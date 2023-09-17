@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+
 
 class ReservationPage extends StatefullWidget {
  
@@ -8,3 +8,7 @@ class ReservationPage extends StatefullWidget {
  
 
 }   
+
+class _ReservationPageState extends State<ReservationPage> {
+  int selectedHall = 0;
+  int selectedTime = 0;
