@@ -96,11 +96,14 @@ class DsDeptPage extends StatelessWidget {
                             },
                             child: Column(
                               children: [
-                                Image.asset(
+                                 ClipRRect(
+                            borderRadius: BorderRadius.circular(20),
+                                child: Image.asset(
                                   'assets/images/pramudya.webp',
                                   width: 100,
                                   height: 100,
                                 ),
+                                 ),
                                 const Text(
                                   'Mr. Pramudya Thilakarathne\nHead / Senior Lecturer',
                                   textAlign: TextAlign.center,
