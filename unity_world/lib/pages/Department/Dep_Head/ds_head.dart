@@ -28,12 +28,15 @@ class DsheadPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Image.asset(
+             ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child:Image.asset(
               'assets/images/pramudya.webp', // Assuming the image is located in the 'assets' folder
               width: 150, // Adjust the width as needed
             ),
+             ),
             SizedBox(height: 20),
-            _buildProgramLink(
+           _buildCurvedContainer(
             context,
             Container(
               width: 300,
@@ -84,7 +87,6 @@ Widget _buildCurvedContainer(BuildContext context, Widget child) {
       child: child,
     );
   }
-
 
 void main() {
   runApp(MaterialApp(
