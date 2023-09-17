@@ -45,3 +45,6 @@ class _ReservationPageState extends State<ReservationPage> {
                         style: TextStyle(fontSize: 18),
                       ),
                       SizedBox(height: 10),
+
+                      ListView.builder(
+                        shrinkWrap: true,
