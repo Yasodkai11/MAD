@@ -149,11 +149,14 @@ class DsDeptPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/hirushi.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Ms. Hirushi Dilpriya\nTemporary Lecturer',
                             textAlign: TextAlign.center,
