@@ -166,11 +166,14 @@ class DsDeptPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/nethmi.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Ms. nethmi\nLecturer',
                             textAlign: TextAlign.center,
