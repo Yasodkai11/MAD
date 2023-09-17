@@ -33,6 +33,8 @@ class DsDeptPage extends StatelessWidget {
                   ),
                    ),
                   SizedBox(height: 10),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -67,16 +69,8 @@ class DsDeptPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
-                  Container(
-                    width: 300,
-                    padding: EdgeInsets.all(20),
-                    child: Text(
-                      'The Department of Data Science (DDS) was established under the Faculty of Computing on the day of 15th December 2020. The department is focused to be the leader in the discipline of Data Science in Sri Lanka which include knowledge contribution from the key areas of Artificial Intelligence, Machine Learning, Deep Learning, Natural Language processing, Data Mining, Statistical Modeling, Simulation, Optimization and Visualization. DDS is preparing to conduct seminars, workshops, and an annual conference in Data Science as its future activities. The department is aiming to disseminate knowledge and spread the global opportunities and business transformation trends with this highly sort after discipline of data science.',
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                    ),
-                    color: Color.fromARGB(255, 15, 26, 88),
                   ),
-                  SizedBox(height: 10),
+                  
 
                   SizedBox(height: 10),
                   const Text(
