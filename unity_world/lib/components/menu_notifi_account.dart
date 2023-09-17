@@ -9,6 +9,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
       leading: Builder(
           builder: ((context) {
+
             return IconButton(
 
               onPressed: () {
@@ -20,7 +21,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
               icon: Icon(
                 Icons.menu
               ),
-
               color: Colors.black,
 
             );
@@ -34,7 +34,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
           IconButton(
               onPressed: () {}, 
               icon: Image.asset(
-                "assets/icons/notification-100.png",
+                "assets/icons/notification.png",
                 width: 24,
                 height: 24,
               ),
@@ -43,7 +43,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
             IconButton(
               onPressed: () {}, 
               icon: Image.asset(
-                "assets/icons/profile-pic.png",
+                "assets/icons/user.png",
                 width: 30,
                 height: 30,
               ),
@@ -55,8 +55,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
   }
   
   @override
-  
   // TODO: implement preferredSize
+  
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 
 }
