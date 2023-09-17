@@ -39,3 +39,8 @@ class _ReservationPageState extends State<ReservationPage> {
                   flex: 1, 
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Hall Number',
+                        style: TextStyle(fontSize: 18),
+                      ),
