@@ -15,3 +15,19 @@ class _ReservationPageState extends State<ReservationPage> {
 
   final List<String> hallNumbers = ['C1-L101', 'C1-005', 'C1-006','C1-007','C1-008']; 
   final List<String> reservedTimes = ['9:00 AM-12:00AM', 'Avaiable', '2:00 PM-4:00pm','Avaiable','Avaiable'];
+
+  @override
+  Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(
+
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            Text("HALL RESERVATION", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+            SizedBox(height: 10,),
+            SvgPicture.asset(
+              'assets/illustration/reservation.svg',
+              height: size.height *0.28,
+            ),
