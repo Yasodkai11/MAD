@@ -267,6 +267,41 @@ void showAlert(){
 
 
 
+
+
+
+
+ const SizedBox(height: 30.0),
+            Center(
+              child: MaterialButton(
+                  padding: const EdgeInsets.all(8),
+                  height: 56,
+                  minWidth: 155,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+
+
+                  color: const Color.fromARGB(255, 15, 26, 88),
+                  textColor: 
+                  Colors.white,
+                  child: 
+                  const Text("Send",
+                  style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold
+                  ),
+                  ),
+
+
+
+
+
+                  
+
+
+
   
           
 
