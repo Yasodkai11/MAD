@@ -5,6 +5,30 @@ class BackAppBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar();
+    return AppBar(
+
+      leading: Builder(
+          builder: ((context) {
+
+            return IconButton(
+
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }, 
+
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            );
+          }
+          ) 
+        ),
+
+        
+    );
   }
 }
