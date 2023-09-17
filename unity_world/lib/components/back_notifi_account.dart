@@ -28,7 +28,28 @@ class BackAppBar extends StatelessWidget {
           ) 
         ),
 
-        
+        backgroundColor: Colors.white,
+        actions: [
+
+          IconButton(
+              onPressed: () {}, 
+              icon: Image.asset(
+                "assets/icons/notification.png",
+                width: 24,
+                height: 24,
+              ),
+            ),
+
+            IconButton(
+              onPressed: () {}, 
+              icon: Image.asset(
+                "assets/icons/user.png",
+                width: 30,
+                height: 30,
+              ),
+            ),
+
+        ],
     );
   }
 }
