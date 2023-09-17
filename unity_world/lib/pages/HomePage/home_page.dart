@@ -5,14 +5,24 @@ import 'package:unity_world/components/menu_notifi_account.dart';
 
 class HomePage extends StatelessWidget {
 
+  int currentIndex = 0;
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Stack(
 
-      appBar: MyAppBar(),
-
-      drawer: MyDrawer(),
-      
+      children: [
+        Scaffold(
+    
+          appBar: MyAppBar(),
+    
+          drawer: MyDrawer(
+            child: Container(),
+          ),
+          
+          
+        ),
+      ],
     );
   }
 }
