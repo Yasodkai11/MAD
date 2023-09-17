@@ -51,3 +51,6 @@ class _ReservationPageState extends State<ReservationPage> {
                         itemCount: hallNumbers.length,
                         itemBuilder: (context, index) {
                           return ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
