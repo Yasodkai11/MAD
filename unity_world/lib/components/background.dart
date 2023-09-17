@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Background extends StatelessWidget {
-  const Background({super.key});
+  const Background({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,10 +16,13 @@ class Background extends StatelessWidget {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            
-          ]
-        )
+            Color.fromRGBO(30, 144, 255, 1.0), 
+            Color.fromRGBO(255, 255, 255, 1.0)
+          ],
+        ),
       ),
+
     );
+
   }
 }
