@@ -34,3 +34,8 @@ class _ReservationPageState extends State<ReservationPage> {
             SizedBox(height: 10,),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Expanded(
+                  flex: 1, 
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
