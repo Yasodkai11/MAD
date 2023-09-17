@@ -11,7 +11,15 @@ class Background extends StatelessWidget {
       height: size.height,
       width: double.infinity,
 
-      
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            
+          ]
+        )
+      ),
     );
   }
 }
