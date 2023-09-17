@@ -48,3 +48,6 @@ class _ReservationPageState extends State<ReservationPage> {
 
                       ListView.builder(
                         shrinkWrap: true,
+                        itemCount: hallNumbers.length,
+                        itemBuilder: (context, index) {
+                          return ElevatedButton(
