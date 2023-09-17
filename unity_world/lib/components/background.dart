@@ -5,6 +5,13 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    Size size = MediaQuery.of(context).size;
+
+    return Container(
+      height: size.height,
+      width: double.infinity,
+
+      
+    );
   }
 }
