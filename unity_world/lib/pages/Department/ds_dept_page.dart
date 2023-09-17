@@ -15,11 +15,14 @@ class DsDeptPage extends StatelessWidget {
             child: Center(
               child: Column(
                 children: [
-                  Image.asset(
+                   ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child: Image.asset(
                     'assets/images/csds.jpg',
                     height: 200,
                     width: 1000,
                   ),
+                   ),
                    _buildCurvedContainer(
                     context,
                   Container(
