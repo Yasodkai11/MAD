@@ -76,3 +76,13 @@ class _MyFormState extends State<MyForm> {
                     controller: _contactController,
                     decoration: InputDecoration(labelText: 'Contact Number',labelStyle: TextStyle(color: Colors.white)),
                   ),
+                  TextField(
+                    style: TextStyle(color: Colors.white),
+                    controller: _purposeController,
+                    decoration: InputDecoration(labelText: 'Purpose',labelStyle: TextStyle(color: Colors.white)),
+                  ),
+                  TextField(
+                    style: TextStyle(color: Colors.white),
+                    controller: _dateTimeFromController,
+                    decoration: InputDecoration(labelText: 'Request Date',labelStyle: TextStyle(color: Colors.white)),
+                  ),
