@@ -33,6 +33,8 @@ class DnsheadPage extends StatelessWidget {
               width: 150, // Adjust the width as needed
             ),
             SizedBox(height: 20),
+             _buildCurvedContainer(
+                    context,
             Container(
               width: 300,
               padding: EdgeInsets.all(20),
@@ -63,6 +65,7 @@ class DnsheadPage extends StatelessWidget {
                 ],
               ),
             ),
+             ),
           ],
         ),
       ),
