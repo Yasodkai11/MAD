@@ -8,3 +8,8 @@ class MyFormApp extends StatelessWidget {
     );
   }
 }
+
+class MyForm extends StatefulWidget {
+  @override
+  _MyFormState createState() => _MyFormState();
+}
