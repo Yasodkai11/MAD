@@ -236,3 +236,15 @@ OutlineInputBorder myFocusBorder() {
     ),
   );
 }
+
+
+
+OutlineInputBorder myInputBorder() {
+  return const OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(20)),
+    borderSide: BorderSide(
+      color: Color.fromARGB(255, 30, 144, 255),
+      width: 3,
+    ),
+  );
+}
