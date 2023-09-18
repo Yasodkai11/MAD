@@ -128,3 +128,18 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
+
+
+            SizedBox(
+              height: 20.0,
+            ),
+            TextField(
+              controller: fullname,
+              decoration: InputDecoration(
+                labelText: 'Full Name',
+                prefixIcon: const Icon(Icons.person),
+                border: myInputBorder(),
+                enabledBorder: myInputBorder(),
+                focusedBorder: myFocusBorder(),
+              ),
+            ),
