@@ -72,11 +72,23 @@ class WelcomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(22),
                       ),
                     ),
-                    child: child),
+                    child: Text(
+                      "Start",
+                      style: TextStyle(
+                        fontSize: 35,
+                        fontFamily: 'Roboto',
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                  ),
                 ),
-              )
+              ),
+
             ],
-          )
+          ),
+          
         ],
       ),
     );
