@@ -32,3 +32,10 @@ class _MyFormState extends State<MyForm> {
       String _enteredPurpose = '';
       String _enteredDateTimeFrom = '';
       String _enteredDateTimeTo = '';
+
+      @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('HALL RESERVATION FORM'),
+      ),
