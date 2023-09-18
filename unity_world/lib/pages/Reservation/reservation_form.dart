@@ -156,3 +156,21 @@ class _MyFormState extends State<MyForm> {
               ),
             ),
           ),
+          ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _degreeController.dispose();
+    _batchController.dispose();
+    _studentNoController.dispose();
+    _contactController.dispose();
+    _purposeController.dispose();
+    _dateTimeFromController.dispose();
+    _dateTimeToController.dispose();
+    super.dispose();
+  }
+}
