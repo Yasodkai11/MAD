@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
 
 class DnsheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mr. Chamara Disanayake'),
+      appBar: BackAppBar(
+      
+      
+      
       ),
       body: Center(
         child: Column(

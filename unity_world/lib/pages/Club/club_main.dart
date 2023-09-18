@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/components/menu_notifi_account.dart';
 
 class CommunityPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
+      appBar: MyAppBar(),
+        drawer: MyDrawer(
+          child: Container(),
       ),
       body: Container(
         color: Colors.white, // Sky blue background color

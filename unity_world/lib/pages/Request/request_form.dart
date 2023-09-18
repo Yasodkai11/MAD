@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/components/menu_notifi_account.dart';
 
 // ignore: camel_case_types
 class request extends StatefulWidget {
@@ -14,9 +16,16 @@ class _requestState extends State<request> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Request Page'),
+      appBar: MyAppBar(),
+       drawer: MyDrawer(
+        child: Container(),
+      
+       
+
+
+
+
+       
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),
