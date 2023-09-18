@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Dep_Head/css_head.dart';
@@ -9,6 +11,11 @@ class CsseDepPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: BackAppBar(),
+        drawer: MyDrawer(
+              child: Container(),
+        ),
+        
       body: Center(
         child: Scrollbar(
           child: SingleChildScrollView(
