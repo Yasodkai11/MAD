@@ -76,3 +76,24 @@ actions: <Widget>[
                 ),
               ),
             ),
+
+
+             Align(
+              alignment: Alignment.topCenter,
+              child: Column(
+                children: <Widget>[
+                  Stack(
+                    children: <Widget>[
+                      ClipOval(
+                        child: Image.asset(
+                          'images/profile.png',
+                          width: 150,
+                          height: 150,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
