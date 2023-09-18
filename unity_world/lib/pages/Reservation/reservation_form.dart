@@ -138,3 +138,21 @@ class _MyFormState extends State<MyForm> {
                                 ),
                               ),
                             ),
+                            actions: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Center(child: Text('OK')),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    },
+                    child: Text('Submit'),
+                  ),
+                ],
+              ),
+            ),
+          ),
