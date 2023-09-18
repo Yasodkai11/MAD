@@ -21,10 +21,20 @@ class WelcomePage extends StatelessWidget {
                 child: Column(
                   children: [
                     Center(
-                      
+                      child: Padding(
+                        padding: EdgeInsets.only(top: 80),
+                        child: Image.asset(
+                          'assets/icons/logo1.png',
+                          height: 250,
+                          width: 250,
+                        ),
+                      ),
                     )
                   ],
-                ))
+                ),
+              ),
+
+              
             ],
           )
         ],
