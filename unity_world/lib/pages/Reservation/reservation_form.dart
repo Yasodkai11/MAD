@@ -39,3 +39,11 @@ class _MyFormState extends State<MyForm> {
       appBar: AppBar(
         title: Text('HALL RESERVATION FORM'),
       ),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Container(
+            decoration: BoxDecoration(
+              color: Color.fromRGBO(15,26,88,1.0),
+              borderRadius: BorderRadius.circular(12), 
+            ),
