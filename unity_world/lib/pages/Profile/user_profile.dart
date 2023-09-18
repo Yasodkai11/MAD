@@ -28,3 +28,12 @@ class UserProfile extends StatelessWidget {
                 ],
               ),
             ),
+
+
+actions: <Widget>[
+              TextButton(
+                child: const Text('Cancel'),
+                onPressed: () {
+                  Navigator.of(context).pop(); // Close the dialog
+                },
+              ),
