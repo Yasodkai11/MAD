@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/Welcome/continue_page.dart';
+import 'package:unity_world/components/background.dart';
+
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -8,40 +9,14 @@ class WelcomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
 
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     
-
+      body: Stack(
+        children: [
+          Background(),
+        ],
+      ),
     );
+    
   }
+
 }
 
