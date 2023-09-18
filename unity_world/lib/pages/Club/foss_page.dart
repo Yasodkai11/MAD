@@ -140,3 +140,46 @@ class MiddleImages extends StatelessWidget {
             ),
           ],
         ),
+
+
+
+        SizedBox(height: 10),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            PersonCard(
+              position: 'President',
+              name: 'Subodha Hettiarachchi',
+              email: 'sphettiarachchi@students.nsbm.ac.lk',
+              imageAsset: 'assets/images/FP.jpg',
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+
+
+
+class EnrollButton extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: () {
+        _launchEnrollmentURL();
+      },
+      style: ElevatedButton.styleFrom(
+        backgroundColor: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: Text(
+        'Enroll',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 18,
+        ),
+      ),
+    );
+  }
+
