@@ -37,3 +37,18 @@ actions: <Widget>[
                   Navigator.of(context).pop(); // Close the dialog
                 },
               ),
+
+              TextButton(
+                child: const Text('Logout'),
+                onPressed: () {
+                  // Add your logout logic here
+                  // For example, you can clear user credentials and navigate to the login page
+                  // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
+                  Navigator.of(context).pop(); // Close the dialog
+                },
+              ),
+            ],
+          );
+        },
+      );
+    }
