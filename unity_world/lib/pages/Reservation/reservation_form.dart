@@ -86,3 +86,9 @@ class _MyFormState extends State<MyForm> {
                     controller: _dateTimeFromController,
                     decoration: InputDecoration(labelText: 'Request Date',labelStyle: TextStyle(color: Colors.white)),
                   ),
+                  TextField(
+                    style: TextStyle(color: Colors.white),
+                    controller: _dateTimeToController,
+                    decoration: InputDecoration(labelText: 'Time',labelStyle: TextStyle(color: Colors.white)),
+                  ),
+                  SizedBox(height: 20.0),
