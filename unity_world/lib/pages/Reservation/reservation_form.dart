@@ -18,3 +18,6 @@ class _MyFormState extends State<MyForm> {
    final TextEditingController _nameController = TextEditingController();
    final TextEditingController _degreeController = TextEditingController();
    final TextEditingController _batchController = TextEditingController();
+   final TextEditingController _studentNoController = TextEditingController();
+   final TextEditingController _contactController = TextEditingController();
+   final TextEditingController _purposeController = TextEditingController();
