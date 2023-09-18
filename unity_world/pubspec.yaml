@@ -43,6 +43,8 @@ dependencies:
   shared_preferences: ^2.2.1
   flutter_svg: ^2.0.7
   carousel_slider: ^4.2.1
+  flutter_hooks: any
+  hooks_riverpod: any
 
 dev_dependencies:
   flutter_test:
@@ -103,6 +105,8 @@ flutter:
     - assets/images/foss.png
     - assets/illustrations/continue.svg
     - assets/illustrations/login.svg
+    - assets/images/incharge.jpg
+    - assets/images/FP.jpg
     
     
 
