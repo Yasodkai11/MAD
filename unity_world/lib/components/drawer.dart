@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/SettingPage/about_us_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({
@@ -51,6 +52,70 @@ class MyDrawer extends StatelessWidget {
                   )
                 ],
               )
+            ),
+
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 10, 30, 10),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color.fromRGBO(217, 217, 217, 1.0),
+                ),
+                child: ListTile(
+                  iconColor: Colors.black,
+                  leading: Icon(
+                    Icons.person_pin_rounded,
+                  ),
+                  title: Text(
+                    "My Account",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProfilePage()
+                        ),
+                    );
+                  },
+                ),
+              ),
+            ),
+
+             Padding(
+              padding: const EdgeInsets.fromLTRB(30, 10, 30, 10),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color.fromRGBO(217, 217, 217, 1.0),
+                ),
+                child: ListTile(
+                  iconColor: Colors.black,
+                  leading: Icon(
+                    Icons.people_alt_outlined,
+                  ),
+                  title: Text(
+                    "About Us",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => AboutUs()
+                        ),
+                    );
+                  },
+                ),
+              ),
             ),
 
             
