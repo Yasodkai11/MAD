@@ -42,7 +42,17 @@ class ContinuePage extends StatelessWidget {
                       print(
                         'Login as a User'
                       );
-                    }, 
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
+                      fixedSize: Size(
+                        180, 
+                        40,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(28),
+                      ),
+                    ), 
                     child: child),
                 ),
               )
