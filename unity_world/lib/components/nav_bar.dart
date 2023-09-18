@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:unity_world/pages/Club/club_main.dart';
+import 'package:unity_world/pages/Club/community_page.dart';
 import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:unity_world/pages/Request/request_form.dart';
 import 'package:unity_world/pages/Schedule/shedule_page.dart';
