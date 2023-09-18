@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/background.dart';
 import 'package:unity_world/pages/Welcome/login_page.dart';
 
 class ContinuePage extends StatelessWidget {
@@ -11,66 +12,70 @@ class ContinuePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
 
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
+      body: Stack(
+        children: [
+          Background(),
+        ]
+      )
     );
-  }
-
+ } 
+ 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
