@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/pages/SettingPage/about_us_page.dart';
+import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
 
 
 class SettingPage extends StatefulWidget {
@@ -141,6 +143,66 @@ void showAlert(){
         
             
   
+
+
+  
+              const SizedBox(height: 15.0),
+             _buildDivider(),
+
+            const SizedBox(height: 15.0),
+            const Text("More",
+                 style: TextStyle(color: Color.fromARGB(255, 173, 173, 173),
+                 fontSize: 18.0,
+                 fontWeight: FontWeight.bold,
+             ),
+             ),
+            
+
+            const SizedBox(height: 20.0),
+               ListTile(
+                 // account lock icon-  leading: Icon(Icons.lock_outline, color: Colors.black,),
+                  title: const Text("About Us",
+                  style: TextStyle(color: Colors.white,
+                  ),),
+                  trailing: const Icon(Icons.keyboard_arrow_right,color: Colors.white),
+                  onTap: () {
+                     Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AboutUs()),
+                              );
+
+                  }
+                ),
+
+
+            const SizedBox(height: 8.0),
+               ListTile(
+                 // account lock icon-  leading: Icon(Icons.lock_outline, color: Colors.black,),
+                  title: const Text("Privacy Policy",
+                  style: TextStyle(color: Colors.white,
+                  ),),
+                  trailing: const Icon(Icons.keyboard_arrow_right, color: Colors.white),
+                  onTap: () {
+                    Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => PrivacyPolicy()),
+                              );
+
+
+                  }
+                ),
+             
+          ],
+        ),
+      ),
+          ],
+        )
+      ),
+    );
+    
+  }
         
 
                
