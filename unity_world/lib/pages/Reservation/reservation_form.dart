@@ -15,3 +15,6 @@ class MyForm extends StatefulWidget {
 }
 
 class _MyFormState extends State<MyForm> {
+   final TextEditingController _nameController = TextEditingController();
+   final TextEditingController _degreeController = TextEditingController();
+   final TextEditingController _batchController = TextEditingController();
