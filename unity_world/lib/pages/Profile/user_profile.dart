@@ -224,3 +224,15 @@ actions: <Widget>[
     );
   }
 }
+
+
+
+OutlineInputBorder myFocusBorder() {
+  return const OutlineInputBorder(
+    borderRadius: BorderRadius.all(Radius.circular(20)),
+    borderSide: BorderSide(
+      color: Color(0xfffcbf49),
+      width: 3,
+    ),
+  );
+}
