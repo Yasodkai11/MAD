@@ -38,9 +38,20 @@ class WelcomePage extends StatelessWidget {
                 child: Center(
                   child: Padding(
                     padding: EdgeInsets.only(top: 50),
+                    child: Text(
+                      "WELCOME",
+                      style: TextStyle(
+                        fontFamily: 'Poppins',
+                        color: Color.fromRGBO(15, 26, 88, 1.0),
+                        fontSize: 60,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1.0,
+                      ),
+                    ),
                   ),
                 ),
               ),
+              
             ],
           )
         ],
