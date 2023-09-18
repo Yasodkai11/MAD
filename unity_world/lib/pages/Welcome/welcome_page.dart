@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/background.dart';
+import 'package:unity_world/pages/Welcome/continue_page.dart';
 
 
 class WelcomePage extends StatelessWidget {
@@ -51,7 +52,22 @@ class WelcomePage extends StatelessWidget {
                   ),
                 ),
               ),
-              
+
+              Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 10, 60),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => ContinuePage()
+                        )
+                      );
+                    }, 
+                    child: child),
+                ),
+              )
             ],
           )
         ],
