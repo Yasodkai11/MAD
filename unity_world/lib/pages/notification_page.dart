@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
 
 
 
@@ -13,7 +15,7 @@ class _NotificationPageState extends State<NotificationPage> {
    Widget build(BuildContext context) {
     return Scaffold(
       appBar: BackAppBar(),
-        drawer: Drawer(
+        drawer: MyDrawer(
         child: Container(),
       
 

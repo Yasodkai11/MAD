@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/components/menu_notifi_account.dart';
+=======
 import 'foss_page.dart';
 import 'ieee_page.dart';
 import 'maths_page.dart';
+>>>>>>> refs/remotes/origin/main
 
 class CommunityPage extends StatelessWidget {
   // Define the getPage function outside of the build method
@@ -27,8 +32,9 @@ class CommunityPage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
+      appBar: MyAppBar(),
+        drawer: MyDrawer(
+          child: Container(),
       ),
       body: Container(
         color: Colors.white,
