@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/pages/SettingPage/about_us_page.dart';
+import 'package:unity_world/pages/SettingPage/settings_page.dart';
+import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({
@@ -118,7 +120,71 @@ class MyDrawer extends StatelessWidget {
               ),
             ),
 
-            
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 10, 30, 10),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color.fromRGBO(217, 217, 217, 1.0),
+                ),
+                child: ListTile(
+                  iconColor: Colors.black,
+                  leading: Icon(
+                    Icons.privacy_tip_outlined,
+                  ),
+                  title: Text(
+                    "Privacy & Policy",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => PrivacyPolicy()
+                        ),
+                    );
+                  },
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30, 10, 30, 10),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  color: Color.fromRGBO(217, 217, 217, 1.0),
+                ),
+                child: ListTile(
+                  iconColor: Colors.black,
+                  leading: Icon(
+                    Icons.settings,
+                  ),
+                  title: Text(
+                    "Settings",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => HelpCenter()
+                        )
+                    );
+                  },
+                ),
+              ),
+            ),
+
+
           ],
         ),
       )
