@@ -130,3 +130,11 @@ class _MyFormState extends State<MyForm> {
                                   ],
                                   ),
                                 ),
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(15,26,88,1.0),
+                                                
+                                  
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                            ),
