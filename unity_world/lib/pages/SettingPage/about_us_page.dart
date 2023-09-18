@@ -1,4 +1,7 @@
   import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
+
 
 class AboutUs extends StatefulWidget {
   const AboutUs({Key? key}) : super(key: key);
@@ -10,9 +13,16 @@ class _AboutUsState extends State<AboutUs> {
   @override
    Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('About Us Page'),
+      appBar: BackAppBar(),
+        drawer: MyDrawer(
+        child: Container(),
+      
+
+
+
+      
+
+
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),

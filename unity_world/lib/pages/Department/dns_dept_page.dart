@@ -14,11 +14,16 @@ class DnsDeptPage extends StatelessWidget {
             child: Center(
               child: Column(
                 children: [
-                  Image.asset(
+                   ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                  child:Image.asset(
                     'assets/images/network.png',
                     height: 200,
                     width: 1000,
                   ),
+                   ),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -28,7 +33,11 @@ class DnsDeptPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
+                  ),
+
                   SizedBox(height: 10),
+                  _buildCurvedContainer(
+                    context,
                   Container(
                     width: 300,
                     padding: EdgeInsets.all(20),
@@ -63,6 +72,7 @@ class DnsDeptPage extends StatelessWidget {
                     ),
                     color: Color.fromARGB(255, 15, 26, 88),
                   ),
+                  ),
                   SizedBox(height: 10),
                   const Text(
                     'Academic Staff',
@@ -87,11 +97,14 @@ class DnsDeptPage extends StatelessWidget {
                             },
                             child: Column(
                               children: [
-                                Image.asset(
+                                 ClipRRect(
+                             borderRadius: BorderRadius.circular(20),
+                                child:Image.asset(
                                   'assets/images/chamindra.webp',
                                   width: 100,
                                   height: 100,
                                 ),
+                                 ),
                                 const Text(
                                   'Mr. Chamindra Attanayake\nHOD / Senior Lecturer',
                                   textAlign: TextAlign.center,
@@ -110,11 +123,14 @@ class DnsDeptPage extends StatelessWidget {
                     children: [
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/chamara.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Mr. Chamara Disanayake\nSenior Lecturer',
                             textAlign: TextAlign.center,
@@ -124,11 +140,14 @@ class DnsDeptPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                  borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/dilhara.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Mr. Dilhara Batan Arachchige\nLecturer',
                             textAlign: TextAlign.center,
@@ -148,11 +167,14 @@ class DnsDeptPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/isuru.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Mr. Isuru Sri Bandara\nLecturer',
                             textAlign: TextAlign.center,
@@ -172,6 +194,18 @@ class DnsDeptPage extends StatelessWidget {
     );
     
     
+  }
+  Widget _buildCurvedContainer(BuildContext context, Widget child) {
+    return Container(
+      margin:
+       EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius:
+         BorderRadius.circular(20), // Adjust the radius as needed
+        color: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: child,
+    );
   }
   Widget _buildProgramLink(
       BuildContext context, String programName, String url) {

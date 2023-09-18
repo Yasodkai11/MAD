@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
+
 
 
 class PrivacyPolicy extends StatefulWidget {
@@ -14,9 +17,17 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Privacy Policy'), 
+      appBar: BackAppBar(),
+       drawer: MyDrawer(
+        child: Container(),
+      
+
+
+     
+     
+
+        
+        
       ),
       
       

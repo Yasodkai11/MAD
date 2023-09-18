@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
 
-class HelpCenter extends StatefulWidget {
-  const HelpCenter({Key? key}) : super(key: key);
+
+class SettingPage extends StatefulWidget {
+  const SettingPage ({Key? key}) : super(key: key);
 
   @override
-  State<HelpCenter> createState() => _HelpCenterState();
+  State<SettingPage > createState() => _SettingPageState();
 }
 
 
-class _HelpCenterState extends State<HelpCenter> {
+class _SettingPageState extends State<SettingPage > {
  
 
 
@@ -23,10 +26,13 @@ void showAlert(){
   @override
    Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Settings Page'),
+      appBar: BackAppBar(),
+          drawer: MyDrawer(
+        child: Container(
       ),
+
+
+          ),
 
 
 

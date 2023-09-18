@@ -101,6 +101,8 @@ flutter:
     - assets/images/data1.png
     - assets/images/iss1.png
     - assets/images/foss.png
+    - assets/illustrations/continue.svg
+    - assets/illustrations/login.svg
     
     
 

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+
+
+import '../../components/drawer.dart';
 
 class HelpCenter extends StatefulWidget {
   const HelpCenter({Key? key}) : super(key: key);
@@ -23,9 +27,9 @@ void showAlert(){
   @override
    Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Help Center Page'),
+      appBar: BackAppBar(),
+       drawer: MyDrawer(
+        child: Container(),
       ),
 
 
