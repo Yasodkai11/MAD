@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:url_launcher/url_launcher.dart';
-=======
 import 'package:unity_world/components/back_notifi_account.dart';
->>>>>>> refs/remotes/origin/main
+
 
 class DnsheadPage extends StatelessWidget {
   @override
