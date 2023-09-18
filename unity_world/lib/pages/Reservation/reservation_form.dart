@@ -47,3 +47,12 @@ class _MyFormState extends State<MyForm> {
               color: Color.fromRGBO(15,26,88,1.0),
               borderRadius: BorderRadius.circular(12), 
             ),
+            child: Padding(
+              padding: EdgeInsets.all(16.0),
+              child: Column(
+                children: [
+                  TextField(
+                    controller: _nameController,
+                    style: TextStyle(color: Colors.white),
+                    decoration: InputDecoration(labelText: 'Requester\'s Name',labelStyle: TextStyle(color: Colors.white),helperStyle: TextStyle(color: Colors.white)),
+                  ),
