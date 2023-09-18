@@ -121,3 +121,22 @@ class DescriptionBox extends StatelessWidget {
       );
   }
 }
+
+
+
+class MiddleImages extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            PersonCard(
+              position: 'Master Incharge',
+              name: 'Dr. Mohamed Shafraz',
+              email: 'shafraz@nsbm.ac.lk',
+              imageAsset: 'assets/images/incharge.jpg',
+            ),
+          ],
+        ),
