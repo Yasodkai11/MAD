@@ -28,9 +28,12 @@ class DnsheadPage extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20),
-            Image.asset(
+            ClipRRect(
+            borderRadius: BorderRadius.circular(20),
+            child: Image.asset(
               'assets/images/chamindra.webp', // Assuming the image is located in the 'assets' folder
               width: 150, // Adjust the width as needed
+            ),
             ),
             SizedBox(height: 20),
              _buildCurvedContainer(
