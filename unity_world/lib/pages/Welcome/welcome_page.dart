@@ -65,6 +65,13 @@ class WelcomePage extends StatelessWidget {
                         )
                       );
                     }, 
+                    style: ElevatedButton.styleFrom(
+                      fixedSize: Size(200, 50),
+                      backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(22),
+                      ),
+                    ),
                     child: child),
                 ),
               )
