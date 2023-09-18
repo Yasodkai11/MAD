@@ -60,12 +60,17 @@ class CssheadPage extends StatelessWidget {
                     'Department: Department of Computer Science & Software Engineering\n'
                     'Faculty: Faculty of Computing\n'
                     'Google Scholar: [Google Scholar Link]\n'
-                    'LinkedIn: [LinkedIn Link]',
+                    'LinkedIn: ',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                     ),
                   ),
+                   GestureDetector(
+                      onTap: () {
+                        // Open LinkedIn link when tapped
+                        launch('https://lk.linkedin.com/');
+                      },
                 ],
               ),
             ),
