@@ -111,3 +111,20 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
+
+
+
+             SizedBox(
+              height: 20.0,
+            ),
+
+            TextField(
+              controller: studentid,
+              decoration: InputDecoration(
+                labelText: 'Student ID',
+                prefixIcon: const Icon(Icons.people),
+                border: myInputBorder(),
+                enabledBorder: myInputBorder(),
+                focusedBorder: myFocusBorder(),
+              ),
+            ),
