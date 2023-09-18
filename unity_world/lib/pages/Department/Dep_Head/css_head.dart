@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
 
 class CssheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Ms. Pavithra Subhashini'),
+      appBar: BackAppBar(
+       
       ),
       body: Center(
         child: Column(
