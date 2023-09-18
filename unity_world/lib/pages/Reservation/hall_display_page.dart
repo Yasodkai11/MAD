@@ -95,3 +95,18 @@ class _ReservationPageState extends State<ReservationPage> {
                             style: ElevatedButton.styleFrom(
                               primary: Color.fromARGB(255, 126, 124, 124),
                             ),
+                            child: Text(reservedTimes[index]),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
