@@ -117,3 +117,7 @@ class _MyFormState extends State<MyForm> {
                                   child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
+                                    Text('Requester\'s Name: $_enteredName', style: TextStyle(color: Colors.white)),
+                                    Text('Degree Program: $_enteredDegree', style: TextStyle(color: Colors.white)),
+                                    Text('Batch Number: $_enteredBatch', style: TextStyle(color: Colors.white)),
+                                    Text('Student Number: $_enteredStudentNo', style: TextStyle(color: Colors.white)),
