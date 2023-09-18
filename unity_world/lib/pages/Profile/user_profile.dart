@@ -157,3 +157,17 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
+
+            SizedBox(
+              height: 20.0,
+            ),
+            TextField(
+              controller: batch,
+              decoration: InputDecoration(
+                labelText: 'Batch',
+                prefixIcon: const Icon(Icons.people),
+                border: myInputBorder(),
+                enabledBorder: myInputBorder(),
+                focusedBorder: myFocusBorder(),
+              ),
+            ),
