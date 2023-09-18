@@ -52,3 +52,27 @@ actions: <Widget>[
         },
       );
     }
+
+
+
+
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: const Text('User Profile'),
+      ),
+      body: SingleChildScrollView(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Center(
+              child: Text(
+                "Profile",
+                style: TextStyle(
+                  color: Color.fromARGB(255, 30, 144, 255),
+                  fontSize: 32,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
