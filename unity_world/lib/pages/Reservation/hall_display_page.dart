@@ -71,3 +71,12 @@ class _ReservationPageState extends State<ReservationPage> {
                     ],
                   ),
                 ),
+                SizedBox(width: 10,),
+                Expanded( 
+                  flex: 2,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 100,),
+                      Text(
+                        'Reserved Time',
