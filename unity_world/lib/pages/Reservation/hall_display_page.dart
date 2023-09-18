@@ -80,3 +80,15 @@ class _ReservationPageState extends State<ReservationPage> {
                       SizedBox(width: 100,),
                       Text(
                         'Reserved Time',
+
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      SizedBox(height: 10),
+                      ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: reservedTimes.length,
+                        itemBuilder: (context, index) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              
+                            },
