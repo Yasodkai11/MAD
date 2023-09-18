@@ -92,3 +92,6 @@ class _ReservationPageState extends State<ReservationPage> {
                             onPressed: () {
                               
                             },
+                            style: ElevatedButton.styleFrom(
+                              primary: Color.fromARGB(255, 126, 124, 124),
+                            ),
