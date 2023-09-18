@@ -21,5 +21,26 @@ class _NotificationPageState extends State<NotificationPage> {
 
       
 
-
+ ),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+             crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Center(
+            child: Text(
+              "Notification",
+              style: TextStyle(
+                color: Color.fromARGB(255, 30, 144, 255),
+                fontSize: 32, 
+                fontWeight: FontWeight.bold),
+          
+            ),
+          
+            ),]
+        ),
+      ),
+    );
+   }
+}
      
