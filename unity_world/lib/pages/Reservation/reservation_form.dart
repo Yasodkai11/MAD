@@ -27,3 +27,7 @@ class _MyFormState extends State<MyForm> {
       String _enteredName = '';
       String _enteredDegree = '';
       String _enteredBatch = '';
+      String _enteredStudentNo = '';
+      String _enteredContact = '';
+      String _enteredPurpose = '';
+      
