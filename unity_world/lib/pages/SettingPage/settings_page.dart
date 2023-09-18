@@ -34,6 +34,21 @@ void showAlert(){
 
           ),
 
+  body: SingleChildScrollView(
+        padding: EdgeInsets.all(20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            const Center(
+            child: Text(
+              "Settings",
+              style: TextStyle(
+                 color: Color.fromARGB(255, 30, 144, 255),
+                 fontSize: 32, 
+                 fontWeight: FontWeight.bold
+              ),
+            ),
+                 ),
 
 
 
