@@ -34,7 +34,13 @@ class WelcomePage extends StatelessWidget {
                 ),
               ),
 
-              
+              Expanded(
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 50),
+                  ),
+                ),
+              ),
             ],
           )
         ],
