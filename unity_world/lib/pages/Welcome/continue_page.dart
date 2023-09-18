@@ -31,7 +31,19 @@ class ContinuePage extends StatelessWidget {
 
                 child: Padding(
                   padding: EdgeInsets.only(top: 200),
-                  
+
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context, 
+                        MaterialPageRoute(builder: (context) => LoginPage()
+                        )
+                      );
+                      print(
+                        'Login as a User'
+                      );
+                    }, 
+                    child: child),
                 ),
               )
             ],
