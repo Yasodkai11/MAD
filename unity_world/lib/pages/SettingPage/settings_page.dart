@@ -54,6 +54,101 @@ void showAlert(){
 
 
 
+                 const SizedBox(height: 18.0),
+          Card(
+            elevation: 8.0,
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+            color: const Color.fromARGB(255, 15, 26, 88),
+            child: ListTile(
+            onTap: (){
+                //open profile Page
+              },
+              title: const Text("Chamodya Sewwandi", 
+              style: TextStyle(color: Colors.white, 
+              fontWeight: FontWeight.bold,
+              ),),
+              leading: const CircleAvatar(
+                //backgroundImage: CachedNetworkImageProvider(avatars[0]),
+              //add png
+              ),
+              // add edit button
+              // trailing: Icon(Icons.edit, color: Colors.white,),
+            ),
+          ),
+          
+          const SizedBox(height: 15.0),
+          _buildDivider(),
+
+          const SizedBox(height: 18.0),
+          Card(
+            color: const Color.fromARGB(255, 15, 26, 88),
+            elevation: 4.0,
+            margin: const EdgeInsets.fromLTRB(32.0, 8.0, 32.0, 16.0),
+            
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+            child: Column(
+              children: <Widget>[
+                const ListTile(
+                 // account lock icon-  leading: Icon(Icons.lock_outline, color: Colors.black,),
+                  title: Text("Account Settings",
+                  style: TextStyle(color: Color.fromARGB(255, 173, 173, 173),
+                  ),),
+                ),
+                
+
+                ListTile(
+                 // account lock icon-  leading: Icon(Icons.lock_outline, color: Colors.black,),
+                  title: const Text("Profile",
+                  style: TextStyle(color: Colors.white,
+                  ),),
+                  trailing: const Icon(Icons.keyboard_arrow_right, color: Colors.white),
+                  onTap: () {
+                    //Open Profile page
+                   
+
+                  }
+                ),
+                
+
+               SwitchListTile( 
+                  activeColor: Colors.white,
+                  value: true, 
+                  onChanged: (val){},
+
+                  title: const Text("Notifications",
+                  style: TextStyle(color: Colors.white,
+                  ),),
+                  
+                ),
+
+
+
+              
+                
+
+
+             const SizedBox(height: 15.0),
+                   const Text("Dark Mode",
+                      style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold
+              ),
+            ),
+            const DarkModeSwitch(
+              
+            ),
+          
+        
+            
+  
+        
+
+               
+
+
+
+
+
 
 
 
