@@ -193,3 +193,34 @@ actions: <Widget>[
                 ),
               ),
             ),
+
+
+
+
+            SizedBox(
+              height: 30.0,
+            ),
+
+            
+            ElevatedButton(
+              onPressed: () {
+                _showLogoutConfirmationDialog(
+                    context); // Show the logout confirmation dialog
+              },
+              child: const Text('Logout'),
+              style: ElevatedButton.styleFrom(
+                primary: Color.fromARGB(255, 15, 26, 88),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: 25.0, vertical: 20.0),
+                textStyle: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
