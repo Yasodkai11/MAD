@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/nav_bar.dart';
 import 'package:unity_world/pages/SettingPage/about_us_page.dart';
 import 'package:unity_world/pages/SettingPage/help_center.dart';
 import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
@@ -213,6 +214,43 @@ class MyDrawer extends StatelessWidget {
                         )
                     );
                   },
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.fromLTRB(80, 50, 30, 0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => BottomNavigation()
+                      )
+                  );
+                },
+      
+                child: ListTile(
+                  iconColor: Colors.white,
+      
+                  leading: Icon(
+                    Icons.arrow_forward_ios_rounded,
+                  ),
+                  title: Text(
+                    "Back to Home",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+      
                 ),
               ),
             ),
