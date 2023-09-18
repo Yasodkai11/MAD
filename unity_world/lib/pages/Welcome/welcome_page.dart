@@ -12,6 +12,14 @@ class WelcomePage extends StatelessWidget {
       body: Stack(
         children: [
           Background(),
+
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+
+              
+            ],
+          )
         ],
       ),
     );
