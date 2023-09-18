@@ -56,3 +56,8 @@ class _MyFormState extends State<MyForm> {
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(labelText: 'Requester\'s Name',labelStyle: TextStyle(color: Colors.white),helperStyle: TextStyle(color: Colors.white)),
                   ),
+                  TextField(
+                    controller: _degreeController,
+                    style: TextStyle(color: Colors.white),
+                    decoration: InputDecoration(labelText: 'Degree Program',labelStyle: TextStyle(color: Colors.white)),
+                  ),
