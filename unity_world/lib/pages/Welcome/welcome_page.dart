@@ -17,7 +17,14 @@ class WelcomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
 
-              
+              Expanded(
+                child: Column(
+                  children: [
+                    Center(
+                      
+                    )
+                  ],
+                ))
             ],
           )
         ],
