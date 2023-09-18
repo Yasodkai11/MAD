@@ -72,6 +72,18 @@ class DnsheadPage extends StatelessWidget {
     );
   }
 }
+ Widget _buildCurvedContainer(BuildContext context, Widget child) {
+    return Container(
+      margin:
+       EdgeInsets.symmetric(vertical: 10),
+      decoration: BoxDecoration(
+        borderRadius:
+         BorderRadius.circular(20), // Adjust the radius as needed
+        color: Color.fromARGB(255, 15, 26, 88),
+      ),
+      child: child,
+    );
+  }
 
 void main() {
   runApp(MaterialApp(
