@@ -59,3 +59,15 @@ class _ReservationPageState extends State<ReservationPage> {
                               setState(() {
                                 selectedHall = index;
                               });
+                              },
+                            style: ElevatedButton.styleFrom(
+                              primary:  Color.fromARGB(255, 46, 141, 213),
+                              
+                            ),
+                            child: Text(hallNumbers[index]),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
