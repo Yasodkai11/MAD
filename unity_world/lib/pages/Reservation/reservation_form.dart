@@ -23,3 +23,7 @@ class _MyFormState extends State<MyForm> {
    final TextEditingController _purposeController = TextEditingController();
    final TextEditingController _dateTimeFromController = TextEditingController();
    final TextEditingController _dateTimeToController = TextEditingController();
+
+      String _enteredName = '';
+      String _enteredDegree = '';
+      String _enteredBatch = '';
