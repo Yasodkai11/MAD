@@ -53,13 +53,26 @@ class ContinuePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(28),
                       ),
                     ), 
-                    child: child),
+                    child: Text(
+                      "USER",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Roboto',
+                        fontSize: 20,
+                        fontWeight: FontWeight.w400,
+                        letterSpacing: 1.5,
+                      ),
+                    ),
+                  ),
+
                 ),
               )
             ],
+
           )
         ]
       )
+      
     );
  } 
  
