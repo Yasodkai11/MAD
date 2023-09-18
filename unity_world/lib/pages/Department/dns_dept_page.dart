@@ -97,11 +97,14 @@ class DnsDeptPage extends StatelessWidget {
                             },
                             child: Column(
                               children: [
-                                Image.asset(
+                                 ClipRRect(
+                             borderRadius: BorderRadius.circular(20),
+                                child:Image.asset(
                                   'assets/images/chamindra.webp',
                                   width: 100,
                                   height: 100,
                                 ),
+                                 ),
                                 const Text(
                                   'Mr. Chamindra Attanayake\nHOD / Senior Lecturer',
                                   textAlign: TextAlign.center,
