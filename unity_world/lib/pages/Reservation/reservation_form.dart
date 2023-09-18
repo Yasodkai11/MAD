@@ -103,3 +103,11 @@ class _MyFormState extends State<MyForm> {
                       _enteredPurpose = _purposeController.text;
                       _enteredDateTimeFrom = _dateTimeFromController.text;
                       _enteredDateTimeTo = _dateTimeToController.text;
+
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return AlertDialog(
+                            title: Text('Submitted Information'),
+                            content: Padding(
+                              padding: const EdgeInsets.all(8.0),
