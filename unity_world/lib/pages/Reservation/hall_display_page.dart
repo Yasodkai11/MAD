@@ -54,3 +54,8 @@ class _ReservationPageState extends State<ReservationPage> {
                             onPressed: () {
                               Navigator.push(
                                 context,
+                                MaterialPageRoute(builder: (context)=>MyFormApp()),
+                                );
+                              setState(() {
+                                selectedHall = index;
+                              });
