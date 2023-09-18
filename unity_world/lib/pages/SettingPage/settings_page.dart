@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/pages/SettingPage/about_us_page.dart';
 import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
+import 'package:unity_world/pages/SettingPage/theme_provider.dart';
 
 
 class SettingPage extends StatefulWidget {
@@ -213,8 +215,35 @@ void showAlert(){
 
 
 
+ Container _buildDivider() {
+    return Container(
+          margin: const EdgeInsets.symmetric(horizontal: 20.0,),
+          width: double.infinity,
+          height: 1.0,
+          color: Colors.grey,
+        );
+  }
+}
+        
 
+        class DarkModeSwitch extends HookConsumerWidget {
+  const DarkModeSwitch({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context,WidgetRef ref) {
+    final appThemeState = ref.watch(appThemeStateNotifier);
+    return Switch(
+      value: appThemeState.isDarkModeEnabled,
+      onChanged: (enabled) {
+         if (enabled) {
+          appThemeState.setDarkTheme();
+        } else {
+          appThemeState.setLightTheme();
+        }
+      },
+    );
+  }
+}
 
 
 
@@ -398,6 +427,12 @@ void showAlert(){
 
 
 
-       );
-   }                    
-   }
+
+
+
+
+
+
+
+      
+      
