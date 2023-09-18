@@ -86,3 +86,20 @@ class _MyFormState extends State<MyForm> {
                     controller: _dateTimeFromController,
                     decoration: InputDecoration(labelText: 'Request Date',labelStyle: TextStyle(color: Colors.white)),
                   ),
+                  TextField(
+                    style: TextStyle(color: Colors.white),
+                    controller: _dateTimeToController,
+                    decoration: InputDecoration(labelText: 'Time',labelStyle: TextStyle(color: Colors.white)),
+                  ),
+                  SizedBox(height: 20.0),
+
+                  ElevatedButton(
+                    onPressed: () {
+                      _enteredName = _nameController.text;
+                      _enteredDegree = _degreeController.text;
+                      _enteredBatch = _batchController.text;
+                      _enteredStudentNo = _studentNoController.text;
+                      _enteredContact = _contactController.text;
+                      _enteredPurpose = _purposeController.text;
+                      _enteredDateTimeFrom = _dateTimeFromController.text;
+                      _enteredDateTimeTo = _dateTimeToController.text;
