@@ -143,3 +143,17 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
+
+             SizedBox(
+              height: 20.0,
+            ),
+            TextField(
+              controller: email,
+              decoration: InputDecoration(
+                labelText: 'Email',
+                prefixIcon: const Icon(Icons.email),
+                border: myInputBorder(),
+                enabledBorder: myInputBorder(),
+                focusedBorder: myFocusBorder(),
+              ),
+            ),
