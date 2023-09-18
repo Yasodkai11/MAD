@@ -97,3 +97,17 @@ actions: <Widget>[
                 ],
               ),
             ),
+
+
+
+             // Add profile fields and the logout button here
+            TextField(
+              controller: username,
+              decoration: InputDecoration(
+                labelText: 'User Name',
+                prefixIcon: const Icon(Icons.person),
+                border: myInputBorder(),
+                enabledBorder: myInputBorder(),
+                focusedBorder: myFocusBorder(),
+              ),
+            ),
