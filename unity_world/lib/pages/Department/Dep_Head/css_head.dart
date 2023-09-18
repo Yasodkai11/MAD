@@ -69,8 +69,16 @@ class CssheadPage extends StatelessWidget {
                    GestureDetector(
                       onTap: () {
                         // Open LinkedIn link when tapped
-                        launch('https://lk.linkedin.com/');
+                        launch('https://lk.linkedin.com//');
                       },
+                      child: Text(
+                        'LinkedIn ',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),
