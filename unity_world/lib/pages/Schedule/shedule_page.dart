@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/components/menu_notifi_account.dart';
 
 class Shedule extends StatefulWidget {
   const Shedule({Key? key}) : super(key: key);
@@ -12,9 +14,11 @@ class _SheduleState extends State<Shedule> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: const Text('Shedule Page'),
+      appBar: MyAppBar(),
+         drawer: MyDrawer(
+        child: Container(),
+      
+      
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(20),

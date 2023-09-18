@@ -1,11 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+
 
 class DnsheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mr. Chamara Disanayake'),
+      appBar: BackAppBar(
+      
+      
+      
       ),
       body: Center(
         child: Column(
@@ -58,13 +63,26 @@ class DnsheadPage extends StatelessWidget {
                     'Phone: +94 11 544 5000 (ext 1213)\n'
                     'Department: Department of Network and Security\n'
                     'Faculty: Faculty of Computing\n'
-                    'Google Scholar: [Google Scholar Link]\n'
-                    'LinkedIn: [LinkedIn Link]',
+                    'Google Scholar: Google Scholar \n'
+                    'LinkedIn: ',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                     ),
                   ),
+                  GestureDetector(
+                      onTap: () {
+                        // Open LinkedIn link when tapped
+                        launch('https://lk.linkedin.com/');
+                      },
+                      child: Text(
+                        'LinkedIn ',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

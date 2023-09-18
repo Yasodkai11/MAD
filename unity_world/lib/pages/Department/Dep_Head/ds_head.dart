@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
 
 class DsheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Mr. Pramudya Thilakarathne'),
+      appBar: BackAppBar(
+       
+
+       
       ),
       body: Center(
         child: Column(
@@ -59,12 +63,25 @@ class DsheadPage extends StatelessWidget {
                     'Department: Department of Data Science\n'
                     'Faculty: Faculty of Computing\n'
                     'Google Scholar: [Google Scholar Link]\n'
-                    'LinkedIn: [LinkedIn Link]',
+                    'LinkedIn: ',
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 16,
                     ),
                   ),
+                   GestureDetector(
+                      onTap: () {
+                        // Open LinkedIn link when tapped
+                        launch('https://lk.linkedin.com/');
+                      },
+                       child: Text(
+                        'LinkedIn ',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
                 ],
               ),
             ),

@@ -62,3 +62,62 @@ class DescriptionBox extends StatelessWidget {
             'About',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
           ),
+          SizedBox(height: 10),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 100,
+                height: 150,
+                child: Image.asset(
+                  'assets/images/foss.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
+              SizedBox(width: 20),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'FOSS of NSBM is a community established to spread the open source knowledge among students. Founded on 13th of December 2013, ',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          Text(
+            'Free, open-source operating systems such as GNU, Linux and BSD are widely utilized today, powering millions of servers, desktops, smartphones (e.g. Google Android) and other devices.',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          SizedBox(height: 10),
+          Text(
+            'Free software licenses and open-source licenses are used in many software packages. The Aim of the Starting Open Source Community at National School of Business Management is to develop & encourage skills of young students, contribute to the society with latest developments and new concepts transforming young lives to feel as a part of the world’s largest developing community.',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              'Contact: ',
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+          ),
+          SizedBox(height: 5),
+          Center(
+              child: Text(
+                'foss.nsbm.ac.lk',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.blue, 
+                  decoration: TextDecoration.underline, 
+                ),
+              ),
+            ),
+            ],
+        ),
+      );
+  }
+}

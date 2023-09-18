@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/nav_bar.dart';
+import 'package:unity_world/pages/Profile/user_profile.dart';
 import 'package:unity_world/pages/SettingPage/about_us_page.dart';
 import 'package:unity_world/pages/SettingPage/help_center.dart';
 import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
@@ -82,7 +83,7 @@ class MyDrawer extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ProfilePage()
+                            builder: (context) => UserProfile()
                         ),
                     );
                   },
