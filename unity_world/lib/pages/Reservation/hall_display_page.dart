@@ -51,3 +51,62 @@ class _ReservationPageState extends State<ReservationPage> {
                         itemCount: hallNumbers.length,
                         itemBuilder: (context, index) {
                           return ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context)=>MyFormApp()),
+                                );
+                              setState(() {
+                                selectedHall = index;
+                              });
+                              },
+                            style: ElevatedButton.styleFrom(
+                              primary:  Color.fromARGB(255, 46, 141, 213),
+                              
+                            ),
+                            child: Text(hallNumbers[index]),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(width: 10,),
+                Expanded( 
+                  flex: 2,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 100,),
+                      Text(
+                        'Reserved Time',
+
+                        style: TextStyle(fontSize: 18),
+                      ),
+                      SizedBox(height: 10),
+                      ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: reservedTimes.length,
+                        itemBuilder: (context, index) {
+                          return ElevatedButton(
+                            onPressed: () {
+                              
+                            },
+                            style: ElevatedButton.styleFrom(
+                              primary: Color.fromARGB(255, 126, 124, 124),
+                            ),
+                            child: Text(reservedTimes[index]),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
