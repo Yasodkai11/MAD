@@ -167,11 +167,14 @@ class DnsDeptPage extends StatelessWidget {
                       ),
                       Column(
                         children: [
-                          Image.asset(
+                           ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                          child: Image.asset(
                             'assets/images/isuru.webp',
                             width: 100,
                             height: 100,
                           ),
+                           ),
                           const Text(
                             'Mr. Isuru Sri Bandara\nLecturer',
                             textAlign: TextAlign.center,
