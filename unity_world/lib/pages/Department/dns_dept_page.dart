@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/components/drawer.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'Dep_Head/dns_head.dart';
 
@@ -8,6 +10,11 @@ class DnsDeptPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: const BackAppBar(),
+        drawer: MyDrawer(
+              child: Container(),
+        ),
+        
        body: Center(
         child: Scrollbar(
           child: SingleChildScrollView(
