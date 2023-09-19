@@ -101,3 +101,12 @@ class DescriptionBox extends StatelessWidget {
             'It publishes a third of the world’s technical literature in electrical engineering, computer science and electronics and is a leading developer of international standards that underpin many of today',
             style: TextStyle(fontSize: 16, color: Colors.white),
           ),
+
+
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              'Contact: ',
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+          ),
