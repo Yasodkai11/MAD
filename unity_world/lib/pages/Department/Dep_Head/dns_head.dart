@@ -58,31 +58,7 @@ class DnsheadPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Text(
-                    'Email: chamindra.a@nsbm.ac.lk\n'
-                    'Phone: +94 11 544 5000 (ext 1213)\n'
-                    'Department: Department of Network and Security\n'
-                    'Faculty: Faculty of Computing\n'
-                    'Google Scholar: Google Scholar \n'
-                    'LinkedIn: ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                  GestureDetector(
-                      onTap: () {
-                        // Open LinkedIn link when tapped
-                        launch('https://lk.linkedin.com/');
-                      },
-                      child: Text(
-                        'LinkedIn ',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ),
+                  
                 ],
               ),
             ),
