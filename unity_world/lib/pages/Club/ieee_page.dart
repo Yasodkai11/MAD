@@ -85,3 +85,13 @@ class DescriptionBox extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 10),
+          Text(
+            'IEEE and its members inspire a global community through its highly cited publications, conferences, technology standards, and professional and educational activities.',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
+          SizedBox(height: 10),
+          Text(
+            'IEEE is the trusted “voice” for engineering, computing and technology information around the globe. There are more than 421,000 IEEE members in more than 160 countries.',
+            style: TextStyle(fontSize: 16, color: Colors.white),
+          ),
