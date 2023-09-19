@@ -61,18 +61,7 @@ class MisheadPage extends StatelessWidget {
 
 
                      SizedBox(height: 10),
-                    Text(
-                      'shafraz@nsbm.ac.lk\n'
-                      '+94 11 544 5000 (ext 1230)\n'
-                      'Department of Information and Systems Sciences\n'
-                      'Faculty of Computing\n'
-                      'Google Scholar\n'
-                      'Linkedin\n',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
-                    ),
+                   
                   ],
                 ),
               ),
