@@ -146,3 +146,19 @@ class MiddleImages extends StatelessWidget {
                     email: 'nldisanayake@students.nsbm.ac.lk',
                     imageAsset: 'assets/images/MP.jpg',
                   ),
+                  SizedBox(width: 20), 
+                  PersonCard(
+                    position: 'Secretary',
+                    name: 'A.D.Kaushalya',
+                    email: 'adkaushalya@students.nsbm.ac.lk',
+                    imageAsset: 'assets/images/MS.jpg',
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
