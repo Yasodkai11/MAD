@@ -162,4 +162,21 @@ class MiddleImages extends StatelessWidget {
                     imageAsset: 'assets/images/IP.jpg',
                   ),
 
+                  SizedBox(width: 20), 
+                  PersonCard(
+                    position: 'Secretary',
+                    name: 'Nirasha Herath',
+                    email: 'nherath@students.nsbm.ac.lk',
+                    imageAsset: 'assets/images/IS.jpg',
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
 
