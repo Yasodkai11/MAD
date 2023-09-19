@@ -18,3 +18,26 @@ class IEEEPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 20),
+            Text(
+              'Welcome IEEE',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 30, 144, 255),
+              ),
+            ),
+            SizedBox(height: 20),
+            DescriptionBox(),
+            SizedBox(height: 20),
+            MiddleImages(),
+            SizedBox(height: 20),
+            EnrollButton(),
+            SizedBox(height: 20),
+          ],
+        ),
+      ),
+    );
+  }
+}
