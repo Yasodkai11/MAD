@@ -127,3 +127,21 @@ class DescriptionBox extends StatelessWidget {
       );
   }
 }
+
+
+class MiddleImages extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            PersonCard(
+              position: 'Mistress Incharge',
+              name: 'Ms.Dulanjali Wijesekara',
+              email: 'dulanjali.w@nsbm.ac.lk',
+              imageAsset: 'assets/images/Dulanjalimam.jpg',
+            ),
+          ],
+        ),
