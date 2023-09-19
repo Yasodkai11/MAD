@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/components/menu_notifi_account.dart';
@@ -15,15 +16,15 @@ class _requestState extends State<request> {
 
   @override
   Widget build(BuildContext context) {
+
+    final subController = TextEditingController();
+    final desController = TextEditingController();
+
+
     return Scaffold(
       appBar: MyAppBar(),
        drawer: MyDrawer(
         child: Container(),
-      
-       
-
-
-
 
        
       ),
@@ -61,7 +62,7 @@ class _requestState extends State<request> {
                 right: 50,
                 left: 10,
               ),
-              child: const Column(
+              child: Column(
                 children: [
                   SizedBox(height: 10.0),
                   Text(
@@ -70,7 +71,8 @@ class _requestState extends State<request> {
                     style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                   SizedBox(height: 15.0),
-                  TextField(
+                  TextFormField(
+                    controller: subController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter the subject here',
@@ -87,7 +89,7 @@ class _requestState extends State<request> {
                 right: 50,
                 left: 10,
               ),
-              child: const Column(
+              child: Column(
                 children: [
                   SizedBox(height: 10.0),
                   Text(
@@ -96,7 +98,8 @@ class _requestState extends State<request> {
                     style: TextStyle(color: Colors.black, fontSize: 18),
                   ),
                   SizedBox(height: 15.0),
-                  TextField(
+                  TextFormField(
+                    controller: desController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter a description here',
@@ -123,6 +126,13 @@ class _requestState extends State<request> {
                   fontSize: 22,
                   fontWeight: FontWeight.bold),),
                   onPressed: () {
+
+                    CollectionReference collRef = FirebaseFirestore.instance.collection('requestform');
+                    collRef.add({
+                      'subject': subController.text,
+                      'description': desController.text,
+                    });
+
                     showDialog(
                         context: context,
                         builder: (context) {

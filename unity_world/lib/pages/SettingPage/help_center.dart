@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
@@ -6,7 +7,9 @@ import 'package:unity_world/components/back_notifi_account.dart';
 import '../../components/drawer.dart';
 
 class HelpCenter extends StatefulWidget {
-  const HelpCenter({Key? key}) : super(key: key);
+  
+  HelpCenter({Key? key}) : super(key: key);
+
 
   @override
   State<HelpCenter> createState() => _HelpCenterState();
@@ -26,6 +29,12 @@ void showAlert(){
 
   @override
    Widget build(BuildContext context) {
+
+  final toController = TextEditingController();
+  final fromController = TextEditingController();
+  final subController = TextEditingController();
+  final desController = TextEditingController();
+    
     return Scaffold(
       appBar: BackAppBar(),
        drawer: MyDrawer(
@@ -93,7 +102,7 @@ void showAlert(){
               ),
 
 
-              child: const Column(
+              child: Column(
                 children: [
                   Center(
                     child: Text(
@@ -123,10 +132,13 @@ void showAlert(){
 
 
                   SizedBox(height: 15.0),
-                  TextField(
+                  
+                  TextFormField(
+                    controller: toController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'codewizard@nsbm.gmail.com.',
+                      
                     ),
                   ),
                 ],
@@ -144,7 +156,7 @@ void showAlert(){
                 left: 15,
               ),
 
-              child: const Column(
+              child: Column(
                 children: [
                   SizedBox(height: 5.0),
                   Text(
@@ -162,7 +174,8 @@ void showAlert(){
 
 
    SizedBox(height: 15.0),
-                  TextField(
+                  TextFormField(
+                    controller: fromController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Username',
@@ -188,7 +201,7 @@ void showAlert(){
                 right: 15,
                 left: 15,
               ),
-              child: const Column(
+              child: Column(
                 children: [
                   SizedBox(height: 5.0),
                   Text(
@@ -209,7 +222,8 @@ void showAlert(){
 
                   SizedBox(height: 15.0),
 
-                  TextField(
+                  TextFormField(
+                    controller: subController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter the subject here',
@@ -239,7 +253,7 @@ void showAlert(){
 
 
 
-              child: const Column(
+              child: Column(
                 children: [
                   SizedBox(height: 10.0),
                   Text(
@@ -256,7 +270,8 @@ void showAlert(){
 
 
                   SizedBox(height: 15.0),
-                  TextField(
+                  TextFormField(
+                    controller: desController,
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter a description here',
@@ -267,12 +282,6 @@ void showAlert(){
                 ],
               ),
             ),
-
-
-
-
-
-
 
 
  const SizedBox(height: 30.0),
@@ -299,12 +308,17 @@ void showAlert(){
                   ),
 
 
-
-
-
-
                      
                   onPressed: () {
+                    CollectionReference collRef = FirebaseFirestore.instance.collection('help-center');
+                    collRef.add({
+                      'to':toController.text,
+                      'from':fromController.text,
+                      'subject': subController.text,
+                      'description': desController.text,
+                    }
+                    );
+
                     showDialog(
                         context: context,
                         builder: (context) {
