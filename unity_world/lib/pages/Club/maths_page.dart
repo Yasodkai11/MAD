@@ -91,3 +91,10 @@ class DescriptionBox extends StatelessWidget {
             'This special occasion was graced by the Vice-Chancellor Prof. E. A. Weerasinghe, Deputy Vice-Chancellor Prof. Chaminda Rathnayake, Deans of Faculty of Computing, Dr. Rasika Ranaweera, Dean of the Faculty of Postgraduate Studies, Dr. Chaminda Wijesinghe, Heads of the Department of Computer Science and Software Engineering, Ms. Pavithra Subashini, academics and non-academics. To mark the inauguration with a memorable event, the circle organized ” Mathematic Quiz Competition involving all the mathematic enthusiasts of the faculty. The first two rounds of the competition were held at the occasion, and the top ten groups were selected for the next round.',
             style: TextStyle(fontSize: 16, color: Colors.white),
           ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              'Contact: ',
+              style: TextStyle(fontSize: 16, color: Colors.white),
+            ),
+          ),
