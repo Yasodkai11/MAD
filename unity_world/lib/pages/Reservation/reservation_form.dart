@@ -117,4 +117,63 @@ class _MyFormState extends State<MyForm> {
                                   padding: const EdgeInsets.all(20.0),
                                   child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [ 
+
+                                  children: [
+                                    Text('Requester\'s Name: $_enteredName', style: TextStyle(color: Colors.white)),
+                                    Text('Degree Program: $_enteredDegree', style: TextStyle(color: Colors.white)),
+                                    Text('Batch Number: $_enteredBatch', style: TextStyle(color: Colors.white)),
+                                    Text('Student Number: $_enteredStudentNo', style: TextStyle(color: Colors.white)),
+                                    Text('Contact Number: $_enteredContact', style: TextStyle(color: Colors.white)),
+                                    Text('Purpose: $_enteredPurpose', style: TextStyle(color: Colors.white)),
+                                    Text('Request Date: $_enteredDateTimeFrom', style: TextStyle(color: Colors.white)),
+                                    Text('Time: $_enteredDateTimeTo', style: TextStyle(color: Colors.white)),
+                                    SizedBox(height: 20,),
+                                    Text('I agree to return hall on or before specified time and i will responsible for any damage for misplace of things within that time period', style: TextStyle(color: Color.fromARGB(255, 46, 141, 213))),
+                                  ],
+                                  ),
+                                ),
+                                decoration: BoxDecoration(
+                                  color: Color.fromRGBO(15,26,88,1.0),
+                                                
+                                  
+                                  borderRadius: BorderRadius.circular(12),
+                                ),
+                              ),
+                            ),
+                            actions: [
+                              ElevatedButton(
+                                onPressed: () {
+                                  Navigator.of(context).pop();
+                                },
+                                child: Center(child: Text('OK')),
+                              ),
+                            ],
+                          );
+                        },
+                      );
+                    },
+                    child: Text('Submit'),
+                  ),
+                ],
+              ),
+            ),
+          ),
+          ),
+      ),
+    );
+  }
+
+  @override
+  void dispose() {
+    _nameController.dispose();
+    _degreeController.dispose();
+    _batchController.dispose();
+    _studentNoController.dispose();
+    _contactController.dispose();
+    _purposeController.dispose();
+    _dateTimeFromController.dispose();
+    _dateTimeToController.dispose();
+    super.dispose();
+  }
+}
+

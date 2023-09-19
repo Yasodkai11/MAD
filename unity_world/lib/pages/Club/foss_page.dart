@@ -183,3 +183,93 @@ class EnrollButton extends StatelessWidget {
     );
   }
 
+
+
+ void _launchEnrollmentURL() async {
+    const url =
+        'https://forms.gle/88F6cYFQ35nLp84P7'; 
+
+    final Uri uri = Uri.parse(url);
+    if (await canLaunch(uri.toString())) {
+      await launch(uri.toString());
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+} 
+
+
+
+
+class PersonCard extends StatelessWidget {
+  final String name;
+  final String email;
+  final String imageAsset;
+  final String position;
+
+  PersonCard({
+    required this.name,
+    required this.imageAsset,
+    this.email = '',
+    required this.position,
+  });
+
+
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 80,
+          height: 80,
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            image: DecorationImage(
+              image: AssetImage(imageAsset),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        SizedBox(height: 8),
+        Text(
+          position,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
+
+
+        if (position.isNotEmpty) // Display position if it's not empty
+          Text(
+            name,
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
+          ),
+        if (email.isNotEmpty) // Display email if it's not empty
+          Text(
+            email,
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.blue,
+              decoration: TextDecoration.underline, 
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+
+       
+
+
+
+
+
+
