@@ -14,3 +14,17 @@ lass MathsPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
+       body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(height: 20),
+            Text(
+              'Welcome Maths',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 30, 144, 255),
+              ),
+            ),
