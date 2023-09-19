@@ -247,5 +247,36 @@ class PersonCard extends StatelessWidget {
         ),
         SizedBox(height: 8),
 
+        Text(
+          position,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 16,
+            color: Colors.black,
+          ),
+        ),
+        if (position.isNotEmpty) // Display position if it's not empty
+          Text(
+            name,
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.black,
+            ),
+          ),
+        if (email.isNotEmpty) // Display email if it's not empty
+          Text(
+            email,
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.blue,
+              decoration: TextDecoration.underline, 
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+
 
 
