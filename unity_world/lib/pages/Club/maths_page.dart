@@ -60,3 +60,15 @@ class DescriptionBox extends StatelessWidget {
             'About',
             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
           ),
+          SizedBox(height: 10),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                width: 100,
+                height: 150,
+                child: Image.asset(
+                  'assets/images/maths.png',
+                  fit: BoxFit.contain,
+                ),
+              ),
