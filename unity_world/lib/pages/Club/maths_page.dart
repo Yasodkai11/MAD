@@ -114,3 +114,20 @@ class DescriptionBox extends StatelessWidget {
       );
   }
 }
+
+class MiddleImages extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            PersonCard(
+              position: 'Mistress Incharge',
+              name: 'Ms.Hirushi Dilpriya',
+              email: 'hirushi.d@nsbm.ac.lk',
+              imageAsset: 'assets/images/hirushimadam.jpg',
+            ),
+          ],
+        ),
