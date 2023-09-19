@@ -80,7 +80,7 @@ class DnsheadPage extends StatelessWidget {
                     ),
                     _buildContactInfoRow(
                       icon: 'assets/icons/linkedin.png',
-                      value: 'https://lk.linkedin.com//',
+                      value: 'LinkedIn',
                     ),
                 ],
               ),
@@ -118,6 +118,27 @@ class DnsheadPage extends StatelessWidget {
             color: Colors.white,
           ),
         ),
+         SizedBox(width: 8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (icon == 'https://lk.linkedin.com/') {
+                launch(value);
+              }
+            },
+            child: Text(
+              value,
+              style: TextStyle(
+                color: icon == 'linkedin.png' ? Colors.blue : Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
 
 void main() {
   runApp(MaterialApp(
