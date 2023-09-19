@@ -7,7 +7,7 @@ void main() {
   ));
 }
 
-lass MathsPage extends StatelessWidget {
+class MathsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
