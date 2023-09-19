@@ -22,4 +22,11 @@ class MisheadPage extends StatelessWidget {
             ),
 
 
-            
+            SizedBox(height: 10),
+            Text(
+              'Senior Lecturer / Head',
+              style: TextStyle(
+                fontSize: 18,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
