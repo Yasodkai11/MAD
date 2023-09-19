@@ -61,7 +61,30 @@ class MisheadPage extends StatelessWidget {
 
 
                      SizedBox(height: 10),
-                   
+                   _buildContactInfoRow(
+                      icon: 'assets/icons/email.png',
+                      value: 'shafraz@nsbm.ac.lk',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/phone.png',
+                      value: '+94 11 544 5000 (ext 1230)',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/department.png',
+                      value: 'Department of Information and Systems Sciences',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/faculty.png',
+                      value: 'Faculty of Computing',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/google.png',
+                      value: 'Google Scholar',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/linkedin.png',
+                      value: 'https://lk.linkedin.com//',
+                    ),
                   ],
                 ),
               ),
