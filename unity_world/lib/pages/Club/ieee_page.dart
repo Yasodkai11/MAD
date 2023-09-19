@@ -230,4 +230,22 @@ class PersonCard extends StatelessWidget {
   });
 
 
+    @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 80,
+          height: 80,
+          decoration: BoxDecoration(
+            shape: BoxShape.rectangle,
+            image: DecorationImage(
+              image: AssetImage(imageAsset),
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        SizedBox(height: 8),
+
+
 
