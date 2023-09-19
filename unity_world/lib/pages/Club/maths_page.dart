@@ -53,3 +53,10 @@ class DescriptionBox extends StatelessWidget {
         color: Color.fromARGB(255, 15, 26, 88),
         borderRadius: BorderRadius.circular(10),
       ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'About',
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold,color: Colors.white),
+          ),
