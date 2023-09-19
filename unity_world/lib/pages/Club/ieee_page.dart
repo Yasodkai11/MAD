@@ -71,3 +71,17 @@ class DescriptionBox extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
+              SizedBox(width: 20),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'IEEE is the world’s largest professional association dedicated to advancing technological innovation and excellence for the benefit of humanity.',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
