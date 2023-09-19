@@ -104,6 +104,20 @@ class DnsheadPage extends StatelessWidget {
       child: child,
     );
   }
+  Widget _buildContactInfoRow({required String icon, required String value}) {
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: 8),
+    child: Row(
+      children: [
+        Container(
+          height: 24, // Adjust the height as needed
+          width: 24, // Adjust the width as needed
+          child: Image.asset(
+            icon,
+            fit: BoxFit.cover,
+            color: Colors.white,
+          ),
+        ),
 
 void main() {
   runApp(MaterialApp(
