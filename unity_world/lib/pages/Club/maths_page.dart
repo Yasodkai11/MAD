@@ -72,3 +72,17 @@ class DescriptionBox extends StatelessWidget {
                   fit: BoxFit.contain,
                 ),
               ),
+              SizedBox(width: 20),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'The inauguration ceremony of the Mathematics and Statistics Circle of the NSBM Faculty of Computing was held on 10th May 2023.',
+                      style: TextStyle(fontSize: 16, color: Colors.white),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
