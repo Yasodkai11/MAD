@@ -39,3 +39,22 @@ class MisheadPage extends StatelessWidget {
                 width: 150, // Adjust the width as needed
               ),
             ),
+
+
+             SizedBox(height: 20),
+            _buildCurvedContainer(
+              context,
+              Container(
+                width: 300,
+                padding: EdgeInsets.all(20),
+                color: Color.fromARGB(255, 15, 26, 88),
+                child: Column(
+                  children: [
+                    Text(
+                      'CONTACT INFO',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
