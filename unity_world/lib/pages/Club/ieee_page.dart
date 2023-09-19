@@ -14,3 +14,7 @@ class IEEEPage extends StatelessWidget {
       appBar: AppBar(
         title: Text(''),
       ),
+      body: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
