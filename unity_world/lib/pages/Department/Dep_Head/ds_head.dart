@@ -57,31 +57,7 @@ class DsheadPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Text(
-                    'Email: pramudya.h@nsbm.ac.lk\n'
-                    'Phone: +94 11 544 5000 (ext 1231)\n'
-                    'Department: Department of Data Science\n'
-                    'Faculty: Faculty of Computing\n'
-                    'Google Scholar: [Google Scholar Link]\n'
-                    'LinkedIn: ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                   GestureDetector(
-                      onTap: () {
-                        // Open LinkedIn link when tapped
-                        launch('https://lk.linkedin.com/');
-                      },
-                       child: Text(
-                        'LinkedIn ',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ),
+                 
                 ],
               ),
             ),
