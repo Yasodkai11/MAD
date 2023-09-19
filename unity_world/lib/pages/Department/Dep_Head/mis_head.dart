@@ -95,3 +95,9 @@ Widget _buildCurvedContainer(BuildContext context, Widget child) {
     child: child,
   );
 }
+
+void main() {
+  runApp(MaterialApp(
+    home: MisheadPage(),
+  ));
+}
