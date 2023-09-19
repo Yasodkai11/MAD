@@ -30,3 +30,12 @@ class MisheadPage extends StatelessWidget {
                 fontStyle: FontStyle.italic,
               ),
             ),
+
+            SizedBox(height: 20),
+            ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Image.asset(
+                'assets/images/shafraz.webp', // Assuming the image is located in the 'assets' folder
+                width: 150, // Adjust the width as needed
+              ),
+            ),
