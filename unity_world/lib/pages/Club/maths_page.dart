@@ -98,3 +98,19 @@ class DescriptionBox extends StatelessWidget {
               style: TextStyle(fontSize: 16, color: Colors.white),
             ),
           ),
+          SizedBox(height: 5),
+          Center(
+              child: Text(
+                'maths.nsbm.ac.lk',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.blue, 
+                  decoration: TextDecoration.underline, 
+                ),
+              ),
+            ),
+            ],
+        ),
+      );
+  }
+}
