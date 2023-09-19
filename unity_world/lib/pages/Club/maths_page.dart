@@ -41,3 +41,15 @@ lass MathsPage extends StatelessWidget {
     );
   }
 }
+
+
+class DescriptionBox extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 300,
+      padding: EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 15, 26, 88),
+        borderRadius: BorderRadius.circular(10),
+      ),
