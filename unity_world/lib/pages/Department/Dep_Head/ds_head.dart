@@ -79,7 +79,7 @@ class DsheadPage extends StatelessWidget {
                     ),
                     _buildContactInfoRow(
                       icon: 'assets/icons/linkedin.png',
-                      value: 'https://lk.linkedin.com//',
+                      value: 'LinkedIn',
                     ),
                 ],
               ),
@@ -121,7 +121,7 @@ Widget _buildCurvedContainer(BuildContext context, Widget child) {
         Expanded(
           child: GestureDetector(
             onTap: () {
-              if (icon == 'linkedin.png') {
+              if (icon == 'https://lk.linkedin.com/') {
                 launch(value);
               }
             },

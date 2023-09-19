@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MisheadPage extends StatelessWidget {
   @override
@@ -83,7 +84,7 @@ class MisheadPage extends StatelessWidget {
                     ),
                     _buildContactInfoRow(
                       icon: 'assets/icons/linkedin.png',
-                      value: 'https://lk.linkedin.com//',
+                      value: 'LinkedIn',
                     ),
                   ],
                 ),
@@ -121,6 +122,27 @@ Widget _buildContactInfoRow({required String icon, required String value}) {
             color: Colors.white,
           ),
         ),
+        SizedBox(width: 8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (icon == 'https://www.linkedin.com/in/mohamed-shafraz-ph-d-75335633/') {
+                launch(value);
+              }
+            },
+            child: Text(
+              value,
+              style: TextStyle(
+                color: icon == 'linkedin.png' ? Colors.blue : Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
 
 void main() {
   runApp(MaterialApp(
