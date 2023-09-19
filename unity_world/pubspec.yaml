@@ -108,6 +108,13 @@ flutter:
     - assets/illustrations/login.svg
     - assets/images/incharge.jpg
     - assets/images/FP.jpg
+    - assets/icons/email.png
+    - assets/icons/faculty.png
+    - assets/icons/department.png
+    - assets/icons/google.png
+    - assets/icons/linkedin.png
+    - assets/icons/phone.png
+    
     
     
 
