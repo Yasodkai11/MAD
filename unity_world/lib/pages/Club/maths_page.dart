@@ -131,3 +131,18 @@ class MiddleImages extends StatelessWidget {
             ),
           ],
         ),
+        SizedBox(height: 10),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Expanded(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  PersonCard(
+                    position: 'President',
+                    name: 'Nipun Lakshitha',
+                    email: 'nldisanayake@students.nsbm.ac.lk',
+                    imageAsset: 'assets/images/MP.jpg',
+                  ),
