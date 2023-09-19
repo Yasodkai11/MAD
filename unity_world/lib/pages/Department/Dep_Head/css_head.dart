@@ -118,6 +118,27 @@ Widget _buildCurvedContainer(BuildContext context, Widget child) {
             color: Colors.white,
           ),
         ),
+         SizedBox(width: 8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (icon == 'https://lk.linkedin.com/') {
+                launch(value);
+              }
+            },
+            child: Text(
+              value,
+              style: TextStyle(
+                color: icon == 'linkedin.png' ? Colors.blue : Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
 
 
 void main() {
