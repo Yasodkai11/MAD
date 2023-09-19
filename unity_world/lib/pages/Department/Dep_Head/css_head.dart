@@ -55,30 +55,30 @@ class CssheadPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Text(
-                    'Email: pavithras@nsbm.ac.lk\n'
-                    'Phone: +94 11 544 5000 (ext 1212)\n'
-                    'Department: Department of Computer Science & Software Engineering\n'
-                    'Faculty: Faculty of Computing\n'
-                    'Google Scholar: [Google Scholar Link]\n'
-                    'LinkedIn: ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
+                 SizedBox(height: 10),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/email.png',
+                      value: ' pavithras@nsbm.ac.lk',
                     ),
-                  ),
-                   GestureDetector(
-                      onTap: () {
-                        // Open LinkedIn link when tapped
-                        launch('https://lk.linkedin.com//');
-                      },
-                      child: Text(
-                        'LinkedIn ',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 16,
-                        ),
-                      ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/phone.png',
+                      value: '+94 11 544 5000 (ext 1212)',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/department.png',
+                      value: 'Department of Software Engineering',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/faculty.png',
+                      value: 'Faculty of Computing',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/google.png',
+                      value: 'Google Scholar',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/linkedin.png',
+                      value: 'LinkedIn',
                     ),
                 ],
               ),
