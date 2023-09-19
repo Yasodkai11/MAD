@@ -202,3 +202,17 @@ class EnrollButton extends StatelessWidget {
   }
 
 
+  void _launchEnrollmentURL() async {
+    const url =
+        ''; 
+
+    final Uri uri = Uri.parse(url);
+    if (await canLaunch(uri.toString())) {
+      await launch(uri.toString());
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+}
+
+
