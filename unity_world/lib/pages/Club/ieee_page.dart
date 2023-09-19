@@ -216,3 +216,18 @@ class EnrollButton extends StatelessWidget {
 }
 
 
+class PersonCard extends StatelessWidget {
+  final String name;
+  final String email;
+  final String imageAsset;
+  final String position;
+
+  PersonCard({
+    required this.name,
+    required this.imageAsset,
+    this.email = '',
+    required this.position,
+  });
+
+
+
