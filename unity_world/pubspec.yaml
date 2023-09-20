@@ -126,9 +126,16 @@ flutter:
     - assets/images/hirushimadam.jpg
     - assets/images/MP.jpg
     - assets/images/MS.jpg
+<<<<<<< HEAD
     
 
     
+=======
+    - assets/icons/vision.png
+    - assets/icons/mission.png
+    - assets/icons/logo1.png
+    - assets/images/dean.jpg
+>>>>>>> 06975762551c464b706b60d982be55fae8bb4e6a
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

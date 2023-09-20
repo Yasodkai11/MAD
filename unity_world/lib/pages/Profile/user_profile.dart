@@ -17,7 +17,7 @@ class UserProfile extends StatelessWidget {
      Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, // user must tap button!
+        barrierDismissible: false, 
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Confirm Logout'),
@@ -34,17 +34,15 @@ actions: <Widget>[
               TextButton(
                 child: const Text('Cancel'),
                 onPressed: () {
-                  Navigator.of(context).pop(); // Close the dialog
+                  Navigator.of(context).pop(); 
                 },
               ),
 
               TextButton(
                 child: const Text('Logout'),
                 onPressed: () {
-                  // Add your logout logic here
-                  // For example, you can clear user credentials and navigate to the login page
-                  // Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LoginPage()));
-                  Navigator.of(context).pop(); // Close the dialog
+                  
+                  Navigator.of(context).pop(); 
                 },
               ),
             ],
@@ -100,7 +98,7 @@ actions: <Widget>[
 
 
 
-             // Add profile fields and the logout button here
+             
             TextField(
               controller: username,
               decoration: InputDecoration(
@@ -180,7 +178,7 @@ actions: <Widget>[
             ElevatedButton(
               onPressed: () {
                 _showLogoutConfirmationDialog(
-                    context); // Show the logout confirmation dialog
+                    context); 
               },
               child: const Text('Logout'),
               style: ElevatedButton.styleFrom(
@@ -202,22 +200,7 @@ actions: <Widget>[
             ),
 
             
-            ElevatedButton(
-              onPressed: () {
-                _showLogoutConfirmationDialog(
-                    context); // Show the logout confirmation dialog
-              },
-              child: const Text('Logout'),
-              style: ElevatedButton.styleFrom(
-                primary: Color.fromARGB(255, 15, 26, 88),
-                padding: const EdgeInsets.symmetric(
-                    horizontal: 25.0, vertical: 20.0),
-                textStyle: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
+            
           ],
         ),
       ),
