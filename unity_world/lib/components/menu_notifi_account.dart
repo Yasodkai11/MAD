@@ -3,7 +3,7 @@ import 'package:unity_world/pages/Profile/user_profile.dart';
 import 'package:unity_world/pages/notification_page.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const MyAppBar({super.key});
+  const MyAppBar({super.key, required Text title});
 
   @override
   Widget build(BuildContext context) {

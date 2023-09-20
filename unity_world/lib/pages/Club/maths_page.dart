@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -11,8 +12,8 @@ class MathsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
+      appBar: BackAppBar(
+       
       ),
        body: SingleChildScrollView(
         child: Column(
