@@ -58,30 +58,29 @@ class DnsheadPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10),
-                  Text(
-                    'Email: chamindra.a@nsbm.ac.lk\n'
-                    'Phone: +94 11 544 5000 (ext 1213)\n'
-                    'Department: Department of Network and Security\n'
-                    'Faculty: Faculty of Computing\n'
-                    'Google Scholar: Google Scholar \n'
-                    'LinkedIn: ',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
+                  _buildContactInfoRow(
+                      icon: 'assets/icons/email.png',
+                      value: 'chamindra.a@nsbm.ac.lk',
                     ),
-                  ),
-                  GestureDetector(
-                      onTap: () {
-                        // Open LinkedIn link when tapped
-                        launch('https://lk.linkedin.com/');
-                      },
-                      child: Text(
-                        'LinkedIn ',
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontSize: 16,
-                        ),
-                      ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/phone.png',
+                      value: '+94 11 544 5000 (ext 1213)',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/department.png',
+                      value: 'Department of Network and Security',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/faculty.png',
+                      value: 'Faculty of Computing',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/google.png',
+                      value: 'Google Scholar',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/linkedin.png',
+                      value: 'LinkedIn',
                     ),
                 ],
               ),
@@ -105,6 +104,41 @@ class DnsheadPage extends StatelessWidget {
       child: child,
     );
   }
+  Widget _buildContactInfoRow({required String icon, required String value}) {
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: 8),
+    child: Row(
+      children: [
+        Container(
+          height: 24, // Adjust the height as needed
+          width: 24, // Adjust the width as needed
+          child: Image.asset(
+            icon,
+            fit: BoxFit.cover,
+            color: Colors.white,
+          ),
+        ),
+         SizedBox(width: 8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (icon == 'https://lk.linkedin.com/') {
+                launch(value);
+              }
+            },
+            child: Text(
+              value,
+              style: TextStyle(
+                color: icon == 'linkedin.png' ? Colors.blue : Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
+  );
+}
 
 void main() {
   runApp(MaterialApp(
