@@ -31,7 +31,9 @@ class CommunityPage extends StatelessWidget {
     }
 
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(
+        title: Text('club main'),
+      ),
         drawer: MyDrawer(
           child: Container(),
       ),

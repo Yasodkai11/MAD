@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_auth/models/UserModel.dart';
+
+import '../models/UserModel.dart';
 
 class AuthServices {
   //firebase instance

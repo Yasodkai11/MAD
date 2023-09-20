@@ -1,6 +1,8 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:unity_world/pages/Reservation/reservation_form.dart';
 
-
-class ReservationPage extends StatefullWidget {
+class ReservationPage extends StatefulWidget {
  
 
  @override

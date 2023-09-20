@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/background.dart';
 import 'package:unity_world/pages/Welcome/continue_page.dart';
+import 'package:unity_world/pages/Welcome/login_page.dart';
+
+import '../Department/Dep_Head/mis_head.dart';
 
 
 class WelcomePage extends StatelessWidget {
@@ -61,7 +64,7 @@ class WelcomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(
                         context, 
-                        MaterialPageRoute(builder: (context) => ContinuePage()
+                        MaterialPageRoute(builder: (context) => LoginPage()
                         )
                       );
                     }, 

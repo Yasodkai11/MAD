@@ -22,7 +22,9 @@ class _requestState extends State<request> {
 
 
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(
+          title: Text('request'),
+      ),
        drawer: MyDrawer(
         child: Container(),
 

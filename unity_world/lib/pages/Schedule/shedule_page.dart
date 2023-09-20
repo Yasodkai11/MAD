@@ -14,7 +14,9 @@ class _SheduleState extends State<Shedule> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(
+          title: Text('Shedule'),
+      ),
          drawer: MyDrawer(
         child: Container(),
       
