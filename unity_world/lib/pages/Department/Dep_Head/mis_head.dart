@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MisheadPage extends StatelessWidget {
   @override
@@ -61,17 +62,29 @@ class MisheadPage extends StatelessWidget {
 
 
                      SizedBox(height: 10),
-                    Text(
-                      'shafraz@nsbm.ac.lk\n'
-                      '+94 11 544 5000 (ext 1230)\n'
-                      'Department of Information and Systems Sciences\n'
-                      'Faculty of Computing\n'
-                      'Google Scholar\n'
-                      'Linkedin\n',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                      ),
+                   _buildContactInfoRow(
+                      icon: 'assets/icons/email.png',
+                      value: 'shafraz@nsbm.ac.lk',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/phone.png',
+                      value: '+94 11 544 5000 (ext 1230)',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/department.png',
+                      value: 'Department of Information and Systems Sciences',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/faculty.png',
+                      value: 'Faculty of Computing',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/google.png',
+                      value: 'Google Scholar',
+                    ),
+                    _buildContactInfoRow(
+                      icon: 'assets/icons/linkedin.png',
+                      value: 'LinkedIn',
                     ),
                   ],
                 ),
@@ -93,6 +106,41 @@ Widget _buildCurvedContainer(BuildContext context, Widget child) {
       color: Color.fromARGB(255, 15, 26, 88),
     ),
     child: child,
+  );
+}
+Widget _buildContactInfoRow({required String icon, required String value}) {
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: 8),
+    child: Row(
+      children: [
+        Container(
+          height: 24, // Adjust the height as needed
+          width: 24, // Adjust the width as needed
+          child: Image.asset(
+            icon,
+            fit: BoxFit.cover,
+            color: Colors.white,
+          ),
+        ),
+        SizedBox(width: 8),
+        Expanded(
+          child: GestureDetector(
+            onTap: () {
+              if (icon == 'https://www.linkedin.com/in/mohamed-shafraz-ph-d-75335633/') {
+                launch(value);
+              }
+            },
+            child: Text(
+              value,
+              style: TextStyle(
+                color: icon == 'linkedin.png' ? Colors.blue : Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ),
+        ),
+      ],
+    ),
   );
 }
 

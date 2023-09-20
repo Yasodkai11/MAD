@@ -91,6 +91,7 @@ class _MyFormState extends State<MyForm> {
                     controller: _dateTimeToController,
                     decoration: InputDecoration(labelText: 'Time',labelStyle: TextStyle(color: Colors.white)),
                   ),
+
                   SizedBox(height: 20.0),
 
                   ElevatedButton(
@@ -116,6 +117,7 @@ class _MyFormState extends State<MyForm> {
                                   padding: const EdgeInsets.all(20.0),
                                   child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
+
                                   children: [
                                     Text('Requester\'s Name: $_enteredName', style: TextStyle(color: Colors.white)),
                                     Text('Degree Program: $_enteredDegree', style: TextStyle(color: Colors.white)),
@@ -174,3 +176,4 @@ class _MyFormState extends State<MyForm> {
     super.dispose();
   }
 }
+
