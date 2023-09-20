@@ -46,7 +46,7 @@ dependencies:
   flutter_hooks: any
   hooks_riverpod: any
   cloud_firestore: ^4.3.2
-  firebase_messaging: ^12.0.1
+  firebase_messaging: ^14.6.7
 
 
 dev_dependencies:
@@ -111,6 +111,11 @@ flutter:
     - assets/images/incharge.jpg
     - assets/images/FP.jpg
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    - assets/icons/notification.png
+    - assets/icons/user.png
+>>>>>>> refs/remotes/origin/main
     - assets/icons/email.png
     - assets/icons/faculty.png
     - assets/icons/department.png
@@ -125,12 +130,23 @@ flutter:
     - assets/images/hirushimadam.jpg
     - assets/images/MP.jpg
     - assets/images/MS.jpg
+<<<<<<< HEAD
     
+<<<<<<< HEAD
 =======
     - assets/icons/notification.png
     - assets/icons/user.png
 >>>>>>> bf06ccf9456782a8da22d35c2970820b823fccd2
+=======
+
+>>>>>>> refs/remotes/origin/main
     
+=======
+    - assets/icons/vision.png
+    - assets/icons/mission.png
+    - assets/icons/logo1.png
+    - assets/images/dean.jpg
+>>>>>>> 06975762551c464b706b60d982be55fae8bb4e6a
     
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+//import 'package:unity_world/pages/Profile/user_profile.dart';
+//import 'package:unity_world/pages/notification_page.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const MyAppBar({super.key});
+  const MyAppBar({super.key, required Text title});
 
   @override
   Widget build(BuildContext context) {
@@ -30,8 +32,8 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
         backgroundColor: Colors.white,
         actions: [
-
           IconButton(
+
               onPressed: () {}, 
               icon: 
                 Icon(
@@ -40,7 +42,9 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
                 color: Colors.black,
             ),
 
+
             IconButton(
+
               onPressed: () {}, 
               icon: 
                 Icon(

@@ -41,7 +41,7 @@ class MyDrawer extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    'assets/image/logo1.png',
+                    'assets/icons/logo1.png',
                     width: size.width * 0.5,
                     height: size.height * 0.12,
                   ),
