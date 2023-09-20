@@ -8,10 +8,10 @@ bool isCheckedRememberMe = false;
 
 class LoginPage extends StatefulWidget {
   //function
-  final Function toggle;
+  //final Function toggle;
   const LoginPage({
     Key? key,
-    required this.toggle
+    //required this.toggle
     }) : super(key: key);
 
   @override
@@ -20,14 +20,14 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   //ref for the AuthServices class
-  final AuthServices _auth = AuthServices();
+  // final AuthServices _auth = AuthServices();
 
   //from key
   final _formKey = GlobalKey<FormState>();
   //email password states
-  String email = "";
-  String password = "";
-  String error = "";
+  // String email = "";
+  // String password = "";
+  // String error = "";
 
   
   @override
@@ -65,43 +65,39 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(30, 15, 30, 20),
 
-                  child: Form(
-                    key: _formKey,
-
-                    child: TextFormField(
-                      decoration: InputDecoration(
+                  child: TextFormField(
+                    decoration: InputDecoration(
                   
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                  
-                        labelText: 'Enter your E-mail',
-                        labelStyle: TextStyle(
-                          color: Color.fromRGBO(0, 0, 0, 0.5),
-                        ),
-                  
-                        hintText: '@student.nsbm.as.lk',
-                        hintStyle: TextStyle(
-                          color: Color.fromRGBO(158, 158, 158, 1),
-                          fontSize: 16,
-                        ),
-                  
-                        prefixIcon: Icon(
-                          Icons.mail_outlined,
-                          color: Color.fromRGBO(0, 0, 0, 0.5),
-                        ),
-                  
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
                       ),
-
-                      validator: (val) => 
-                        val!.isEmpty ? "Enter a valid email" : null,
-                      onChanged: (val) {
-                        setState(() {
-                              email = val;
-                        });
-                      },
-
+                  
+                      labelText: 'Enter your E-mail',
+                      labelStyle: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 0.5),
+                      ),
+                  
+                      hintText: '@student.nsbm.as.lk',
+                      hintStyle: TextStyle(
+                        color: Color.fromRGBO(158, 158, 158, 1),
+                        fontSize: 16,
+                      ),
+                  
+                      prefixIcon: Icon(
+                        Icons.mail_outlined,
+                        color: Color.fromRGBO(0, 0, 0, 0.5),
+                      ),
+                  
                     ),
+
+                    validator: (val) => 
+                      val!.isEmpty ? "Enter a valid email" : null,
+                    onChanged: (val) {
+                      setState(() {
+                            // email = val;
+                      });
+                    },
+
                   ),
 
                 ),
@@ -109,43 +105,39 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(30, 0, 30, 5),
 
-                  child: Form(
-                    key: _formKey,
-
-                    child: TextFormField(
-                      decoration: InputDecoration(
+                  child: TextFormField(
+                    decoration: InputDecoration(
                   
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
-                  
-                        labelText: 'Password',
-                        labelStyle: TextStyle(
-                          color: Color.fromRGBO(0, 0, 0, 0.5),
-                        ),
-                  
-                        prefixIcon: Icon(
-                          Icons.lock_outlined,
-                          color: Color.fromRGBO(0, 0, 0, 0.5),
-                        ),
-                  
-                        suffixIcon: IconButton(
-                          onPressed: () {}, 
-                          icon: Icon(Icons.visibility)
-                        ),
-                  
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
                       ),
-
-                      validator: (val) => val!.length < 6
-                          ? "Password must be at least 6 characters"
-                          : null,
-                      onChanged: (val) {
-                          setState(() {
-                            password = val;
-                          });
-                      },
-
+                  
+                      labelText: 'Password',
+                      labelStyle: TextStyle(
+                        color: Color.fromRGBO(0, 0, 0, 0.5),
+                      ),
+                  
+                      prefixIcon: Icon(
+                        Icons.lock_outlined,
+                        color: Color.fromRGBO(0, 0, 0, 0.5),
+                      ),
+                  
+                      suffixIcon: IconButton(
+                        onPressed: () {}, 
+                        icon: Icon(Icons.visibility)
+                      ),
+                  
                     ),
+
+                    validator: (val) => val!.length < 6
+                        ? "Password must be at least 6 characters"
+                        : null,
+                    onChanged: (val) {
+                        setState(() {
+                          // password = val;
+                        });
+                    },
+
                   ),
 
                 ),
@@ -213,18 +205,18 @@ class _LoginPageState extends State<LoginPage> {
                     width: 250,
                 
                     child: GestureDetector(
-                      onTap: () async 
+                      onTap: () 
                       {
-                          dynamic result = await _auth
-                              .signInUsingEmailAndPassword(email, password);
+                          // dynamic result = await _auth
+                          //     .signInUsingEmailAndPassword(email, password);
 
-                          if (result == null) {
-                            setState(() 
-                            {
-                              error = "Could not signin with those credentials";
-                            }
-                            );
-                          }
+                          // if (result == null) {
+                          //   setState(() 
+                          //   {
+                          //     // error = "Could not signin with those credentials";
+                          //   }
+                          //   );
+                          // }
                         },
 
                       child: ElevatedButton(

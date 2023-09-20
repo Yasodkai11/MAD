@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "676899004112",
-    "project_id": "testing-2-238f0",
-    "storage_bucket": "testing-2-238f0.appspot.com"
+    "project_number": "891958384714",
+    "project_id": "unityworld-7dd09",
+    "storage_bucket": "unityworld-7dd09.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:676899004112:android:1f230f023b9c4dac4148d5",
+        "mobilesdk_app_id": "1:891958384714:android:ab47429d086c49b01e6eb3",
         "android_client_info": {
-          "package_name": "com.android.application"
+          "package_name": "com.example.unity_world"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyB_SeLYObyWSmi4bvteFmiXchpKHb764Bs"
+          "current_key": "AIzaSyCVI0WiaGiICq26QfzK3RGhiHEhIuqbTuE"
         }
       ],
       "services": {

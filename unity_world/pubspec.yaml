@@ -46,6 +46,8 @@ dependencies:
   flutter_hooks: any
   hooks_riverpod: any
   cloud_firestore: ^4.3.2
+  firebase_messaging: ^12.0.1
+
 
 dev_dependencies:
   flutter_test:
@@ -98,7 +100,7 @@ flutter:
     - assets/images/naji.webp
     - assets/images/chalani.webp
     - assets/images/mis.png
-    - assets/dean.jpg
+    - assets/images/dean.jpg
     - assets/images/csse1.png
     - assets/images/d1.png
     - assets/images/data1.png
@@ -108,6 +110,8 @@ flutter:
     - assets/illustrations/login.svg
     - assets/images/incharge.jpg
     - assets/images/FP.jpg
+    - assets/icons/notification.png
+    - assets/icons/user.png
     
     
 
