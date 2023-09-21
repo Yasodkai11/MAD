@@ -2,6 +2,8 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 
+import 'HomePage/home_page.dart';
+
 
 class NotificationPage extends StatelessWidget {
   const NotificationPage({Key? key});
@@ -14,7 +16,26 @@ class NotificationPage extends StatelessWidget {
       final message = arguments;
 
       return Scaffold(
-        appBar: BackAppBar(),
+        appBar: BackAppBar(
+          IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(16.0),
           child: Container(
@@ -42,7 +63,24 @@ class NotificationPage extends StatelessWidget {
       );
     } else {
       return Scaffold(
-        appBar: BackAppBar(),
+        appBar: BackAppBar(IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),),
         body: Center(
           child: Text('No Notification'),
         ),
@@ -51,3 +89,4 @@ class NotificationPage extends StatelessWidget {
   }
 }
 
+ 
