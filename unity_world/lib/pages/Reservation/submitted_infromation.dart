@@ -75,3 +75,49 @@ void clearData() {
       appBar: AppBar(
         title: Text('Submitted Information'),
       ),
+
+
+      body: SingleChildScrollView(
+        child: Center(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Requester's Name
+                        Row(
+                          children: [
+                            Text('\nRequester\'s Name:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                requesterName,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Degree Program
+                        Row(
+                          children: [
+                            Text('\nDegree Program:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                degreeProgram,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Batch Number
+                        Row(
+                          children: [
+                            Text('\nBatch Number:\n',
+                                style: TextStyle(color: Colors.white)),
