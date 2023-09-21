@@ -1,5 +1,11 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:unity_world/pages/Reservation/reservation_form.dart';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
 class ReservationPage extends StatefulWidget {
  
 

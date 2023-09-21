@@ -33,20 +33,20 @@ class BackAppBar extends StatelessWidget implements PreferredSizeWidget{
 
           IconButton(
               onPressed: () {}, 
-              icon: Image.asset(
-                "assets/icons/notification.png",
-                width: 24,
-                height: 24,
-              ),
-            ),
+              icon: 
+                Icon(
+                  Icons.notifications_active_outlined
+                ),
+                color: Colors.black,
+          ),
 
             IconButton(
               onPressed: () {}, 
-              icon: Image.asset(
-                "assets/icons/user.png",
-                width: 30,
-                height: 30,
-              ),
+              icon: 
+                Icon(
+                  Icons.person
+                ),
+                color: Colors.black,
             ),
 
         ],

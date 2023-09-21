@@ -3,14 +3,22 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:unity_world/components/background.dart';
 import 'package:unity_world/pages/Welcome/login_page.dart';
 
-class ContinuePage extends StatelessWidget {
+
+
+class ContinuePage extends StatefulWidget {
   const ContinuePage({super.key});
 
+  @override
+  State<ContinuePage> createState() => _ContinuePageState();
+}
+
+class _ContinuePageState extends State<ContinuePage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-    return Scaffold(
+    return
+     Scaffold(
       backgroundColor: Colors.white,
 
       body: Stack(
@@ -75,7 +83,6 @@ class ContinuePage extends StatelessWidget {
       
     );
  } 
- 
 }
 
 

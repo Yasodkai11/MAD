@@ -19,7 +19,9 @@ class HomePage extends StatelessWidget {
       children: [
         Scaffold(
     
-          appBar: MyAppBar(),
+          appBar: MyAppBar(
+              title: Text('Home Page'),
+          ),
     
           drawer: MyDrawer(
             child: Container(),

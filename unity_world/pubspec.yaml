@@ -30,12 +30,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.1.14
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  firebase_core: ^2.12.0
+  firebase_core: ^2.15.1
   firebase_auth: ^4.6.0
   dio: ^5.3.2
   http: ^1.1.0
@@ -45,6 +46,11 @@ dependencies:
   carousel_slider: ^4.2.1
   flutter_hooks: any
   hooks_riverpod: any
+  cloud_firestore: ^4.3.2
+  firebase_messaging: ^12.0.1
+  firebase_local_notifications: ^9.8.0+1
+
+
 
 dev_dependencies:
   flutter_test:
@@ -97,7 +103,7 @@ flutter:
     - assets/images/naji.webp
     - assets/images/chalani.webp
     - assets/images/mis.png
-    - assets/dean.jpg
+    - assets/images/dean.jpg
     - assets/images/csse1.png
     - assets/images/d1.png
     - assets/images/data1.png
@@ -107,7 +113,29 @@ flutter:
     - assets/illustrations/login.svg
     - assets/images/incharge.jpg
     - assets/images/FP.jpg
-    
+    - assets/icons/notification.png
+    - assets/icons/user.png
+    - assets/icons/email.png
+    - assets/icons/faculty.png
+    - assets/icons/department.png
+    - assets/icons/google.png
+    - assets/icons/linkedin.png
+    - assets/icons/phone.png
+    - assets/images/ieee.png
+    - assets/images/Dulanjalimam.jpg
+    - assets/images/IP.jpg
+    - assets/images/IS.jpg
+    - assets/images/maths.png
+    - assets/images/hirushimadam.jpg
+    - assets/images/MP.jpg
+    - assets/images/MS.jpg
+    - assets/icons/notification.png
+    - assets/icons/user.png
+    - assets/icons/vision.png
+    - assets/icons/mission.png
+    - assets/icons/logo1.png
+    - assets/images/dean.jpg
+
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
