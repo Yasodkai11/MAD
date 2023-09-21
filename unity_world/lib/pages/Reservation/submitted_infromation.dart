@@ -213,3 +213,16 @@ void clearData() {
                         ),
                         SizedBox(
                           height: 20,
+                          ),
+                        Text(
+                            'I agree to return the hall on or before the specified time, and I will be responsible for any damage or misplacement of things within that time period',
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 46, 141, 213))),
+                      ],
+                    ),
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(15, 26, 88, 1.0),
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
