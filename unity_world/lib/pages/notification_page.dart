@@ -1,48 +1,53 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
-import 'package:unity_world/components/drawer.dart';
 
 
+class NotificationPage extends StatelessWidget {
+  const NotificationPage({Key? key});
 
-class NotificationPage extends StatefulWidget {
-  const NotificationPage({Key? key}) : super(key: key);
-  static const route = '/notification-screen';
   @override
-  State<NotificationPage> createState() => _NotificationPageState();
-}
-class _NotificationPageState extends State<NotificationPage> {
-  @override
-   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: BackAppBar(),
-        drawer: MyDrawer(
-        child: Container(),
-      
+  Widget build(BuildContext context) {
+    final arguments = ModalRoute.of(context)!.settings.arguments;
 
+    if (arguments is RemoteMessage) {
+      final message = arguments;
 
-
-      
-
- ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-             crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            const Center(
-            child: Text(
-              "Notification",
-              style: TextStyle(
-                color: Color.fromARGB(255, 30, 144, 255),
-                fontSize: 32, 
-                fontWeight: FontWeight.bold),
-          
+      return Scaffold(
+        appBar: BackAppBar(),
+        body: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Container(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  message.notification?.title ?? '',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8),
+                Text(
+                  message.notification?.body ?? '',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+              ],
             ),
-          
-            ),]
+          ),
         ),
-      ),
-    );
-   }
+      );
+    } else {
+      return Scaffold(
+        appBar: BackAppBar(),
+        body: Center(
+          child: Text('No Notification'),
+        ),
+      );
+    }
+  }
 }
-     
+

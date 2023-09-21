@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/components/menu_notifi_account.dart';
 
-// ignore: camel_case_types
+
 class request extends StatefulWidget {
   const request({Key? key}) : super(key: key);
 
@@ -11,7 +11,6 @@ class request extends StatefulWidget {
   State<request> createState() => _requestState();
 }
 
-// ignore: camel_case_types
 class _requestState extends State<request> {
 
   @override

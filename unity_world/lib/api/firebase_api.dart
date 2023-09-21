@@ -1,13 +1,7 @@
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter/material.dart';
+
 import 'package:unity_world/main.dart';
 
-Future<void> handleBackgroundMessage(RemoteMessage meesage) async{
-var message;
-print('Title: ${message.notification?.title}');
-print('Body: ${message.notification?.body}');
-print('Payload: ${message.data}');
-}
 class FirebaseApi {
   //firebase messaging instance
   final _firebaseMessaging = FirebaseMessaging.instance;
@@ -20,7 +14,23 @@ class FirebaseApi {
 
     print("Token: $fCMToken");
 
-    FirebaseMessaging.onBackgroundMessage(handleBackgroundMessage);
+    initPushNotifications();
+  }
 
+  //function to handle received notification
+  void handleMessage(RemoteMessage? message) {
+    if (message == null) return;
+
+    navigatorKey.currentState?.pushNamed(
+      '/notification_screen',
+      arguments: message,
+    );
+  }
+
+  //function to initialize background settings
+  Future<void> initPushNotifications() async {
+    FirebaseMessaging.instance.getInitialMessage().then(handleMessage);
+
+    FirebaseMessaging.onMessageOpenedApp.listen(handleMessage);
   }
 }
