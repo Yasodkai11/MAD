@@ -404,3 +404,31 @@ class _EditPageState extends State<EditPage> {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
+                // Save the edited data and return to the previous screen
+                final editedData = {
+                  'requesterName': requesterNameController.text,
+                  'degreeProgram': degreeProgramController.text,
+                  'batchNumber': batchNumberController.text,
+                  'studentNumber': studentNumberController.text,
+                  'hallNumber': hallNumberController.text,
+                  'contactNumber': contactNumberController.text,
+                  'purpose': purposeController.text,
+                  'requestDate': requestDateController.text,
+                  'time': timeController.text,
+                };
+                Navigator.pop(context, editedData);
+              },
+              child: Text('Save'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(MaterialApp(
+    home: HomePage(),
+  ));
+}
