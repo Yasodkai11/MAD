@@ -203,3 +203,13 @@ void clearData() {
                           children: [
                             Text('\nTime:\n',
                                 style: TextStyle(color: Colors.white)),
+                                Expanded(
+                              child: Text(
+                                time,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 20,
