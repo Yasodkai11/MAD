@@ -5,6 +5,7 @@ import 'package:unity_world/api/firebase_api.dart';
 
 import 'package:unity_world/pages/Welcome/welcome_page.dart';
 
+final navigatorKey = GlobalKey<NavigatorState>();
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();

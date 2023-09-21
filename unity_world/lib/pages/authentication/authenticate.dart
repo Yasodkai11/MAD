@@ -23,8 +23,8 @@ class _AuthenticateState extends State<Authenticate> {
     if (singinPage == true) {
       return LoginPage();
     } else {
-      // Return another page or a default page when singinPage is false
-      return Placeholder(); // Change Placeholder() to your desired widget.
+    
+      return Placeholder(); 
     }
   }
 }
