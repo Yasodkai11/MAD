@@ -189,3 +189,17 @@ void clearData() {
                           children: [
                             Text('\nRequest Date:\n',
                                 style: TextStyle(color: Colors.white)),
+
+                                Expanded(
+                              child: Text(
+                                requestDate,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Time
+                        Row(
+                          children: [
+                            Text('\nTime:\n',
+                                style: TextStyle(color: Colors.white)),
