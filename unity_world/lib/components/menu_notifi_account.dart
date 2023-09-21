@@ -20,7 +20,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
               tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
 
-              icon: Icon(
+              icon: const Icon(
                 Icons.menu
               ),
               color: Colors.black,
@@ -36,7 +36,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
               onPressed: () {}, 
               icon: 
-                Icon(
+                const Icon(
                   Icons.notifications_active_outlined
                 ),
                 color: Colors.black,
@@ -59,7 +59,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
   }
   
   @override
-  // TODO: implement preferredSize
+
   
   Size get preferredSize => Size.fromHeight(kToolbarHeight);
 

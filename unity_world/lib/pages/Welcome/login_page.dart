@@ -20,7 +20,7 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   //ref for the AuthServices class
-  // final AuthServices _auth = AuthServices();
+   //final AuthServices _auth = AuthServices();
 
   //from key
   //final _formKey = GlobalKey<FormState>();
