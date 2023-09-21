@@ -187,6 +187,7 @@ class _LoginPageState extends State<LoginPage> {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(3),
+                               color: isCheckedRememberMe ? Colors.blue : Colors.black,
                             ),
                             child: SizedBox(
                               width: 6,
@@ -196,8 +197,10 @@ class _LoginPageState extends State<LoginPage> {
                           Text(
                             'Remember Me',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: isCheckedRememberMe ? Color.fromRGBO(15, 26, 88, 1.0): Colors.black,
                               fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 1
                             ),
                           ),
 
