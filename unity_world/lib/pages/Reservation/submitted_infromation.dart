@@ -269,3 +269,29 @@ void clearData() {
                           }
                         });
                       },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(15, 26, 88, 1.0),
+                      ),
+                      child: Text('EDIT'),
+                    ),
+                    SizedBox(width: 20),
+                    ElevatedButton(
+                      onPressed: () {
+                        _showDeleteConfirmationDialog(
+                            context); // Show the delete confirmation dialog
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Color.fromRGBO(15, 26, 88, 1.0),
+                      ),
+                      child: Text('DELETE'),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
