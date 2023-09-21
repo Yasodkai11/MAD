@@ -125,6 +125,7 @@ flutter:
     - assets/icons/vision.png
     - assets/icons/mission.png
     - assets/icons/logo1.png
+    - assets/images/dean.jpg
     
 
   # An image asset can refer to one or more resolution-specific "variants", see
