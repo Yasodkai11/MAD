@@ -1,6 +1,6 @@
 
 
-class ReservationPage extends StatefullWidget {
+class ReservationPage extends StatefulWidget {
  
 
  @override
