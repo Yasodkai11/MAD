@@ -53,3 +53,25 @@ class _HomePageState extends State<HomePage> {
       },
     );
   }
+
+void clearData() {
+    // Reset all data to initial values
+    setState(() {
+      requesterName = '';
+      degreeProgram = '';
+      batchNumber = '';
+      studentNumber = '';
+      hallNumber = '';
+      contactNumber = '';
+      purpose = '';
+      requestDate = '';
+      time = '';
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Submitted Information'),
+      ),
