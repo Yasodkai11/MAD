@@ -252,3 +252,20 @@ void clearData() {
                               },
                             ),
                           ),
+                          ).then((editedData) {
+                          if (editedData != null) {
+                            // Update the data with edited values
+                            setState(() {
+                              requesterName = editedData['requesterName'];
+                              degreeProgram = editedData['degreeProgram'];
+                              batchNumber = editedData['batchNumber'];
+                              studentNumber = editedData['studentNumber'];
+                              hallNumber = editedData['hallNumber'];
+                              contactNumber = editedData['contactNumber'];
+                              purpose = editedData['purpose'];
+                              requestDate = editedData['requestDate'];
+                              time = editedData['time'];
+                            });
+                          }
+                        });
+                      },
