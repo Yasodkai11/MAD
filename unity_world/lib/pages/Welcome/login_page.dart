@@ -54,12 +54,13 @@ class _LoginPageState extends State<LoginPage> {
 
                 Text(
                   "Login To Continue",
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Poppins',
-                    color: Color.fromRGBO(15, 26, 00, 0.8),
-                  ),
+                  style: 
+                    TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Poppins',
+                      color: Color.fromRGBO(15, 26, 00, 0.8),
+                    ),
                 ),
 
                 Padding(
@@ -73,20 +74,23 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                   
                       labelText: 'Enter your E-mail',
-                      labelStyle: TextStyle(
-                        color: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
-                  
+                      labelStyle: 
+                        TextStyle(
+                          color: Color.fromRGBO(0, 0, 0, 0.5),
+                        ),
+                    
                       hintText: '@student.nsbm.as.lk',
-                      hintStyle: TextStyle(
-                        color: Color.fromRGBO(158, 158, 158, 1),
-                        fontSize: 16,
-                      ),
+                      hintStyle: 
+                        TextStyle(
+                          color: Color.fromRGBO(158, 158, 158, 1),
+                          fontSize: 16,
+                        ),
                   
-                      prefixIcon: Icon(
-                        Icons.mail_outlined,
-                        color: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
+                      prefixIcon: 
+                        Icon(
+                          Icons.mail_outlined,
+                          color: Color.fromRGBO(0, 0, 0, 0.5),
+                        ),
                   
                     ),
 
@@ -113,18 +117,23 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                   
                       labelText: 'Password',
-                      labelStyle: TextStyle(
-                        color: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
+                      labelStyle: 
+                        TextStyle(
+                          color: Color.fromRGBO(0, 0, 0, 0.5),
+                        ),
                   
-                      prefixIcon: Icon(
-                        Icons.lock_outlined,
-                        color: Color.fromRGBO(0, 0, 0, 0.5),
-                      ),
+                      prefixIcon: 
+                        Icon(
+                          Icons.lock_outlined,
+                          color: Color.fromRGBO(0, 0, 0, 0.5),
+                        ),
                   
                       suffixIcon: IconButton(
                         onPressed: () {}, 
-                        icon: Icon(Icons.visibility)
+                        icon: 
+                          Icon(
+                            Icons.visibility
+                          )
                       ),
                   
                     ),
@@ -219,22 +228,24 @@ class _LoginPageState extends State<LoginPage> {
                           // }
                         },
 
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context, 
-                            MaterialPageRoute(
-                              builder: (context) => BottomNavigation()
-                            ),
+                      child: 
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context, 
+                              MaterialPageRoute(
+                                builder: (context) => BottomNavigation()
+                              ),
                           );
-                        }, 
+                          }, 
                         
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)
+                        style: 
+                          ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)
+                            ),
                           ),
-                        ),
                       
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -242,11 +253,12 @@ class _LoginPageState extends State<LoginPage> {
                     
                             Text(
                               "LOGIN",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: 
+                                TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                             ),
                     
                             Icon(
