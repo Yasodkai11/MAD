@@ -13,10 +13,10 @@ class BackAppBar extends StatelessWidget implements PreferredSizeWidget{
             return IconButton(
 
               onPressed: () {
-                Scaffold.of(context).openDrawer();
+                //Scaffold.of(context).openDrawer();
               }, 
 
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
 
               icon: Icon(
                 Icons.arrow_back_ios_new_rounded,
