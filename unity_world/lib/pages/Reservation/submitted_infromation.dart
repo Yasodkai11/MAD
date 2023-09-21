@@ -330,3 +330,18 @@ class _EditPageState extends State<EditPage> {
     requestDateController.text = widget.initialData['requestDate'] ?? '';
     timeController.text = widget.initialData['time'] ?? '';
   }
+
+  @override
+  void dispose() {
+    // Dispose of the text controllers when the widget is disposed
+    requesterNameController.dispose();
+    degreeProgramController.dispose();
+    batchNumberController.dispose();
+    studentNumberController.dispose();
+    hallNumberController.dispose();
+    contactNumberController.dispose();
+    purposeController.dispose();
+    requestDateController.dispose();
+    timeController.dispose();
+    super.dispose();
+  }
