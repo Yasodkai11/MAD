@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/Profile/user_profile.dart';
+import 'package:unity_world/pages/notification_page.dart';
 //import 'package:unity_world/pages/Profile/user_profile.dart';
 //import 'package:unity_world/pages/notification_page.dart';
 
@@ -35,7 +37,12 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
           IconButton(
 
               onPressed: () {
-                
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (context) => const NotificationPage()
+                  ),
+                );
               }, 
               icon: 
                 const Icon(
@@ -47,7 +54,14 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget{
 
             IconButton(
 
-              onPressed: () {}, 
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (context) => UserProfile()
+                  ),
+                );
+              }, 
               icon: 
                 Icon(
                   Icons.person

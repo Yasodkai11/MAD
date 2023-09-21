@@ -13,7 +13,25 @@ class FOSSPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: BackAppBar(
-        
+        IconButton(
+
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+                // Navigator.push(
+                //   context, MaterialPageRoute(
+                //     builder: (context) => CommunityPage()
+                //   )
+                // );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
       ),
       body: SingleChildScrollView(
         child: Column(

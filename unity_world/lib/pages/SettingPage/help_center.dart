@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 
 
 import '../../components/drawer.dart';
@@ -36,7 +37,26 @@ void showAlert(){
   final desController = TextEditingController();
     
     return Scaffold(
-      appBar: BackAppBar(),
+      appBar: BackAppBar(
+        IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+      ),
        drawer: MyDrawer(
         child: Container(),
       ),

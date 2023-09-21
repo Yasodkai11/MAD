@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/components/menu_notifi_account.dart';
 import 'package:unity_world/pages/Reservation/reservation_form.dart';
 
 class ReservationPage extends StatefulWidget {
@@ -23,14 +25,31 @@ class _ReservationPageState extends State<ReservationPage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
 
+      appBar: MyAppBar(
+        title: Text(
+          "hall-display"
+        )
+      ),
+
+      drawer: MyDrawer(
+        child: Container(),
+      ),
+
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            Text("HALL RESERVATION", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),),
+            Text(
+              "HALL RESERVATION",
+              style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 30, 144, 255),
+              ),
+            ),
             SizedBox(height: 10,),
             SvgPicture.asset(
-              'assets/illustration/reservation.svg',
+              'assets/illustrations/Reservation.svg',
               height: size.height *0.28,
             ),
             SizedBox(height: 10,),
@@ -56,12 +75,14 @@ class _ReservationPageState extends State<ReservationPage> {
                             onPressed: () {
                               Navigator.push(
                                 context,
-                                MaterialPageRoute(builder: (context)=>MyFormApp()),
-                                );
+                                MaterialPageRoute(
+                                  builder: (context)=>MyFormApp()
+                                ),
+                              );
                               setState(() {
                                 selectedHall = index;
                               });
-                              },
+                            },
                             style: ElevatedButton.styleFrom(
                               primary:  Color.fromARGB(255, 46, 141, 213),
                               
@@ -83,7 +104,9 @@ class _ReservationPageState extends State<ReservationPage> {
                       Text(
                         'Reserved Time',
 
-                        style: TextStyle(fontSize: 18),
+                        style: TextStyle(
+                          fontSize: 18
+                        ),
                       ),
                       SizedBox(height: 10),
                       ListView.builder(
