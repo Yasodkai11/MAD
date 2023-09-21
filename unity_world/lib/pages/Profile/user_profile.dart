@@ -84,7 +84,7 @@ actions: <Widget>[
                     children: <Widget>[
                       ClipOval(
                         child: Image.asset(
-                          'images/profile.png',
+                          'assets/images/profile.png',
                           width: 150,
                           height: 150,
                           fit: BoxFit.cover,

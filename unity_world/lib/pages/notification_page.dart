@@ -6,7 +6,7 @@ import 'package:unity_world/components/drawer.dart';
 
 class NotificationPage extends StatefulWidget {
   const NotificationPage({Key? key}) : super(key: key);
-
+  static const route = '/notification-screen';
   @override
   State<NotificationPage> createState() => _NotificationPageState();
 }
