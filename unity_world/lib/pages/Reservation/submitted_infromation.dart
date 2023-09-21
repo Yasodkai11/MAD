@@ -314,3 +314,19 @@ class _EditPageState extends State<EditPage> {
   TextEditingController purposeController = TextEditingController();
   TextEditingController requestDateController = TextEditingController();
   TextEditingController timeController = TextEditingController();
+
+  @override
+  void initState() {
+    super.initState();
+
+    // Set the initial values in the text controllers
+    requesterNameController.text = widget.initialData['requesterName'] ?? '';
+    degreeProgramController.text = widget.initialData['degreeProgram'] ?? '';
+    batchNumberController.text = widget.initialData['batchNumber'] ?? '';
+    studentNumberController.text = widget.initialData['studentNumber'] ?? '';
+    hallNumberController.text = widget.initialData['hallNumber'] ?? '';
+    contactNumberController.text = widget.initialData['contactNumber'] ?? '';
+    purposeController.text = widget.initialData['purpose'] ?? '';
+    requestDateController.text = widget.initialData['requestDate'] ?? '';
+    timeController.text = widget.initialData['time'] ?? '';
+  }
