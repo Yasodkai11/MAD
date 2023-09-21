@@ -3,6 +3,7 @@ import 'package:unity_world/components/background.dart';
 import 'package:unity_world/pages/Welcome/continue_page.dart';
 import 'package:unity_world/pages/Welcome/login_page.dart';
 
+// ignore: unused_import
 import '../Department/Dep_Head/mis_head.dart';
 
 
@@ -38,7 +39,7 @@ class WelcomePage extends StatelessWidget {
                 ),
               ),
 
-              Expanded(
+              const Expanded(
                 child: Center(
                   child: Padding(
                     padding: EdgeInsets.only(top: 50),
@@ -75,7 +76,7 @@ class WelcomePage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(22),
                       ),
                     ),
-                    child: Text(
+                    child: const Text(
                       "Start",
                       style: TextStyle(
                         fontSize: 35,

@@ -66,7 +66,7 @@ class _requestState extends State<request> {
               child: Column(
                 children: [
                   SizedBox(height: 10.0),
-                  Text(
+                  const Text(
                     "Subject :- ",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.black, fontSize: 18),
@@ -74,7 +74,7 @@ class _requestState extends State<request> {
                   SizedBox(height: 15.0),
                   TextFormField(
                     controller: subController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter the subject here',
                     ),
@@ -93,7 +93,7 @@ class _requestState extends State<request> {
               child: Column(
                 children: [
                   SizedBox(height: 10.0),
-                  Text(
+                  const Text(
                     "Please provide a brief description :- ",
                     textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.black, fontSize: 18),
@@ -101,7 +101,7 @@ class _requestState extends State<request> {
                   SizedBox(height: 15.0),
                   TextFormField(
                     controller: desController,
-                    decoration: InputDecoration(
+                    decoration: const InputDecoration(
                       border: OutlineInputBorder(),
                       hintText: 'Enter a description here',
                     ),

@@ -9,12 +9,12 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   // Define variables to hold the data
-  String requesterName = 'Mark';
-  String degreeProgram = 'Computer Science';
+  String requesterName = 'Losathi';
+  String degreeProgram = 'Software Engineering';
   String batchNumber = '21.1';
-  String studentNumber = '123456789';
+  String studentNumber = '1234';
   String hallNumber = 'L101';
-  String contactNumber = '0771995953';
+  String contactNumber = '0771234567';
   String purpose = 'Study';
   String requestDate = '2023-09-20';
   String time = '14:30 - 16:30';
@@ -25,8 +25,8 @@ class _HomePageState extends State<HomePage> {
       barrierDismissible: false, // Prevent dismissing by tapping outside
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Delete Confirmation'),
-          content: SingleChildScrollView(
+          title: const Text('Delete Confirmation'),
+          content: const SingleChildScrollView(
             child: ListBody(
               children: <Widget>[
                 Text('Are you sure you want to delete this information?'),

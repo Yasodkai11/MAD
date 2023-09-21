@@ -4,13 +4,9 @@ import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/pages/HomePage/home_page.dart';
 
 
-class AboutUs extends StatefulWidget {
+class AboutUs extends StatelessWidget {
   const AboutUs({Key? key}) : super(key: key);
 
-  @override
-  State<AboutUs> createState() => _AboutUsState();
-}
-class _AboutUsState extends State<AboutUs> {
   @override
    Widget build(BuildContext context) {
     return Scaffold(
