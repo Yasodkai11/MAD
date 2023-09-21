@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:unity_world/components/background.dart';
 import 'package:unity_world/components/nav_bar.dart';
+// ignore: unused_import
 import 'package:unity_world/service/auth.dart';
 
 bool isCheckedRememberMe = false;

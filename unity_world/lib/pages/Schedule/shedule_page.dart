@@ -2,19 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:unity_world/components/drawer.dart';
 import 'package:unity_world/components/menu_notifi_account.dart';
 
-class Shedule extends StatefulWidget {
+class Shedule extends StatelessWidget {
   const Shedule({Key? key}) : super(key: key);
-
-  @override
-  State<Shedule> createState() => _SheduleState();
-}
-
-class _SheduleState extends State<Shedule> {
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
+      appBar: const MyAppBar(
           title: Text('Shedule'),
       ),
          drawer: MyDrawer(

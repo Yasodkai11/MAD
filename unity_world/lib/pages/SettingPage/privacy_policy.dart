@@ -5,14 +5,10 @@ import 'package:unity_world/pages/HomePage/home_page.dart';
 
 
 
-class PrivacyPolicy extends StatefulWidget {
-  const PrivacyPolicy({super.key});
+// ignore: must_be_immutable
+class PrivacyPolicy extends StatelessWidget {
+   PrivacyPolicy({super.key});
 
-  @override
-  State<PrivacyPolicy> createState() => _PrivacyPolicyState();
-}
-
-class _PrivacyPolicyState extends State<PrivacyPolicy> {
   String selectedSection = 'Highlights';
 
   @override

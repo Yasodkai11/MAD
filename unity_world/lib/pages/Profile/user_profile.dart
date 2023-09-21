@@ -12,8 +12,6 @@ class UserProfile extends StatelessWidget {
     TextEditingController batch = TextEditingController();
 
 
-
-
      Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
       return showDialog<void>(
         context: context,
