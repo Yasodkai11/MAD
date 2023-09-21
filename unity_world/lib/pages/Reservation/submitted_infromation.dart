@@ -226,3 +226,29 @@ void clearData() {
                     borderRadius: BorderRadius.circular(12),
                   ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      onPressed: () {
+                        // Navigate to the edit screen and pass the data
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => EditPage(
+                              initialData: {
+                                'requesterName': requesterName,
+                                'degreeProgram': degreeProgram,
+                                'batchNumber': batchNumber,
+                                'studentNumber': studentNumber,
+                                'hallNumber': hallNumber,
+                                'contactNumber': contactNumber,
+                                'purpose': purpose,
+                                'requestDate': requestDate,
+                                'time': time,
+                              },
+                            ),
+                          ),
