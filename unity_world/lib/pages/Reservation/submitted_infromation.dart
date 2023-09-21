@@ -345,3 +345,24 @@ class _EditPageState extends State<EditPage> {
     timeController.dispose();
     super.dispose();
   }
+
+   @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Edit Information'),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          children: [
+            // Requester's Name
+            TextFormField(
+              controller: requesterNameController,
+              decoration: InputDecoration(labelText: 'Requester\'s Name'),
+            ),
+            // Degree Program
+            TextFormField(
+              controller: degreeProgramController,
+              decoration: InputDecoration(labelText: 'Degree Program'),
+            ),
