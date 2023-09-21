@@ -366,3 +366,23 @@ class _EditPageState extends State<EditPage> {
               controller: degreeProgramController,
               decoration: InputDecoration(labelText: 'Degree Program'),
             ),
+            // Batch Number
+            TextFormField(
+              controller: batchNumberController,
+              decoration: InputDecoration(labelText: 'Batch Number'),
+            ),
+            // Student Number
+            TextFormField(
+              controller: studentNumberController,
+              decoration: InputDecoration(labelText: 'Student Number'),
+            ),
+            // Hall Number
+            TextFormField(
+              controller: hallNumberController,
+              decoration: InputDecoration(labelText: 'Hall Number'),
+            ),
+            // Contact Number
+            TextFormField(
+              controller: contactNumberController,
+              decoration: InputDecoration(labelText: 'Contact Number'),
+            ),
