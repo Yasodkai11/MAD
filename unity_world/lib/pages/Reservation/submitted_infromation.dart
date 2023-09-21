@@ -295,3 +295,22 @@ void clearData() {
     );
   }
 }
+class EditPage extends StatefulWidget {
+  final Map<String, String> initialData;
+
+  EditPage({required this.initialData});
+
+  @override
+  _EditPageState createState() => _EditPageState();
+}
+
+class _EditPageState extends State<EditPage> {
+  TextEditingController requesterNameController = TextEditingController();
+  TextEditingController degreeProgramController = TextEditingController();
+  TextEditingController batchNumberController = TextEditingController();
+  TextEditingController studentNumberController = TextEditingController();
+  TextEditingController hallNumberController = TextEditingController();
+  TextEditingController contactNumberController = TextEditingController();
+  TextEditingController purposeController = TextEditingController();
+  TextEditingController requestDateController = TextEditingController();
+  TextEditingController timeController = TextEditingController();
