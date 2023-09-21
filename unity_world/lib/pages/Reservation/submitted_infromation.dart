@@ -141,3 +141,51 @@ void clearData() {
                               child: Text(
                                 studentNumber,
                                 style: TextStyle(color: Colors.white),
+ ),
+                            ),
+                          ],
+                        ),
+                        // Hall Number
+                        Row(
+                          children: [
+                            Text('\nHall Number:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                hallNumber,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Contact Number
+                        Row(
+                          children: [
+                            Text('\nContact Number:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                contactNumber,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Purpose
+                        Row(
+                          children: [
+                            Text('\nPurpose:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                purpose,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Request Date
+                        Row(
+                          children: [
+                            Text('\nRequest Date:\n',
+                                style: TextStyle(color: Colors.white)),
