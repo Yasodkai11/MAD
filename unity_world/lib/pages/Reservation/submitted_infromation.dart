@@ -121,3 +121,23 @@ void clearData() {
                           children: [
                             Text('\nBatch Number:\n',
                                 style: TextStyle(color: Colors.white)),
+
+
+
+                                                            Expanded(
+                              child: Text(
+                                batchNumber,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ),
+                          ],
+                        ),
+                        // Student Number
+                        Row(
+                          children: [
+                            Text('\nStudent Number:\n',
+                                style: TextStyle(color: Colors.white)),
+                            Expanded(
+                              child: Text(
+                                studentNumber,
+                                style: TextStyle(color: Colors.white),
