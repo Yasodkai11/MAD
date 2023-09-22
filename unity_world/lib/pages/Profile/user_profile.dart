@@ -122,17 +122,23 @@ class UserProfile extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20.0,
+              height: 30.0,
             ),
-            TextField(
-              controller: fullname,
-              decoration: InputDecoration(
-                labelText: 'Full Name',
-                prefixIcon: const Icon(Icons.person),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.person,
+                  size: 30,
+                ),
+                Text(
+                  'Sanali Losathi',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 20.0,
