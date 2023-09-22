@@ -11,11 +11,10 @@ class UserProfile extends StatelessWidget {
     TextEditingController email = TextEditingController();
     TextEditingController batch = TextEditingController();
 
-
-     Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
+    Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, 
+        barrierDismissible: false,
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Confirm Logout'),
@@ -26,21 +25,17 @@ class UserProfile extends StatelessWidget {
                 ],
               ),
             ),
-
-
-actions: <Widget>[
+            actions: <Widget>[
               TextButton(
                 child: const Text('Cancel'),
                 onPressed: () {
-                  Navigator.of(context).pop(); 
+                  Navigator.of(context).pop();
                 },
               ),
-
               TextButton(
                 child: const Text('Logout'),
                 onPressed: () {
-                  
-                  Navigator.of(context).pop(); 
+                  Navigator.of(context).pop();
                 },
               ),
             ],
@@ -48,9 +43,6 @@ actions: <Widget>[
         },
       );
     }
-
-
-
 
     return Scaffold(
       appBar: AppBar(
@@ -72,9 +64,7 @@ actions: <Widget>[
                 ),
               ),
             ),
-
-
-             Align(
+            Align(
               alignment: Alignment.topCenter,
               child: Column(
                 children: <Widget>[
@@ -93,27 +83,28 @@ actions: <Widget>[
                 ],
               ),
             ),
-
-
-
-             
-            TextField(
-              controller: username,
-              decoration: InputDecoration(
-                labelText: 'User Name',
-                prefixIcon: const Icon(Icons.person),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
+            SizedBox(
+              height: 30.0,
             ),
-
-
-
-             SizedBox(
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.person,
+                  size: 30,
+                ),
+                Text(
+                  'KKS Losathi',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
               height: 20.0,
             ),
-
             TextField(
               controller: studentid,
               decoration: InputDecoration(
@@ -124,8 +115,6 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
-
-
             SizedBox(
               height: 20.0,
             ),
@@ -139,8 +128,7 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
-
-             SizedBox(
+            SizedBox(
               height: 20.0,
             ),
             TextField(
@@ -153,7 +141,6 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
-
             SizedBox(
               height: 20.0,
             ),
@@ -167,16 +154,12 @@ actions: <Widget>[
                 focusedBorder: myFocusBorder(),
               ),
             ),
-
-
             SizedBox(
               height: 30.0,
             ),
-
             ElevatedButton(
               onPressed: () {
-                _showLogoutConfirmationDialog(
-                    context); 
+                _showLogoutConfirmationDialog(context);
               },
               child: const Text('Logout'),
               style: ElevatedButton.styleFrom(
@@ -189,24 +172,15 @@ actions: <Widget>[
                 ),
               ),
             ),
-
-
-
-
             SizedBox(
               height: 30.0,
             ),
-
-            
-            
           ],
         ),
       ),
     );
   }
 }
-
-
 
 OutlineInputBorder myFocusBorder() {
   return const OutlineInputBorder(
@@ -217,8 +191,6 @@ OutlineInputBorder myFocusBorder() {
     ),
   );
 }
-
-
 
 OutlineInputBorder myInputBorder() {
   return const OutlineInputBorder(
