@@ -140,18 +140,24 @@ class UserProfile extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: 20.0,
+            SSizedBox(
+              height: 30.0,
             ),
-            TextField(
-              controller: email,
-              decoration: InputDecoration(
-                labelText: 'Email',
-                prefixIcon: const Icon(Icons.email),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.email_outlined,
+                  size: 30,
+                ),
+                Text(
+                  'kkslosathi@students.nsbm.ac.lk',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 20.0,
