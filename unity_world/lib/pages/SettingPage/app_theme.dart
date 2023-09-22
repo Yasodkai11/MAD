@@ -9,3 +9,9 @@ class AppTheme {
         color: Colors.white,
       ),
     ),
+    textTheme: const TextTheme(
+      bodyText2: TextStyle(
+        color: Colors.black,
+      ),
+    ),
+  );
