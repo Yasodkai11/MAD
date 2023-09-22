@@ -103,17 +103,23 @@ class UserProfile extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: 20.0,
+              height: 30.0,
             ),
-            TextField(
-              controller: studentid,
-              decoration: InputDecoration(
-                labelText: 'Student ID',
-                prefixIcon: const Icon(Icons.people),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.perm_identity,
+                  size: 30,
+                ),
+                Text(
+                  '22838',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
             ),
             SizedBox(
               height: 20.0,
