@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/drawer.dart';
+import 'package:url_launcher/url_launcher.dart'; 
+
 import 'package:unity_world/components/menu_notifi_account.dart';
 
 class Shedule extends StatefulWidget {
@@ -107,21 +109,26 @@ class _SheduleState extends State<Shedule> {
               child: Column(
             children: [
               Row(
-                children: [
-                  Container(
-                    height: 54,
-                    width: 98,
-                    color: const Color.fromARGB(255, 15, 26, 88),   
-                    child: const Center(
-                      child: Text(
-                        "20.1",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18,
-                            fontWeight: FontWeight.bold),
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          _launchURL(""); 
+                        },
+                        child: Container(
+                          height: 54,
+                          width: 98,
+                          color: const Color.fromARGB(255, 15, 26, 88),
+                          child: const Center(
+                            child: Text(
+                              "20.1",
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ),
                       ),
-                    ),                 
-                  ),
                   Container(
                     height: 54,
                     width: 20,
@@ -256,4 +263,8 @@ class _SheduleState extends State<Shedule> {
       ),
     );
   }
+}
+
+class _launchURL {
+  _launchURL(String s);
 }
