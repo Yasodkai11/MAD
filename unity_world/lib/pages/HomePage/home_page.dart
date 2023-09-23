@@ -8,6 +8,7 @@ import 'package:unity_world/pages/Department/ds_dept_page.dart';
 import 'package:unity_world/pages/Department/mis_dept_page.dart';
 
 
+// ignore: must_be_immutable
 class HomePage extends StatelessWidget {
 
   int currentIndex = 0;
@@ -19,7 +20,9 @@ class HomePage extends StatelessWidget {
       children: [
         Scaffold(
     
-          appBar: MyAppBar(),
+          appBar: MyAppBar(
+              title: Text('Home Page'),
+          ),
     
           drawer: MyDrawer(
             child: Container(),

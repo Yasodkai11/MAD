@@ -1,19 +1,35 @@
-  import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 
 
-class AboutUs extends StatefulWidget {
+class AboutUs extends StatelessWidget {
   const AboutUs({Key? key}) : super(key: key);
 
   @override
-  State<AboutUs> createState() => _AboutUsState();
-}
-class _AboutUsState extends State<AboutUs> {
-  @override
    Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BackAppBar(),
+      appBar: BackAppBar(
+        IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+      ),
         drawer: MyDrawer(
         child: Container(),
       

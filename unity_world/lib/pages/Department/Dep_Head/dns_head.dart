@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/Department/dns_dept_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 
@@ -8,7 +9,24 @@ class DnsheadPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: BackAppBar(
-      
+        IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => DnsDeptPage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
       
       
       ),

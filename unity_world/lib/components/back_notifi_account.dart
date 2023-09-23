@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/pages/Profile/user_profile.dart';
+import 'package:unity_world/pages/notification_page.dart';
 
 class BackAppBar extends StatelessWidget implements PreferredSizeWidget{
-  const BackAppBar({super.key});
+  const BackAppBar(IconButton iconButton, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +15,10 @@ class BackAppBar extends StatelessWidget implements PreferredSizeWidget{
             return IconButton(
 
               onPressed: () {
-                Scaffold.of(context).openDrawer();
+                //Scaffold.of(context).openDrawer();
               }, 
 
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
 
               icon: Icon(
                 Icons.arrow_back_ios_new_rounded,
@@ -32,21 +34,35 @@ class BackAppBar extends StatelessWidget implements PreferredSizeWidget{
         actions: [
 
           IconButton(
-              onPressed: () {}, 
-              icon: Image.asset(
-                "assets/icons/notification.png",
-                width: 24,
-                height: 24,
-              ),
-            ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (context) => const NotificationPage()
+                  ),
+                );
+              }, 
+              icon: 
+                Icon(
+                  Icons.notifications_active_outlined
+                ),
+                color: Colors.black,
+          ),
 
             IconButton(
-              onPressed: () {}, 
-              icon: Image.asset(
-                "assets/icons/user.png",
-                width: 30,
-                height: 30,
-              ),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                  builder: (context) => UserProfile()
+                  ),
+                );
+              }, 
+              icon: 
+                Icon(
+                  Icons.person
+                ),
+                color: Colors.black,
             ),
 
         ],

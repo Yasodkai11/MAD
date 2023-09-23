@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void main() {
@@ -11,8 +12,26 @@ class FOSSPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(''),
+      appBar: BackAppBar(
+        IconButton(
+
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+                // Navigator.push(
+                //   context, MaterialPageRoute(
+                //     builder: (context) => CommunityPage()
+                //   )
+                // );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
       ),
       body: SingleChildScrollView(
         child: Column(

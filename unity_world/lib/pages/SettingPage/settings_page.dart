@@ -3,6 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:quickalert/quickalert.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 import 'package:unity_world/pages/SettingPage/about_us_page.dart';
 import 'package:unity_world/pages/SettingPage/privacy_policy.dart';
 import 'package:unity_world/pages/SettingPage/theme_provider.dart';
@@ -30,7 +31,26 @@ void showAlert(){
   @override
    Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BackAppBar(),
+      appBar: BackAppBar(
+        IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+      ),
           drawer: MyDrawer(
         child: Container(
       ),

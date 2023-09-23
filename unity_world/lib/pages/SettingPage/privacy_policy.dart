@@ -1,23 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/back_notifi_account.dart';
 import 'package:unity_world/components/drawer.dart';
+import 'package:unity_world/pages/HomePage/home_page.dart';
 
 
 
-class PrivacyPolicy extends StatefulWidget {
-  const PrivacyPolicy({super.key});
+// ignore: must_be_immutable
+class PrivacyPolicy extends StatelessWidget {
+   PrivacyPolicy({super.key});
 
-  @override
-  State<PrivacyPolicy> createState() => _PrivacyPolicyState();
-}
-
-class _PrivacyPolicyState extends State<PrivacyPolicy> {
   String selectedSection = 'Highlights';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BackAppBar(),
+      appBar: BackAppBar(
+        IconButton(
+
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => HomePage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+      ),
        drawer: MyDrawer(
         child: Container(),
       

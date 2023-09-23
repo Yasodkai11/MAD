@@ -1,14 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:unity_world/components/back_notifi_account.dart';
+import 'package:unity_world/pages/Department/mis_dept_page.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MisheadPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Dr. Mohamed Shafraz'),
-      ),
+      appBar: BackAppBar(
+       IconButton(
 
+              onPressed: () {
+                Navigator.push(
+                  context, MaterialPageRoute(
+                    builder: (context) => IsseDepPage()
+                  )
+                );
+              }, 
+
+              //tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+
+              icon: const Icon(
+                Icons.arrow_back_ios_new_rounded,
+              ),
+              color: Colors.black,
+
+            ),
+
+       
+      ),
        body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

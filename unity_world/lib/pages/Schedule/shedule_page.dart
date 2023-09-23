@@ -4,19 +4,15 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'package:unity_world/components/menu_notifi_account.dart';
 
-class Shedule extends StatefulWidget {
+class Shedule extends StatelessWidget {
   const Shedule({Key? key}) : super(key: key);
 
   @override
-  State<Shedule> createState() => _SheduleState();
-}
-
-class _SheduleState extends State<Shedule> {
-
-  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: MyAppBar(),
+    return Scaffold( 
+      appBar: const MyAppBar(
+          title: Text('Shedule'),
+      ),
          drawer: MyDrawer(
         child: Container(),
       

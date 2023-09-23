@@ -2,16 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:unity_world/components/background.dart';
 import 'package:unity_world/components/nav_bar.dart';
+// ignore: unused_import
 import 'package:unity_world/service/auth.dart';
 
 bool isCheckedRememberMe = false;
 
 class LoginPage extends StatefulWidget {
   //function
-  final Function toggle;
+  //final Function toggle;
   const LoginPage({
     Key? key,
-    required this.toggle
+    //required this.toggle
     }) : super(key: key);
 
   @override
@@ -20,14 +21,14 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   //ref for the AuthServices class
-  final AuthServices _auth = AuthServices();
+   //final AuthServices _auth = AuthServices();
 
   //from key
-  final _formKey = GlobalKey<FormState>();
+  //final _formKey = GlobalKey<FormState>();
   //email password states
-  String email = "";
-  String password = "";
-  String error = "";
+  // String email = "";
+  // String password = "";
+  // String error = "";
 
   
   @override
@@ -54,54 +55,54 @@ class _LoginPageState extends State<LoginPage> {
 
                 Text(
                   "Login To Continue",
-                  style: TextStyle(
-                    fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Poppins',
-                    color: Color.fromRGBO(15, 26, 00, 0.8),
-                  ),
+                  style: 
+                    TextStyle(
+                      fontSize: 32,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Poppins',
+                      color: Color.fromRGBO(15, 26, 00, 0.8),
+                    ),
                 ),
 
                 Padding(
                   padding: EdgeInsets.fromLTRB(30, 15, 30, 20),
 
-                  child: Form(
-                    key: _formKey,
-
-                    child: TextFormField(
-                      decoration: InputDecoration(
+                  child: TextFormField(
+                    decoration: InputDecoration(
                   
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                   
-                        labelText: 'Enter your E-mail',
-                        labelStyle: TextStyle(
+                      labelText: 'Enter your E-mail',
+                      labelStyle: 
+                        TextStyle(
                           color: Color.fromRGBO(0, 0, 0, 0.5),
                         ),
-                  
-                        hintText: '@student.nsbm.as.lk',
-                        hintStyle: TextStyle(
+                    
+                      hintText: '@student.nsbm.as.lk',
+                      hintStyle: 
+                        TextStyle(
                           color: Color.fromRGBO(158, 158, 158, 1),
                           fontSize: 16,
                         ),
                   
-                        prefixIcon: Icon(
+                      prefixIcon: 
+                        Icon(
                           Icons.mail_outlined,
                           color: Color.fromRGBO(0, 0, 0, 0.5),
                         ),
                   
-                      ),
-
-                      validator: (val) => 
-                        val!.isEmpty ? "Enter a valid email" : null,
-                      onChanged: (val) {
-                        setState(() {
-                              email = val;
-                        });
-                      },
-
                     ),
+
+                    validator: (val) => 
+                      val!.isEmpty ? "Enter a valid email" : null,
+                    onChanged: (val) {
+                      setState(() {
+                            // email = val;
+                      });
+                    },
+
                   ),
 
                 ),
@@ -109,43 +110,44 @@ class _LoginPageState extends State<LoginPage> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(30, 0, 30, 5),
 
-                  child: Form(
-                    key: _formKey,
-
-                    child: TextFormField(
-                      decoration: InputDecoration(
+                  child: TextFormField(
+                    decoration: InputDecoration(
                   
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(20),
-                        ),
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(20),
+                      ),
                   
-                        labelText: 'Password',
-                        labelStyle: TextStyle(
+                      labelText: 'Password',
+                      labelStyle: 
+                        TextStyle(
                           color: Color.fromRGBO(0, 0, 0, 0.5),
                         ),
                   
-                        prefixIcon: Icon(
+                      prefixIcon: 
+                        Icon(
                           Icons.lock_outlined,
                           color: Color.fromRGBO(0, 0, 0, 0.5),
                         ),
                   
-                        suffixIcon: IconButton(
-                          onPressed: () {}, 
-                          icon: Icon(Icons.visibility)
-                        ),
-                  
+                      suffixIcon: IconButton(
+                        onPressed: () {}, 
+                        icon: 
+                          Icon(
+                            Icons.visibility
+                          )
                       ),
-
-                      validator: (val) => val!.length < 6
-                          ? "Password must be at least 6 characters"
-                          : null,
-                      onChanged: (val) {
-                          setState(() {
-                            password = val;
-                          });
-                      },
-
+                  
                     ),
+
+                    validator: (val) => val!.length < 6
+                        ? "Password must be at least 6 characters"
+                        : null,
+                    onChanged: (val) {
+                        setState(() {
+                          // password = val;
+                        });
+                    },
+
                   ),
 
                 ),
@@ -185,6 +187,7 @@ class _LoginPageState extends State<LoginPage> {
                           Container(
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(3),
+                               color: isCheckedRememberMe ? Colors.blue : Colors.black,
                             ),
                             child: SizedBox(
                               width: 6,
@@ -194,8 +197,10 @@ class _LoginPageState extends State<LoginPage> {
                           Text(
                             'Remember Me',
                             style: TextStyle(
-                              color: Colors.black,
+                              color: isCheckedRememberMe ? Color.fromRGBO(15, 26, 88, 1.0): Colors.black,
                               fontSize: 14,
+                              fontWeight: FontWeight.w600,
+                              letterSpacing: 1
                             ),
                           ),
 
@@ -213,36 +218,38 @@ class _LoginPageState extends State<LoginPage> {
                     width: 250,
                 
                     child: GestureDetector(
-                      onTap: () async 
+                      onTap: () 
                       {
-                          dynamic result = await _auth
-                              .signInUsingEmailAndPassword(email, password);
+                          // dynamic result = await _auth
+                          //     .signInUsingEmailAndPassword(email, password);
 
-                          if (result == null) {
-                            setState(() 
-                            {
-                              error = "Could not signin with those credentials";
-                            }
-                            );
-                          }
+                          // if (result == null) {
+                          //   setState(() 
+                          //   {
+                          //     // error = "Could not signin with those credentials";
+                          //   }
+                          //   );
+                          // }
                         },
 
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Navigator.push(
-                            context, 
-                            MaterialPageRoute(
-                              builder: (context) => BottomNavigation()
-                            ),
+                      child: 
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context, 
+                              MaterialPageRoute(
+                                builder: (context) => BottomNavigation()
+                              ),
                           );
-                        }, 
+                          }, 
                         
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5)
+                        style: 
+                          ElevatedButton.styleFrom(
+                            backgroundColor: Color.fromRGBO(15, 26, 88, 1.0),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5)
+                            ),
                           ),
-                        ),
                       
                         child: Row(
                           mainAxisSize: MainAxisSize.min,
@@ -250,11 +257,12 @@ class _LoginPageState extends State<LoginPage> {
                     
                             Text(
                               "LOGIN",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20,
-                                fontWeight: FontWeight.bold,
-                              ),
+                              style: 
+                                TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
                             ),
                     
                             Icon(
