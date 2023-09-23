@@ -11,11 +11,10 @@ class UserProfile extends StatelessWidget {
     TextEditingController email = TextEditingController();
     TextEditingController batch = TextEditingController();
 
-
-     Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
+    Future<void> _showLogoutConfirmationDialog(BuildContext context) async {
       return showDialog<void>(
         context: context,
-        barrierDismissible: false, 
+        barrierDismissible: false,
         builder: (BuildContext context) {
           return AlertDialog(
             title: const Text('Confirm Logout'),
@@ -26,21 +25,17 @@ class UserProfile extends StatelessWidget {
                 ],
               ),
             ),
-
-
-actions: <Widget>[
+            actions: <Widget>[
               TextButton(
                 child: const Text('Cancel'),
                 onPressed: () {
-                  Navigator.of(context).pop(); 
+                  Navigator.of(context).pop();
                 },
               ),
-
               TextButton(
                 child: const Text('Logout'),
                 onPressed: () {
-                  
-                  Navigator.of(context).pop(); 
+                  Navigator.of(context).pop();
                 },
               ),
             ],
@@ -48,9 +43,6 @@ actions: <Widget>[
         },
       );
     }
-
-
-
 
     return Scaffold(
       appBar: AppBar(
@@ -72,9 +64,7 @@ actions: <Widget>[
                 ),
               ),
             ),
-
-
-             Align(
+            Align(
               alignment: Alignment.topCenter,
               child: Column(
                 children: <Widget>[
@@ -93,90 +83,107 @@ actions: <Widget>[
                 ],
               ),
             ),
-
-
-
-             
-            TextField(
-              controller: username,
-              decoration: InputDecoration(
-                labelText: 'User Name',
-                prefixIcon: const Icon(Icons.person),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
-            ),
-
-
-
-             SizedBox(
-              height: 20.0,
-            ),
-
-            TextField(
-              controller: studentid,
-              decoration: InputDecoration(
-                labelText: 'Student ID',
-                prefixIcon: const Icon(Icons.people),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
-            ),
-
-
-            SizedBox(
-              height: 20.0,
-            ),
-            TextField(
-              controller: fullname,
-              decoration: InputDecoration(
-                labelText: 'Full Name',
-                prefixIcon: const Icon(Icons.person),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
-            ),
-
-             SizedBox(
-              height: 20.0,
-            ),
-            TextField(
-              controller: email,
-              decoration: InputDecoration(
-                labelText: 'Email',
-                prefixIcon: const Icon(Icons.email),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
-            ),
-
-            SizedBox(
-              height: 20.0,
-            ),
-            TextField(
-              controller: batch,
-              decoration: InputDecoration(
-                labelText: 'Batch',
-                prefixIcon: const Icon(Icons.people),
-                border: myInputBorder(),
-                enabledBorder: myInputBorder(),
-                focusedBorder: myFocusBorder(),
-              ),
-            ),
-
-
             SizedBox(
               height: 30.0,
             ),
-
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.person,
+                  size: 30,
+                ),
+                Text(
+                  'KKS Losathi',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.perm_identity,
+                  size: 30,
+                ),
+                Text(
+                  '22838',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.person,
+                  size: 30,
+                ),
+                Text(
+                  'Sanali Losathi',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SSizedBox(
+              height: 30.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.email_outlined,
+                  size: 30,
+                ),
+                Text(
+                  'kkslosathi@students.nsbm.ac.lk',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Icon(
+                  Icons.class_,
+                  size: 30,
+                ),
+                Text(
+                  '21.1 Batch',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w400,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 30.0,
+            ),
             ElevatedButton(
               onPressed: () {
-                _showLogoutConfirmationDialog(
-                    context); 
+                _showLogoutConfirmationDialog(context);
               },
               child: const Text('Logout'),
               style: ElevatedButton.styleFrom(
@@ -189,24 +196,15 @@ actions: <Widget>[
                 ),
               ),
             ),
-
-
-
-
             SizedBox(
               height: 30.0,
             ),
-
-            
-            
           ],
         ),
       ),
     );
   }
 }
-
-
 
 OutlineInputBorder myFocusBorder() {
   return const OutlineInputBorder(
@@ -217,8 +215,6 @@ OutlineInputBorder myFocusBorder() {
     ),
   );
 }
-
-
 
 OutlineInputBorder myInputBorder() {
   return const OutlineInputBorder(
