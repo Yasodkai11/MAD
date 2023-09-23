@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:unity_world/components/background.dart';
+// ignore: unused_import
 import 'package:unity_world/pages/Welcome/continue_page.dart';
 import 'package:unity_world/pages/Welcome/login_page.dart';
 
