@@ -58,6 +58,10 @@ Many students often hesitate to request things they need for their education, ma
  
  • UI/UX Designer / Frontend Developer
 
+**Sanali Losathi** ([LosathiKK](https://github.com/LosathiKK))
+ 
+ • Frontend Developer / Backend Developer
+ 
  **Ridma Navod** ([ridmanavod](https://github.com/ridmanavod))
  
  • UI/UX Designer / Frontend Developer
