@@ -77,5 +77,5 @@ In Conclusion, this project proposal shows the development of a mobile applicati
 FOC students of NSBM. This Unityworld mobile application provides four facilities namely, Club Enrollment, Daily Schedule Display, Study Room Reservation Facility, Request and Feedback Facility.The app is developed using the best UI/UX practices.A GitHub repository has also been set up.This can make a significant impact in the FOC of NSBM. Strengthens communication between students. Improves access to information. And the work can be done more efficiently. It also aims to improve the student experience within the Faculty of Computing by simplifying administrative procedures.
 
 ---
-Thank you for your interest in the N-Side Mobile App. We hope you find it valuable in enhancing your university experience. If you have any questions, feedback, or suggestions, please don't hesitate to contact us.
+Thank you for your interest in the Unity World Mobile App. We hope you find it valuable in enhancing your university experience. If you have any questions, feedback, or suggestions, please don't hesitate to contact us.
 
